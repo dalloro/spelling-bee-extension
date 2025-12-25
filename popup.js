@@ -1069,6 +1069,15 @@ function setupEventListeners() {
 }
 
 function handleKeydown(e) {
+  // Ignore keydown if typing in an input field
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+  // Ignore shortcuts (Cmd/Ctrl/Alt + Key)
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+  // Ignore if multiplayer screen is open (visible)
+  if (els.multi.screen && els.multi.screen.offsetParent !== null) return;
+
   if (e.key === 'Backspace') {
     handleDelete();
   } else if (e.key === 'Enter') {
