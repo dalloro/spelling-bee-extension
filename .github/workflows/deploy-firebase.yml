@@ -22,6 +22,9 @@ jobs:
       - name: Deploy Firestore Rules (Project A)
         run: firebase deploy --only firestore --project "${{ secrets.RELAY_PROJECT_ID }}" --token "${{ secrets.FIREBASE_TOKEN }}"
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Build Unified Assets
         run: npm run build
         env:
