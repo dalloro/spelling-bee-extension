@@ -1,0 +1,4 @@
+node_modules/
+.DS_Store
+spelling-bee-extension.zip
+*.log

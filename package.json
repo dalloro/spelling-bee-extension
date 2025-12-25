@@ -1,0 +1,8 @@
+{
+    "name": "spelling-bee-extension",
+    "version": "1.0.0",
+    "description": "Chrome extension for the Spelling Bee game",
+    "scripts": {
+        "zip": "zip -r spelling-bee-extension.zip manifest.json popup.html popup.js popup.css words.js puzzles.js icons/"
+    }
+}
