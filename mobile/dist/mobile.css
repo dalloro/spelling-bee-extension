@@ -213,8 +213,8 @@ header {
 .cell {
     position: absolute;
     width: 100px;
-    height: 110px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    height: 90px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background-color: var(--hive-color);
     color: var(--hive-text-color);
     display: flex;
@@ -238,43 +238,43 @@ header {
     color: var(--center-text-color);
     z-index: 5;
     left: 100px;
-    top: 85px;
+    top: 95px;
 }
 
-/* Perfect hexagonal grid offsets */
+/* Perfect hexagonal grid offsets for Flat-Top */
 #cell-1 {
     left: 100px;
-    top: -10px;
+    top: 5px;
 }
 
 /* Top */
 #cell-2 {
-    left: 185px;
-    top: 38px;
+    left: 175px;
+    top: 50px;
 }
 
 /* Top Right */
 #cell-3 {
-    left: 185px;
-    top: 133px;
+    left: 175px;
+    top: 140px;
 }
 
 /* Bottom Right */
 #cell-4 {
     left: 100px;
-    top: 180px;
+    top: 185px;
 }
 
 /* Bottom */
 #cell-5 {
-    left: 15px;
-    top: 133px;
+    left: 25px;
+    top: 140px;
 }
 
 /* Bottom Left */
 #cell-6 {
-    left: 15px;
-    top: 38px;
+    left: 25px;
+    top: 50px;
 }
 
 /* Top Left */
