@@ -1,34 +1,78 @@
-# Spelling Bee Chrome Extension
+# Spelling Bee Project (Extension & Mobile)
 
-A clean, modern Chrome extension for playing the Spelling Bee word game. Features a random puzzle generator and official NYT Daily puzzle integration.
+A clean, modern implementation of the Spelling Bee word game, featuring official NYT Daily puzzle integration, random puzzles, and **Real-Time Multiplayer**.
 
-## Features
-- **NYT Daily Integration**: Play the official daily puzzle fetched directly from NYT.
-- **Random Puzzle Mode**: Generate a new puzzle anytime.
-- **Progress Tracking**: Real-time scoring and ranking system (Beginner to Queen Bee).
-- **Responsive Design**: Beautiful hexagonal grid UI with dark mode.
-- **Comprehensive Dictionary**: Augmented word list for precise validation.
+## 🏗️ Architecture (Dual-Project)
 
-## Development & Distribution
+The project uses a split Firebase architecture for maximum isolation and security:
+- **Project A (Relay)**: Handles the Firestore multiplayer backend (`spelling-bee-relay-1025`).
+- **Project B (Hosting)**: Hosts the standalone mobile web app (`spelling-bee-mobile`).
 
-### Distribution
-To create a zip file for distribution (e.g., for the Chrome Web Store), run:
+## 📱 Mobile Web App
+The touch-optimized web version is live at:
+🔗 **[https://spelling-bee-mobile.web.app/](https://spelling-bee-mobile.web.app/)**
+
+---
+
+## 🚀 Deployment
+
+### 1. Automated (CI/CD)
+Deployments are automated via **GitHub Actions** whenever you push to `main`.
+To enable this, ensure the following **GitHub Secrets** are configured:
+- `FIREBASE_TOKEN`: Your Firebase CI login token (`firebase login:ci`).
+- `RELAY_PROJECT_ID`: The ID of your Firestore project.
+- `HOSTING_PROJECT_ID`: The ID of your Hosting project (`spelling-bee-mobile`).
+- `FIREBASE_API_KEY`: Your Firebase Web API Key.
+
+### 2. Manual (CLI)
+If you need to deploy manually from your local machine:
+
+**Deploy Static Web App:**
 ```bash
-npm run zip
+cd mobile
+npm run build
+firebase deploy --only hosting --project spelling-bee-mobile
 ```
-This will generate `spelling-bee-extension.zip` in the root directory, containing only the necessary files for the extension to run.
 
-### Local Installation
+**Deploy Firestore Rules:**
+```bash
+firebase deploy --only firestore --project spelling-bee-relay-1025
+```
+
+---
+
+## 🧪 Testing & Development
+
+### Local Emulator Testing
+To test multiplayer logic locally without hitting production:
+1. Start the Firestore emulator:
+   ```bash
+   firebase emulators:start
+   ```
+2. In the browser (Mobile App), open the developer console and run:
+   ```javascript
+   switchMultiplayerEnv()
+   ```
+   This toggles the app between **Production** and **Local Emulator** modes.
+
+### Browser Extension
 1. Open Chrome and navigate to `chrome://extensions/`.
-2. Enable **Developer mode** (top right).
-3. Click **Load unpacked**.
-4. Select this project directory.
+2. Enable **Developer mode**.
+3. Click **Load unpacked** and select the root directory (or the zipped `dist` folder after running `npm run build`).
 
-## File Structure
-- `manifest.json`: Extension configuration.
-- `popup.html`: Main game interface.
-- `popup.js`: Game logic and NYT scraping.
-- `popup.css`: Visual styling.
-- `words.js`: Word validation dictionary.
-- `puzzles.js`: Precomputed puzzle sets.
-- `icons/`: Extension icons.
+---
+
+## 🛠️ Build System
+We use `esbuild` for a unified build process that handles both the extension and the mobile app:
+```bash
+npm run build
+```
+This command:
+1. Bundles `popup.js` into `dist/`.
+2. Bundles `mobile.js` into `mobile/dist/`.
+3. Injects secrets into the code.
+4. Generates **Cache-Busting** version strings for mobile assets.
+5. Zips the extension for distribution.
+
+---
+*Maintained with care* 🐝
