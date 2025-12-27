@@ -356,22 +356,55 @@ function renderFoundWords() {
 
 async function loadNYTDailyPuzzle(sync = true) {
     try {
-        // Use CORS proxy to bypass browser restrictions
         const proxyUrl = "https://corsproxy.io/?";
         const targetUrl = encodeURIComponent('https://nytbee.com/');
         const res = await fetch(proxyUrl + targetUrl);
         const html = await res.text();
         const doc = new DOMParser().parseFromString(html, 'text/html');
+
+        // 1. Extract the words
+        const words = Array.from(doc.querySelectorAll('a[id^="link-definition-"]')).map(a => a.id.split('-').pop().toLowerCase());
+        if (!words.length) throw new Error("No words found");
+
+        // 2. Identify the true center letter (must be in every word)
+        let commonLetters = new Set(words[0].split(''));
+        words.forEach(w => {
+            const wordSet = new Set(w.split(''));
+            commonLetters = new Set([...commonLetters].filter(x => wordSet.has(x)));
+        });
+        const centerLetter = Array.from(commonLetters)[0]?.toUpperCase();
+        if (!centerLetter) throw new Error("Center letter detection failed");
+
+        // 3. Extract all candidate 7-letter sets from scripts
         const scripts = Array.from(doc.querySelectorAll('script')).map(s => s.textContent).join(' ');
-        const bokeh = scripts.match(/\[\s*"([A-Z])"(?:\s*,\s*"([A-Z])"){6}\s*\]/i);
-        if (!bokeh) throw new Error("No letters");
-        const letters = bokeh[0].match(/[A-Z]/gi).map(l => l.toUpperCase());
-        const words = Array.from(doc.querySelectorAll('a[id^="link-definition-"]')).map(a => a.id.split('-').pop());
+        const letterArrays = scripts.match(/\[\s*"[A-Z]"(?:\s*,\s*"[A-Z]"){6}\s*\]/gi) || [];
+
+        let foundLetters = null;
+        for (const arrStr of letterArrays) {
+            const candidate = arrStr.match(/[A-Z]/gi).map(l => l.toUpperCase());
+            if (candidate.includes(centerLetter)) {
+                // Return letters with the detected center letter at index 0
+                const others = candidate.filter(l => l !== centerLetter);
+                foundLetters = [centerLetter, ...others];
+                break;
+            }
+        }
+
+        if (!foundLetters) throw new Error("Could not match letters to word list");
 
         state.puzzleId = 'nyt-' + new Date().toISOString().split('T')[0];
-        state.puzzle = { letters, words, maxScore: words.reduce((acc, w) => acc + (w.length === 4 ? 1 : w.length + (new Set(w).size === 7 ? 7 : 0)), 0) };
-        state.foundWords = []; state.score = 0;
-        saveLocalState(); renderPuzzle(); updateScoreUI(); renderFoundWords();
+        state.puzzle = {
+            letters: foundLetters,
+            words,
+            maxScore: words.reduce((acc, w) => acc + (w.length === 4 ? 1 : w.length + (new Set(w).size === 7 ? 7 : 0)), 0)
+        };
+
+        state.foundWords = [];
+        state.score = 0;
+        saveLocalState();
+        renderPuzzle();
+        updateScoreUI();
+        renderFoundWords();
         if (sync && state.multiplayer.roomCode) syncPuzzleToFirebase(state.puzzleId);
     } catch (e) {
         console.error("NYT Load Error:", e);
