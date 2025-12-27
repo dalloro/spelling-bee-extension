@@ -1,4 +1,4 @@
-// Firebase Imports
+// Firebase Imports - v2.3.2
 import { initializeApp } from 'firebase/app';
 import {
     getFirestore, doc, setDoc, getDoc, updateDoc, onSnapshot, Timestamp, connectFirestoreEmulator, deleteField
