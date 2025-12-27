@@ -74,6 +74,8 @@ async function build() {
     adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/popup_bundle.js"', 'src="popup_bundle.js"');
     adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/lang/strings.js"', 'src="lang/strings.js"');
     adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/lang/it/puzzles_it.js"', 'src="lang/it/puzzles_it.js"');
+    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/words.js"', 'src="words.js"');
+    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/puzzles.js"', 'src="puzzles.js"');
 
     await zipDirectory(EXTENSION_DIST, ZIP_FILE);
     console.log(`✅ Extension ready at ${ZIP_FILE}`);
