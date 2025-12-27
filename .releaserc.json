@@ -23,7 +23,7 @@
             {
                 "assets": [
                     {
-                        "path": "spelling-bee-extension.zip",
+                        "path": "*.zip",
                         "label": "Chrome Extension (Zip)"
                     }
                 ]
