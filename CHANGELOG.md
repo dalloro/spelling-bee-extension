@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/dalloro/spelling-bee-extension/compare/v3.0.0...v3.1.0) (2025-12-27)
+
+
+### Bug Fixes
+
+* ranking levels showing undefined in mobile app\n\nUsed t(l.key) instead of l.name which doesn't exist in LEVELS objects ([709d6b3](https://github.com/dalloro/spelling-bee-extension/commit/709d6b3ebbba3824377e6f5ddb5f295878c2e2c2))
+
+
+### Features
+
+* upgrade to v3.0.0\n\nBREAKING CHANGE: Italian support is now fully integrated with optimized builds. ([9d34e74](https://github.com/dalloro/spelling-bee-extension/commit/9d34e7451c6eba624aacec68816433dfee17b5f2))
+
 # [2.7.0](https://github.com/dalloro/spelling-bee-extension/compare/v2.6.0...v2.7.0) (2025-12-27)
 
 
