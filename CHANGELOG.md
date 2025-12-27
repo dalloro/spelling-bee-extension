@@ -1,3 +1,31 @@
+# [4.0.0](https://github.com/dalloro/spelling-bee-extension/compare/v3.1.0...v4.0.0) (2025-12-27)
+
+
+### Bug Fixes
+
+* **ci:** update manifest.json path to extension/ folder ([c8488f4](https://github.com/dalloro/spelling-bee-extension/commit/c8488f4dd20a4c1db200b6e82254fc2b2f94d351))
+
+
+### Code Refactoring
+
+* reorganize codebase structure and extract shared modules ([91e31aa](https://github.com/dalloro/spelling-bee-extension/commit/91e31aa97633c9bded94499fd461543a1603aa86))
+
+
+### BREAKING CHANGES
+
+* Chrome extension files moved to extension/ folder
+
+- Moved popup.js, popup.html, popup.css, manifest.json to extension/
+- Moved puzzles.js and words.js to lang/en/ (English puzzles/dictionary)
+- Created utils/constants.js (shared LEVELS and LANGUAGE_CONFIG)
+- Created utils/multiplayer.js (shared multiplayer utilities)
+- Created utils/puzzle-loaders.js (shared puzzle loading logic)
+- Updated build.js to work with new folder structure
+- Deleted temporary files (temp_apegramma.html, temp_laregione.html, debug logs)
+- Updated import paths in popup.js and mobile.js
+
+All tests pass, build verified, browser testing confirms functionality
+
 # [3.1.0](https://github.com/dalloro/spelling-bee-extension/compare/v3.0.0...v3.1.0) (2025-12-27)
 
 
