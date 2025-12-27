@@ -2,6 +2,13 @@
 
 A clean, modern implementation of the Spelling Bee word game, featuring official NYT Daily puzzle integration, random puzzles, and **Real-Time Multiplayer**.
 
+## 📥 Download & Install
+### **Chrome Extension**
+The easiest way to play is to install the Chrome Extension:
+🔗 **[Download Latest spelling-bee-extension.zip](https://github.com/dalloro/spelling-bee-extension/releases/latest/download/spelling-bee-extension.zip)**
+
+*To install: Download the zip, hexport it, go to `chrome://extensions/`, enable "Developer Mode", and click "Load unpacked" on the folder.*
+
 ## 🏗️ Architecture (Dual-Project)
 
 The project uses a split Firebase architecture for maximum isolation and security:
