@@ -75,11 +75,36 @@ We use `esbuild` for a unified build process that handles both the extension and
 npm run build
 ```
 This command:
-1. Bundles `popup.js` into `dist/`.
-2. Bundles `mobile.js` into `mobile/dist/`.
+1. Bundles `extension/popup.js` into `extension/dist/`.
+2. Bundles `mobile/mobile.js` into `mobile/dist/`.
 3. Injects secrets into the code.
 4. Generates **Cache-Busting** version strings for mobile assets.
 5. Zips the extension for distribution.
+
+### 📁 Folder Structure
+```
+spelling-bee-extension/
+├── extension/          # Chrome extension source
+│   ├── popup.js        # Main extension logic
+│   ├── popup.html      
+│   ├── popup.css       
+│   ├── manifest.json   
+│   └── icons/          
+├── mobile/             # Mobile web app source
+│   ├── mobile.js       
+│   ├── index.html      
+│   └── mobile.css      
+├── lang/               # Language resources
+│   ├── en/             # English puzzles & dictionary
+│   ├── it/             # Italian puzzles & dictionary  
+│   └── strings.js      # Localization strings
+├── utils/              # Shared modules
+│   ├── constants.js    # LEVELS, LANGUAGE_CONFIG
+│   ├── game-logic.js   # Word validation
+│   ├── multiplayer.js  # Room code generation
+│   └── puzzle-loaders.js # Daily puzzle fetchers
+└── scripts/            # Build & generation scripts
+```
 
 ---
 
