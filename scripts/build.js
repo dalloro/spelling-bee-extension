@@ -70,8 +70,10 @@ async function build() {
     }
 
     // Adjust HTML: Remove the massive dictionary script tag and swap bundle path
-    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), '<script src="lang/it/words_it.js"></script>', '<!-- words_it.js excluded -->');
+    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), '<script src="dist/lang/it/words_it.js"></script>', '<!-- words_it.js excluded -->');
     adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/popup_bundle.js"', 'src="popup_bundle.js"');
+    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/lang/strings.js"', 'src="lang/strings.js"');
+    adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), 'src="dist/lang/it/puzzles_it.js"', 'src="lang/it/puzzles_it.js"');
 
     await zipDirectory(EXTENSION_DIST, ZIP_FILE);
     console.log(`✅ Extension ready at ${ZIP_FILE}`);
