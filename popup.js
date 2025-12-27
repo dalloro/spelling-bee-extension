@@ -791,8 +791,8 @@ function addWord(word, scoreVal, isPangram) {
   state.score += scoreVal;
   state.foundWords.sort();
 
-  // Track self as the finder for attribution
-  state.wordFinders[word] = state.multiplayer.nickname || 'You';
+  // Track self as the finder for attribution via playerId
+  state.wordFinders[word] = state.playerId;
 
   saveState();
   updateScoreUI();
@@ -1027,6 +1027,7 @@ function setupEventListeners() {
       // Update UI
       if (els.multi.displayNickname) els.multi.displayNickname.innerText = val;
       renderMultiplayerScreen(); // Re-render to update lists/banners
+      renderFoundWords(); // Update word list labels
     }
   };
 

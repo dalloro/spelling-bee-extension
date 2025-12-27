@@ -585,11 +585,40 @@ function renderMultiplayerScreen() {
 
 function handleSaveNickname() {
     const v = els.multi.nicknameInput.value.trim();
-    if (v) { state.multiplayer.nickname = v; localStorage.setItem('sb_nickname', v); state.multiplayer.step = 'menu'; renderMultiplayerScreen(); }
+    if (v) {
+        state.multiplayer.nickname = v;
+        localStorage.setItem('sb_nickname', v);
+
+        if (state.multiplayer.roomCode) {
+            const ref = doc(db, 'rooms', state.multiplayer.roomCode);
+            updateDoc(ref, { [`players.${state.playerId}.nickname`]: v })
+                .catch(e => console.warn("Nickname update failed:", e));
+        }
+
+        state.multiplayer.step = 'menu';
+        renderMultiplayerScreen();
+        renderFoundWords(); // Immediate update
+    }
 }
 
 function handleLeaveRoom() { if (confirm("Leave?")) { state.multiplayer.roomCode = null; state.multiplayer.step = 'menu'; saveLocalState(); location.reload(); } }
-function handleEditNickname() { const n = prompt("New nickname:", state.multiplayer.nickname); if (n) { state.multiplayer.nickname = n; saveLocalState(); renderMultiplayerScreen(); } }
+function handleEditNickname() {
+    const n = prompt("New nickname:", state.multiplayer.nickname);
+    if (n && n.trim()) {
+        const val = n.trim();
+        state.multiplayer.nickname = val;
+        saveLocalState();
+
+        if (state.multiplayer.roomCode) {
+            const ref = doc(db, 'rooms', state.multiplayer.roomCode);
+            updateDoc(ref, { [`players.${state.playerId}.nickname`]: val })
+                .catch(e => console.warn("Nickname update failed:", e));
+        }
+
+        renderMultiplayerScreen();
+        renderFoundWords(); // Immediate update
+    }
+}
 
 function submitWordToFirebase(word) {
     if (state.multiplayer.roomCode) {
