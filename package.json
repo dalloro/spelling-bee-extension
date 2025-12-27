@@ -1,6 +1,7 @@
 {
     "name": "spelling-bee-extension",
     "version": "2.4.0",
+    "repository": "https://github.com/dalloro/spelling-bee-extension.git",
     "description": "Chrome extension for the Spelling Bee game",
     "scripts": {
         "build": "node scripts/build.js",
@@ -14,6 +15,7 @@
         "@semantic-release/exec": "^7.1.0",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "^12.0.2",
+        "@semantic-release/npm": "^13.1.3",
         "archiver": "^7.0.1",
         "esbuild": "^0.24.2",
         "semantic-release": "^25.0.2"

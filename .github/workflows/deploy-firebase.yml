@@ -4,17 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'firestore.rules'
-      - 'firebase.json'
-      - 'mobile/**'
-      - 'scripts/**'
-      - '.github/workflows/deploy-firebase.yml'
-      - 'package.json'
-      - 'manifest.json'
-      - 'popup.js'
-      - 'popup.html'
-      - 'popup.css'
 
 permissions:
   contents: write
