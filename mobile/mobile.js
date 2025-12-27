@@ -708,7 +708,7 @@ function openRankingsModal() {
     [...LEVELS].reverse().forEach(l => {
         const row = document.createElement('div');
         row.className = `ranking-row ${state.score >= Math.floor(max * l.pct) ? 'reached' : ''}`;
-        row.innerHTML = `<span>${l.name}</span><span>${Math.floor(max * l.pct)}</span>`;
+        row.innerHTML = `<span>${t(l.key)}</span><span>${Math.floor(max * l.pct)}</span>`;
         list.appendChild(row);
     });
 
