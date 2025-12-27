@@ -1,3 +1,16 @@
+# [2.7.0](https://github.com/dalloro/spelling-bee-extension/compare/v2.6.0...v2.7.0) (2025-12-27)
+
+
+### Bug Fixes
+
+* **ci:** add firebase emulator and java to test workflow ([fa07578](https://github.com/dalloro/spelling-bee-extension/commit/fa0757862e5567387e261a8643a0f4b0993d832e))
+* **ci:** upgrade java to 21 for firebase emulator compatibility ([833b46e](https://github.com/dalloro/spelling-bee-extension/commit/833b46ebb23efcd4d38b16efa7fed5a5c439e1b3))
+
+
+### Features
+
+* v3.0.0 full Italian support with optimized build & expanded wordlist ([91b64da](https://github.com/dalloro/spelling-bee-extension/commit/91b64da3b61bbef63e928e7ca84bdd00102174f2))
+
 # [2.6.0](https://github.com/dalloro/spelling-bee-extension/compare/v2.5.0...v2.6.0) (2025-12-27)
 
 
