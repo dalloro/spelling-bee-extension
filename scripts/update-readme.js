@@ -9,11 +9,8 @@ const readmePath = path.join(ROOT_DIR, 'README.md');
 if (fs.existsSync(readmePath)) {
     let content = fs.readFileSync(readmePath, 'utf8');
 
-    // Regex to find the download link and update it
-    // Examples:
-    // [test](.../download/spelling-bee-extension-v2.4.0.zip)
-    // [test](.../download/spelling-bee-extension.zip)
-    const regex = /spelling-bee-extension-v[\d\.]+\.zip|spelling-bee-extension\.zip/g;
+    // Regex to find any versioned zip name in the README
+    const regex = /spelling-bee-extension-v[\d\.]+\.zip/g;
     const newName = `spelling-bee-extension-v${version}.zip`;
 
     if (content.match(regex)) {
