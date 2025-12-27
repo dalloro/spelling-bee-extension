@@ -584,6 +584,14 @@ async function submitWordToFirebase(word) {
 async function syncPuzzleToFirebase(puzzleId) {
   if (!state.multiplayer.roomCode) return;
   const roomRef = doc(db, 'rooms', state.multiplayer.roomCode);
+  const snapshot = await getDoc(roomRef);
+  if (snapshot.exists()) {
+    const data = snapshot.data();
+    if (data.puzzleId === puzzleId) {
+      console.log("Puzzle already synced, skipping reset.");
+      return;
+    }
+  }
   await updateDoc(roomRef, { puzzleId: puzzleId, foundWords: {} });
 }
 

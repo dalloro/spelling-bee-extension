@@ -637,7 +637,13 @@ function submitWordToFirebase(word) {
         });
     }
 }
-function syncPuzzleToFirebase(pid) { if (state.multiplayer.roomCode) updateDoc(doc(db, 'rooms', state.multiplayer.roomCode), { puzzleId: pid, foundWords: {} }); }
+async function syncPuzzleToFirebase(pid) {
+    if (!state.multiplayer.roomCode) return;
+    const ref = doc(db, 'rooms', state.multiplayer.roomCode);
+    const snap = await getDoc(ref);
+    if (snap.exists() && snap.data().puzzleId === pid) return; // Skip if same
+    await updateDoc(ref, { puzzleId: pid, foundWords: {} });
+}
 function renderMultiplayerBanner() { if (state.multiplayer.roomCode) { els.multi.banner.classList.remove('hidden'); els.multi.bannerRoomCode.innerText = state.multiplayer.roomCode; } else els.multi.banner.classList.add('hidden'); }
 function shuffleLetters() {
     if (!state.puzzle) return;
