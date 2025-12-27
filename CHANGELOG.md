@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.0.0...v4.0.1) (2025-12-27)
+
+
+### Bug Fixes
+
+* multiplayer word sync for joining players ([fbf4c6c](https://github.com/dalloro/spelling-bee-extension/commit/fbf4c6c2b56e5c8081da3ad79cbe3b8bccb20938))
+
 # [4.0.0](https://github.com/dalloro/spelling-bee-extension/compare/v3.1.0...v4.0.0) (2025-12-27)
 
 
