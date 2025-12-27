@@ -425,7 +425,8 @@ function generateRoomCode() {
 }
 
 async function joinFirebaseRoom(roomCode, showScreen = true) {
-  const roomRef = doc(db, 'rooms', roomCode);
+  const cleanCode = roomCode.toLowerCase().trim();
+  const roomRef = doc(db, 'rooms', cleanCode);
   const snapshot = await getDoc(roomRef);
   if (!snapshot.exists()) {
     throw new Error("Room not found");
@@ -441,10 +442,10 @@ async function joinFirebaseRoom(roomCode, showScreen = true) {
     }
   });
 
-  subscribeToRoom(roomCode);
-  startHeartbeat(roomCode);
+  subscribeToRoom(cleanCode);
+  startHeartbeat(cleanCode);
 
-  state.multiplayer.roomCode = roomCode;
+  state.multiplayer.roomCode = cleanCode;
   state.multiplayer.step = 'active';
   saveState();
 
@@ -496,6 +497,8 @@ function subscribeToRoom(roomCode) {
     const data = snapshot.data();
     if (!data) return;
 
+    state.multiplayer.rawPlayers = data.players || {}; // Store for nickname resolution
+
     // 1. Sync Players (with heartbeat-based online status)
     if (data.players) {
       const now = Date.now();
@@ -520,13 +523,14 @@ function subscribeToRoom(roomCode) {
       let newWordsFound = false;
 
       serverFound.forEach(word => {
-        // Store the finder for attribution display
-        state.wordFinders[word] = data.foundWords[word];
+        // Store the finder ID for attribution display
+        const finderId = data.foundWords[word];
+        state.wordFinders[word] = finderId;
 
         if (!state.foundWords.includes(word)) {
-          const finder = data.foundWords[word];
-          if (finder !== state.multiplayer.nickname) {
-            showMessage(`${finder} found ${word}!`, 2000);
+          if (finderId !== state.playerId) {
+            const name = getDisplayName(finderId, data.players || {});
+            showMessage(`${name} found ${word}!`, 2000);
           }
           state.foundWords.push(word);
           const score = calculateScore(word);
@@ -574,7 +578,7 @@ async function submitWordToFirebase(word) {
   if (!state.multiplayer.roomCode) return;
   const roomRef = doc(db, 'rooms', state.multiplayer.roomCode);
   const wordKey = `foundWords.${word}`;
-  await updateDoc(roomRef, { [wordKey]: state.multiplayer.nickname });
+  await updateDoc(roomRef, { [wordKey]: state.playerId }); // Store playerId instead of nickname
 }
 
 async function syncPuzzleToFirebase(puzzleId) {
@@ -618,22 +622,46 @@ function renderMultiplayerBanner() {
 }
 
 function renderTeammates() {
-  const list = els.multi.playerList;
-  list.innerHTML = '';
+  els.multi.playerList.innerHTML = '';
+  const playersMap = state.multiplayer.rawPlayers || {};
 
-  // Add Self
-  const selfItem = document.createElement('div');
-  selfItem.className = 'player-item self';
-  selfItem.innerHTML = `<span class="status-dot online"></span> ${state.multiplayer.nickname} (You)`;
-  list.appendChild(selfItem);
+  // Include self in the display count/logic via teammates concatenation for mapping
+  const allInRoom = [
+    { playerId: state.playerId, nickname: state.multiplayer.nickname, online: true },
+    ...state.multiplayer.teammates
+  ];
 
-  state.multiplayer.teammates.forEach(p => {
-    const item = document.createElement('div');
-    item.className = 'player-item';
-    const statusClass = p.online ? 'online' : 'offline';
-    item.innerHTML = `<span class="status-dot ${statusClass}"></span> ${p.nickname}`;
-    list.appendChild(item);
+  allInRoom.forEach(player => {
+    const div = document.createElement('div');
+    div.className = `player-item ${player.playerId === state.playerId ? 'self' : ''}`;
+
+    const statusDot = document.createElement('div');
+    statusDot.className = `player-status ${player.online ? 'online' : 'offline'}`;
+    div.appendChild(statusDot);
+
+    const nameSpan = document.createElement('span');
+    const name = getDisplayName(player.playerId, playersMap);
+    nameSpan.innerText = player.playerId === state.playerId ? `${name} (You)` : name;
+    div.appendChild(nameSpan);
+
+    els.multi.playerList.appendChild(div);
   });
+}
+
+function getDisplayName(pid, players) {
+  if (!pid) return "Unknown";
+  const p = players[pid];
+  if (!p) return pid.length > 20 ? "Ghost" : pid; // Fallback for legacy nicknames strings
+  const nick = p.nickname || "Anonymous";
+
+  // Check for duplicates
+  const twins = Object.entries(players)
+    .filter(([id, data]) => (data.nickname || "Anonymous") === nick)
+    .sort(([idA], [idB]) => idA.localeCompare(idB));
+
+  if (twins.length <= 1) return nick;
+  const idx = twins.findIndex(([id]) => id === pid);
+  return `${nick} (#${idx + 1})`;
 }
 
 function renderMultiplayerScreen() {
@@ -819,6 +847,7 @@ function renderFoundWords() {
   els.wordsList.innerHTML = '';
 
   const mode = state.attributionMode;
+  const playersMap = state.multiplayer.rawPlayers || {};
 
   if (mode === 0) {
     // Mode 0: No attribution, just list words
@@ -835,15 +864,15 @@ function renderFoundWords() {
     const colors = ['#f7da21', '#4ecdc4', '#ff6b6b', '#a8e6cf', '#dfe6e9', '#fd79a8', '#74b9ff'];
 
     state.foundWords.forEach(w => {
-      const finder = state.wordFinders[w] || state.multiplayer.nickname || 'You';
-      if (!playerColors[finder]) {
-        playerColors[finder] = colors[colorIndex % colors.length];
+      const finderId = state.wordFinders[w];
+      if (!playerColors[finderId]) {
+        playerColors[finderId] = colors[colorIndex % colors.length];
         colorIndex++;
       }
 
       const span = document.createElement('span');
       span.className = 'found-word';
-      span.style.color = playerColors[finder];
+      span.style.color = playerColors[finderId];
       span.innerText = w;
       els.wordsList.appendChild(span);
     });
@@ -852,16 +881,17 @@ function renderFoundWords() {
     const wordsByPlayer = {};
 
     state.foundWords.forEach(w => {
-      const finder = state.wordFinders[w] || state.multiplayer.nickname || 'You';
-      if (!wordsByPlayer[finder]) wordsByPlayer[finder] = [];
-      wordsByPlayer[finder].push(w);
+      const finderId = state.wordFinders[w];
+      const displayName = getDisplayName(finderId, playersMap);
+      if (!wordsByPlayer[displayName]) wordsByPlayer[displayName] = [];
+      wordsByPlayer[displayName].push(w);
     });
 
     // Sort: current user first, then others alphabetically
-    const myNickname = state.multiplayer.nickname || 'You';
+    const myName = getDisplayName(state.playerId, playersMap);
     const sortedPlayers = Object.keys(wordsByPlayer).sort((a, b) => {
-      if (a === myNickname) return -1;
-      if (b === myNickname) return 1;
+      if (a === myName) return -1;
+      if (b === myName) return 1;
       return a.localeCompare(b);
     });
 
@@ -871,7 +901,7 @@ function renderFoundWords() {
 
       const header = document.createElement('div');
       header.className = 'word-section-header';
-      header.innerText = player === myNickname ? `You (${wordsByPlayer[player].length})` : `${player} (${wordsByPlayer[player].length})`;
+      header.innerText = `${player} (${wordsByPlayer[player].length})`;
       section.appendChild(header);
 
       const wordsContainer = document.createElement('div');

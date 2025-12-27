@@ -205,6 +205,7 @@ function setupEventListeners() {
     els.multi.btn.onclick = renderMultiplayerScreen;
     els.multi.closeBtn.onclick = () => els.multi.screen.style.display = 'none';
     els.multi.saveNicknameBtn.onclick = handleSaveNickname;
+    els.multi.saveNicknameBtn.onclick = handleSaveNickname;
     els.multi.createRoomBtn.onclick = handleCreateRoom;
     document.getElementById('join-room-btn').onclick = () => { state.multiplayer.step = 'join'; renderMultiplayerScreen(); };
     els.multi.confirmJoinBtn.onclick = handleConfirmJoin;
@@ -264,7 +265,7 @@ function handleEnter() {
         state.foundWords.push(word);
         state.score += result.score;
         state.foundWords.sort();
-        state.wordFinders[word] = state.multiplayer.nickname || 'You';
+        state.wordFinders[word] = state.playerId; // Store playerId for consolidation
         saveLocalState();
         updateScoreUI();
         renderFoundWords();
@@ -320,6 +321,7 @@ function renderFoundWords() {
     els.foundCount.innerText = `${state.foundWords.length} words`;
     els.wordsList.innerHTML = '';
     const mode = state.attributionMode;
+    const playersMap = state.multiplayer.rawPlayers || {};
 
     if (mode === 0) {
         state.foundWords.forEach(w => {
@@ -328,21 +330,28 @@ function renderFoundWords() {
         });
     } else if (mode === 1) {
         const colors = ["#f7da21", "#4ecdc4", "#ff6b6b", "#a8e6cf", "#dfe6e9", "#fd79a8", "#74b9ff"];
-        const userMap = {}; let cIdx = 0;
+        const idToColor = {}; let cIdx = 0;
         state.foundWords.forEach(w => {
-            const finder = state.wordFinders[w] || 'You';
-            if (!userMap[finder]) userMap[finder] = colors[cIdx++ % colors.length];
-            const s = document.createElement('span'); s.innerText = w; s.style.color = userMap[finder]; s.className = 'found-word';
+            const finderId = state.wordFinders[w];
+            if (!idToColor[finderId]) idToColor[finderId] = colors[cIdx++ % colors.length];
+            const s = document.createElement('span'); s.innerText = w; s.style.color = idToColor[finderId]; s.className = 'found-word';
             els.wordsList.appendChild(s);
         });
     } else {
         const sections = {};
         state.foundWords.forEach(w => {
-            const f = state.wordFinders[w] || 'You';
-            if (!sections[f]) sections[f] = [];
-            sections[f].push(w);
+            const finderId = state.wordFinders[w];
+            const displayName = getDisplayName(finderId, playersMap);
+            if (!sections[displayName]) sections[displayName] = [];
+            sections[displayName].push(w);
         });
-        Object.keys(sections).sort().forEach(f => {
+
+        const myName = getDisplayName(state.playerId, playersMap);
+        Object.keys(sections).sort((a, b) => {
+            if (a === myName) return -1;
+            if (b === myName) return 1;
+            return a.localeCompare(b);
+        }).forEach(f => {
             const sec = document.createElement('div'); sec.className = 'word-section';
             sec.innerHTML = `<div class="word-section-header">${f} (${sections[f].length})</div><div class="word-section-words"></div>`;
             sections[f].forEach(w => {
@@ -352,6 +361,22 @@ function renderFoundWords() {
             els.wordsList.appendChild(sec);
         });
     }
+}
+
+function getDisplayName(pid, players) {
+    if (!pid) return "Unknown";
+    const p = players[pid];
+    if (!p) return pid.length > 20 ? "Ghost" : pid; // Fallback for legacy nicknames strings
+    const nick = p.nickname || "Anonymous";
+
+    // Check for duplicates
+    const twins = Object.entries(players)
+        .filter(([id, data]) => (data.nickname || "Anonymous") === nick)
+        .sort(([idA], [idB]) => idA.localeCompare(idB));
+
+    if (twins.length <= 1) return nick;
+    const idx = twins.findIndex(([id]) => id === pid);
+    return `${nick} (#${idx + 1})`;
 }
 
 async function loadNYTDailyPuzzle(sync = true) {
@@ -440,22 +465,31 @@ function openRankingsModal() {
 
 // Multiplayer Helpers (Minimal version of popup.js)
 async function joinFirebaseRoom(code, show = true) {
-    const ref = doc(db, 'rooms', code);
+    const cleanCode = code.toLowerCase().trim();
+    const ref = doc(db, 'rooms', cleanCode);
     await updateDoc(ref, { [`players.${state.playerId}`]: { nickname: state.multiplayer.nickname, online: true, lastActive: Timestamp.now() } });
-    state.multiplayer.roomCode = code; state.multiplayer.step = 'active'; saveLocalState();
-    subscribeToRoom(code);
+    state.multiplayer.roomCode = cleanCode; state.multiplayer.step = 'active'; saveLocalState();
+    subscribeToRoom(cleanCode);
     renderMultiplayerBanner(); // Always update banner
     if (show) renderMultiplayerScreen();
 }
 
-async function createFirebaseRoom() {
-    const code = `${['Swift', 'Cool', 'Calm'][Math.floor(Math.random() * 3)]}-Bee-${Math.floor(Math.random() * 99)}`;
-    const ref = doc(db, 'rooms', code);
-    await setDoc(ref, { createdAt: Timestamp.now(), puzzleId: state.puzzleId, foundWords: {}, players: { [state.playerId]: { nickname: state.multiplayer.nickname, online: true, lastActive: Timestamp.now() } } });
-    state.multiplayer.roomCode = code; state.multiplayer.step = 'active'; saveLocalState();
-    subscribeToRoom(code);
-    renderMultiplayerBanner();
-    renderMultiplayerScreen();
+async function handleCreateRoom() {
+    const code = generateRoomCode().toLowerCase(); // Ensure lowercase
+    const p = state.puzzle;
+    await setDoc(doc(db, 'rooms', code), {
+        puzzleId: state.puzzleId,
+        createdAt: Timestamp.now(),
+        players: { [state.playerId]: { nickname: state.multiplayer.nickname, online: true, lastActive: Timestamp.now() } },
+        foundWords: {}
+    });
+    joinFirebaseRoom(code);
+}
+
+function handleConfirmJoin() {
+    const code = els.multi.roomCodeInput.value.trim().toLowerCase();
+    if (!code) return;
+    joinFirebaseRoom(code).catch(e => showMessage("Room not found", 2000));
 }
 
 let unsub = null;
@@ -463,20 +497,28 @@ function subscribeToRoom(code) {
     if (unsub) unsub();
     unsub = onSnapshot(doc(db, 'rooms', code), (s) => {
         const d = s.data(); if (!d) return;
+        state.multiplayer.rawPlayers = d.players || {}; // Store for resolve
         if (d.players) {
-            state.multiplayer.teammates = Object.entries(d.players).filter(([id]) => id !== state.playerId).map(([id, p]) => ({ nickname: p.nickname, online: p.online }));
+            const now = Date.now();
+            state.multiplayer.teammates = Object.entries(d.players)
+                .map(([id, p]) => {
+                    const lastActive = p.lastActive?.toMillis ? p.lastActive.toMillis() : 0;
+                    const isOnline = p.online && (now - lastActive < 90000);
+                    return { playerId: id, nickname: p.nickname, online: isOnline };
+                });
             renderTeammates();
         }
         if (d.foundWords) {
             let changed = false;
             Object.keys(d.foundWords).forEach(w => {
-                const finder = d.foundWords[w];
-                state.wordFinders[w] = finder;
+                const finderId = d.foundWords[w];
+                state.wordFinders[w] = finderId;
                 if (!state.foundWords.includes(w)) {
                     state.foundWords.push(w);
                     changed = true;
-                    if (finder !== state.multiplayer.nickname) {
-                        showMessage(`${finder} found ${w}`, 2000);
+                    if (finderId !== state.playerId) {
+                        const name = getDisplayName(finderId, d.players || {});
+                        showMessage(`${name} found ${w}`, 2000);
                     }
                 }
             });
@@ -507,10 +549,17 @@ function validateWordLookup(word) {
 }
 
 function renderTeammates() {
-    const list = els.multi.playerList; list.innerHTML = `<div class="player-item self">${state.multiplayer.nickname} (You)</div>`;
-    state.multiplayer.teammates.forEach(t => {
-        const i = document.createElement('div'); i.className = 'player-item'; i.innerText = t.nickname;
-        list.appendChild(i);
+    els.multi.playerList.innerHTML = '';
+    const players = state.multiplayer.rawPlayers || {};
+    state.multiplayer.teammates.forEach(p => {
+        const div = document.createElement('div');
+        div.className = `player-item ${p.playerId === state.playerId ? 'self' : ''}`;
+        const name = getDisplayName(p.playerId, players);
+        div.innerHTML = `
+            <div class="player-status ${p.online ? 'online' : 'offline'}"></div>
+            <span>${name} ${p.playerId === state.playerId ? '(You)' : ''}</span>
+        `;
+        els.multi.playerList.appendChild(div);
     });
 }
 
@@ -530,12 +579,16 @@ function handleSaveNickname() {
     if (v) { state.multiplayer.nickname = v; localStorage.setItem('sb_nickname', v); state.multiplayer.step = 'menu'; renderMultiplayerScreen(); }
 }
 
-async function handleCreateRoom() { await createFirebaseRoom(); }
-async function handleConfirmJoin() { await joinFirebaseRoom(els.multi.roomCodeInput.value.trim()); }
 function handleLeaveRoom() { if (confirm("Leave?")) { state.multiplayer.roomCode = null; state.multiplayer.step = 'menu'; saveLocalState(); location.reload(); } }
 function handleEditNickname() { const n = prompt("New nickname:", state.multiplayer.nickname); if (n) { state.multiplayer.nickname = n; saveLocalState(); renderMultiplayerScreen(); } }
 
-function submitWordToFirebase(word) { if (state.multiplayer.roomCode) updateDoc(doc(db, 'rooms', state.multiplayer.roomCode), { [`foundWords.${word}`]: state.multiplayer.nickname }); }
+function submitWordToFirebase(word) {
+    if (state.multiplayer.roomCode) {
+        updateDoc(doc(db, 'rooms', state.multiplayer.roomCode), {
+            [`foundWords.${word}`]: state.playerId // Store playerId instead of nickname
+        });
+    }
+}
 function syncPuzzleToFirebase(pid) { if (state.multiplayer.roomCode) updateDoc(doc(db, 'rooms', state.multiplayer.roomCode), { puzzleId: pid, foundWords: {} }); }
 function renderMultiplayerBanner() { if (state.multiplayer.roomCode) { els.multi.banner.classList.remove('hidden'); els.multi.bannerRoomCode.innerText = state.multiplayer.roomCode; } else els.multi.banner.classList.add('hidden'); }
 function shuffleLetters() {
