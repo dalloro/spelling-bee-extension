@@ -15,7 +15,7 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "node scripts/sync-version.js && npm run build"
+                "prepareCmd": "node scripts/sync-version.js && node scripts/update-readme.js && npm run build"
             }
         ],
         [
@@ -35,7 +35,8 @@
                 "assets": [
                     "package.json",
                     "manifest.json",
-                    "CHANGELOG.md"
+                    "CHANGELOG.md",
+                    "README.md"
                 ],
                 "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
