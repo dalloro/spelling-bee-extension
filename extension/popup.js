@@ -1437,6 +1437,11 @@ function setupEventListeners() {
   els.multi.btns.createRoom.addEventListener('click', handleCreateRoom);
   els.multi.btns.joinRoom.addEventListener('click', handleJoinRoom);
   els.multi.btns.confirmJoin.addEventListener('click', handleConfirmJoin);
+
+  if (els.multi.shareRoomBtnMenu) els.multi.shareRoomBtnMenu.addEventListener('click', handleShareRoom);
+  if (els.multi.shareRoomBtnActive) els.multi.shareRoomBtnActive.addEventListener('click', handleShareRoom);
+  if (els.multi.shareBannerBtn) els.multi.shareBannerBtn.addEventListener('click', handleShareRoom);
+
   els.multi.btns.backToMenu.addEventListener('click', () => {
     state.multiplayer.step = 'menu';
     renderMultiplayerScreen();

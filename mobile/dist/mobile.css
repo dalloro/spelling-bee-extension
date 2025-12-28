@@ -28,6 +28,10 @@ See LICENSE file for details.
     outline: none;
 }
 
+html {
+    touch-action: pan-x pan-y;
+}
+
 body {
     margin: 0;
     font-family: 'Outfit', sans-serif;
@@ -41,6 +45,8 @@ body {
     /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center;
+    touch-action: pan-x pan-y;
+    -webkit-text-size-adjust: none;
 }
 
 .mobile-container {
@@ -272,6 +278,7 @@ header {
     cursor: pointer;
     user-select: none;
     transition: transform 0.1s, filter 0.1s;
+    touch-action: manipulation;
 }
 
 .cell:active {
@@ -343,6 +350,7 @@ header {
     font-weight: 600;
     min-width: 110px;
     transition: all 0.2s;
+    touch-action: manipulation;
 }
 
 .control-btn:active {
@@ -708,4 +716,53 @@ input:focus {
 
 .hidden {
     display: none !important;
+}
+
+/* Sharing UI */
+.banner-share-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--highlight-color);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.banner-share-btn:active {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+}
+
+.share-btn-inline {
+    background: rgba(247, 218, 33, 0.15);
+    border: none;
+    color: var(--highlight-color);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.share-btn-inline:active {
+    transform: scale(0.9);
+    background: rgba(247, 218, 33, 0.3);
+}
+
+.share-btn-alt {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
