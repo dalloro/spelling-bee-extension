@@ -122,4 +122,13 @@ npm run generate:puzzles:it
 The generator automatically tracks existing puzzles to ensure no duplicates are created.
 
 ---
+## 🙏 Credits & Acknowledgements
+
+This project is inspired by the **New York Times Spelling Bee**. Use this extension to practice or play with friends!
+
+We gratefully acknowledge the following sources for our Daily Puzzle data:
+- **[New York Times Spelling Bee (via nytbee.com)](https://nytbee.com/)**: Source for the English daily letters.
+- **[Apegramma (La Regione)](https://www.laregione.ch/giochi/apegramma)**: Source for the Italian daily letters.
+
+---
 *Maintained with care* 🐝
