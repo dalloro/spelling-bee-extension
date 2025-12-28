@@ -1,3 +1,11 @@
+## [4.5.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.0...v4.5.1) (2025-12-28)
+
+
+### Bug Fixes
+
+* preserve single-player progress and improve sharing in extension ([856e017](https://github.com/dalloro/spelling-bee-extension/commit/856e017e19849e65fc1408700804c4ee24bdf94e))
+* preserve single-player progress on reload in mobile app ([c97c9a5](https://github.com/dalloro/spelling-bee-extension/commit/c97c9a50b247deb461312ae7996ec72ac503337f))
+
 # [4.5.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.4.2...v4.5.0) (2025-12-28)
 
 
