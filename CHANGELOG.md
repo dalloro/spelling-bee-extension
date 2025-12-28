@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.1.1...v4.2.0) (2025-12-28)
+
+
+### Features
+
+* generate 1000 balanced puzzles for both English and Italian ([6578d81](https://github.com/dalloro/spelling-bee-extension/commit/6578d81875d27c83c3ee449827777a5eb13056a6))
+
 ## [4.1.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.1.0...v4.1.1) (2025-12-28)
 
 
