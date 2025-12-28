@@ -689,11 +689,20 @@ function openRankingsModal() {
     const list = document.getElementById('rankings-list');
     list.innerHTML = '';
 
+    // Add header
+    const header = document.createElement('div');
+    header.className = 'ranking-row ranking-header';
+    header.innerHTML = `
+        <span class="rank-name">${t('rank')}</span>
+        <span class="rank-score">${t('minimumScore')}</span>
+    `;
+    list.appendChild(header);
+
     const max = state.puzzle.maxScore;
     [...LEVELS].reverse().forEach(l => {
         const row = document.createElement('div');
         row.className = `ranking-row ${state.score >= Math.floor(max * l.pct) ? 'reached' : ''}`;
-        row.innerHTML = `<span>${t(l.key)}</span><span>${Math.floor(max * l.pct)}</span>`;
+        row.innerHTML = `<span class="rank-name">${t(l.key)}</span><span class="rank-score">${Math.floor(max * l.pct)}</span>`;
         list.appendChild(row);
     });
 
