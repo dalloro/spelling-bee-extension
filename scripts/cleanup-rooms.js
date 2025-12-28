@@ -16,14 +16,27 @@ if (!process.env.FIREBASE_SERVICE_ACCOUNT) {
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
+console.log(`Initializing Admin SDK for project: ${serviceAccount.project_id}`);
+
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(serviceAccount),
+    projectId: serviceAccount.project_id
 });
 
 const db = admin.firestore();
 
 async function cleanup() {
     console.log("Starting room cleanup...");
+
+    // Safety check: Try to list collections or get a doc to verify connection
+    try {
+        await db.collection('rooms').limit(1).get();
+        console.log("Successfully connected to Firestore 'rooms' collection.");
+    } catch (e) {
+        console.error("Connection check failed. Please ensure Firestore API is enabled in Google Cloud Console.");
+        throw e;
+    }
+
     const now = admin.firestore.Timestamp.now();
     const sevenDaysAgo = admin.firestore.Timestamp.fromMillis(Date.now() - 168 * 60 * 60 * 1000);
 
