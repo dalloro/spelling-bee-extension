@@ -41,6 +41,7 @@ body {
     /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center;
+    touch-action: manipulation;
 }
 
 .mobile-container {
@@ -272,6 +273,7 @@ header {
     cursor: pointer;
     user-select: none;
     transition: transform 0.1s, filter 0.1s;
+    touch-action: manipulation;
 }
 
 .cell:active {
@@ -343,6 +345,7 @@ header {
     font-weight: 600;
     min-width: 110px;
     transition: all 0.2s;
+    touch-action: manipulation;
 }
 
 .control-btn:active {
