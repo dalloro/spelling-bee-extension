@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
+
 import { describe, it, expect } from 'vitest';
 import { validateWord, findWordsForLetters } from '../utils/game-logic';
 

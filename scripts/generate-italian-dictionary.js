@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
 /**
  * Script to process Italian word lists and generate words_it.js
  * Filters out words with accents, apostrophes, and short words.

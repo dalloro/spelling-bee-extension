@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
+
 /**
  * Shared Constants
  * Used by both Chrome Extension (popup.js) and Mobile Web App (mobile.js)

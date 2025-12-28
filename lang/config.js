@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
+
 // Language Configuration for Multi-Language Spelling Bee
 // This module provides language-specific settings and utilities
 

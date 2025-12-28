@@ -1,4 +1,8 @@
 const esbuild = require('esbuild');
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
+
 const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');

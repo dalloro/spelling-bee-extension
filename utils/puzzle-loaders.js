@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2025 Livio Dalloro
+// See LICENSE file for details.
+
 /**
  * Puzzle Loaders
  * Shared puzzle fetching logic for NYT and Apegramma daily puzzles
