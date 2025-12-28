@@ -77,84 +77,89 @@ function getCurrentValidWords() {
   return state.language === 'it' ? (typeof VALID_WORDS_IT !== 'undefined' ? VALID_WORDS_IT : new Set()) : VALID_WORDS;
 }
 
-// DOM Elements
-// DOM Elements
-const els = {
-  input: document.getElementById('word-input') || document.getElementById('input-text'),
-  cursor: document.querySelector('.cursor'),
-  score: document.getElementById('score-value') || document.getElementById('score'),
-  messageArea: document.getElementById('message-toast') || document.getElementById('message-area'),
-  hive: document.getElementById('hive-container'),
-  levelText: document.getElementById('rank-label') || document.getElementById('current-level'),
-  bar: document.getElementById('progress-fill'),
-  wordsList: document.getElementById('words-list'),
-  foundCount: document.getElementById('found-count'),
-  toggleWordsBtn: document.getElementById('toggle-words-btn'),
-  toggleAttributionBtn: document.getElementById('toggle-attribution-btn'),
-  deleteBtn: document.querySelector('.action-btn.delete') || document.getElementById('delete-btn'),
-  enterBtn: document.querySelector('.action-btn.enter') || document.getElementById('enter-btn'),
-  restartBtn: document.getElementById('restart-btn'),
-  shuffleBtn: document.getElementById('shuffle-btn'),
-  dotsContainer: document.querySelector('.dots-container'), // Restoring dotsContainer which was missing
+let els = {};
 
-  cells: {
-    center: document.getElementById('cell-center'),
-    outer: [
-      document.getElementById('cell-1'), document.getElementById('cell-2'), document.getElementById('cell-3'),
-      document.getElementById('cell-4'), document.getElementById('cell-5'), document.getElementById('cell-6')
-    ]
-  },
+function initElements() {
+  console.log("Initializing DOM elements...");
+  els = {
+    input: document.getElementById('word-input') || document.getElementById('input-text'),
+    cursor: document.querySelector('.cursor'),
+    score: document.getElementById('score-value') || document.getElementById('score'),
+    messageArea: document.getElementById('message-toast') || document.getElementById('message-area'),
+    hive: document.getElementById('hive-container'),
+    levelText: document.getElementById('rank-label') || document.getElementById('current-level'),
+    bar: document.getElementById('progress-fill'),
+    wordsList: document.getElementById('words-list'),
+    foundCount: document.getElementById('found-count'),
+    toggleWordsBtn: document.getElementById('toggle-words-btn'),
+    toggleAttributionBtn: document.getElementById('toggle-attribution-btn'),
+    deleteBtn: document.querySelector('.action-btn.delete') || document.getElementById('delete-btn'),
+    enterBtn: document.querySelector('.action-btn.enter') || document.getElementById('enter-btn'),
+    restartBtn: document.getElementById('restart-btn'),
+    shuffleBtn: document.getElementById('shuffle-btn'),
+    dotsContainer: document.querySelector('.dots-container'),
 
-  // Multiplayer Elements
-  multi: {
-    btn: document.getElementById('multiplayer-btn'),
-    screen: document.getElementById('multiplayer-screen'),
-    closeBtn: document.getElementById('close-multi-btn'),
+    cells: {
+      center: document.getElementById('cell-center'),
+      outer: [
+        document.getElementById('cell-1'), document.getElementById('cell-2'), document.getElementById('cell-3'),
+        document.getElementById('cell-4'), document.getElementById('cell-5'), document.getElementById('cell-6')
+      ]
+    },
 
-    // Steps
-    stepNickname: document.getElementById('multi-setup') || document.getElementById('multi-nickname'),
-    stepMenu: document.getElementById('multi-menu'),
-    stepJoin: document.getElementById('multi-join'),
-    stepActive: document.getElementById('multi-active'),
+    // Multiplayer Elements
+    multi: {
+      btn: document.getElementById('multiplayer-btn'),
+      screen: document.getElementById('multiplayer-screen'),
+      closeBtn: document.getElementById('close-multi-btn'),
 
-    // Inputs/Buttons
-    nicknameInput: document.getElementById('nickname-input'),
-    saveNicknameBtn: document.getElementById('save-nickname-btn'),
-    createRoomBtn: document.getElementById('create-room-btn'),
-    roomCodeInput: document.getElementById('room-code-input'),
-    confirmJoinBtn: document.getElementById('confirm-join-btn') || document.getElementById('join-confirm-btn'),
-    backBtn: document.getElementById('back-to-menu-btn') || document.getElementById('join-back-btn'),
-    leaveBtn: document.getElementById('leave-room-btn'),
+      // Steps
+      stepNickname: document.getElementById('multi-setup') || document.getElementById('multi-nickname'),
+      stepMenu: document.getElementById('multi-menu'),
+      stepJoin: document.getElementById('multi-join'),
+      stepActive: document.getElementById('multi-active'),
 
-    // Displays
-    activeRoomCode: document.getElementById('active-room-code'),
-    playerList: document.getElementById('player-list'),
-    displayNickname: document.getElementById('display-nickname'),
-    editNicknameMenu: document.getElementById('edit-nickname-menu'),
-    editNicknameRoom: document.getElementById('edit-nickname-room'),
-    banner: document.getElementById('multiplayer-banner'),
-    bannerRoomCode: document.getElementById('banner-room-code'),
-    shareRoomBtnMenu: document.getElementById('share-room-btn-menu'),
-    shareRoomBtnActive: document.getElementById('share-room-btn-active'),
-    shareBannerBtn: document.getElementById('share-banner-btn'),
+      // Inputs/Buttons
+      nicknameInput: document.getElementById('nickname-input'),
+      saveNicknameBtn: document.getElementById('save-nickname-btn'),
+      createRoomBtn: document.getElementById('create-room-btn'),
+      roomCodeInput: document.getElementById('room-code-input'),
+      confirmJoinBtn: document.getElementById('confirm-join-btn') || document.getElementById('join-confirm-btn'),
+      backBtn: document.getElementById('back-to-menu-btn') || document.getElementById('join-back-btn'),
+      leaveBtn: document.getElementById('leave-room-btn'),
 
-    // Legacy btn group if needed?
-    btns: {
-      open: document.getElementById('multiplayer-btn'),
-      close: document.getElementById('close-multi-btn'),
-      saveNickname: document.getElementById('save-nickname-btn'),
-      createRoom: document.getElementById('create-room-btn'),
-      joinRoom: document.getElementById('join-room-btn'),
-      confirmJoin: document.getElementById('confirm-join-btn') || document.getElementById('join-confirm-btn'),
-      backToMenu: document.getElementById('back-to-menu-btn') || document.getElementById('join-back-btn'),
-      leaveRoom: document.getElementById('leave-room-btn')
+      // Displays
+      activeRoomCode: document.getElementById('active-room-code'),
+      playerList: document.getElementById('player-list'),
+      displayNickname: document.getElementById('display-nickname'),
+      editNicknameMenu: document.getElementById('edit-nickname-menu'),
+      editNicknameRoom: document.getElementById('edit-nickname-room'),
+      banner: document.getElementById('multiplayer-banner'),
+      bannerRoomCode: document.getElementById('banner-room-code'),
+      shareRoomBtnMenu: document.getElementById('share-room-btn-menu'),
+      shareRoomBtnActive: document.getElementById('share-room-btn-active'),
+      shareBannerBtn: document.getElementById('share-banner-btn'),
+
+      // Legacy btn group if needed?
+      btns: {
+        open: document.getElementById('multiplayer-btn'),
+        close: document.getElementById('close-multi-btn'),
+        saveNickname: document.getElementById('save-nickname-btn'),
+        createRoom: document.getElementById('create-room-btn'),
+        joinRoom: document.getElementById('join-room-btn'),
+        confirmJoin: document.getElementById('confirm-join-btn') || document.getElementById('join-confirm-btn'),
+        backToMenu: document.getElementById('back-to-menu-btn') || document.getElementById('join-back-btn'),
+        leaveRoom: document.getElementById('leave-room-btn')
+      }
     }
-  }
-};
+  };
+  console.log("DOM elements initialized:", Object.keys(els).length);
+}
 
 document.addEventListener('DOMContentLoaded', initGame);
 
 async function initGame() {
+  initElements();
   await loadState();
 
   // Initialize playerId if missing
@@ -785,17 +790,24 @@ async function createFirebaseRoom() {
 }
 
 async function handleShareRoom(e) {
+  console.log("handleShareRoom triggered", e);
   const btn = e.currentTarget;
+  if (!btn) {
+    console.error("No button found in event target");
+    return;
+  }
   const originalHtml = btn.innerHTML;
   const isMenuBtn = btn.id === 'share-room-btn-menu';
 
   if (!state.multiplayer.roomCode) {
     try {
+      console.log("No room code, creating room first...");
       btn.disabled = true;
       if (isMenuBtn) {
         btn.innerText = state.language === 'it' ? 'Creazione stanza...' : 'Creating room...';
       }
       await createFirebaseRoom();
+      console.log("Room created:", state.multiplayer.roomCode);
     } catch (e) {
       console.error("Failed to create room for sharing:", e);
       btn.innerHTML = originalHtml;
@@ -809,18 +821,25 @@ async function handleShareRoom(e) {
   btn.disabled = false;
 
   const code = (state.multiplayer.displayCode || state.multiplayer.roomCode || '').toUpperCase();
-  if (!code) return;
+  console.log("Sharing room code:", code);
+  if (!code) {
+    console.error("No room code found in state");
+    return;
+  }
 
   // Point to the mobile web app URL for sharing
   const url = `https://spelling-bee-mobile.web.app/?room=${code}`;
+  console.log("Constructed share URL:", url);
 
   copyToClipboard(url);
 }
 
 async function copyToClipboard(text) {
+  console.log("Attempting to copy to clipboard:", text);
   try {
     // Try modern API first (now with manifest permission)
     if (navigator.clipboard && navigator.clipboard.writeText) {
+      console.log("Using navigator.clipboard.writeText");
       await navigator.clipboard.writeText(text);
       const msg = state.language === 'it' ? 'Link copiato!' : 'Link copied!';
       showMessage(msg, 2000);
@@ -831,6 +850,7 @@ async function copyToClipboard(text) {
   }
 
   // Fallback: Textarea method
+  console.log("Using textarea fallback for copy");
   const textArea = document.createElement("textarea");
   textArea.value = text;
   // Ensure it's not visible but still works
@@ -842,6 +862,7 @@ async function copyToClipboard(text) {
   textArea.select();
   try {
     const successful = document.execCommand('copy');
+    console.log("execCommand copy status:", successful);
     if (successful) {
       const msg = state.language === 'it' ? 'Link copiato!' : 'Link copied!';
       showMessage(msg, 2000);

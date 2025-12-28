@@ -28,6 +28,10 @@ See LICENSE file for details.
     outline: none;
 }
 
+html {
+    touch-action: pan-x pan-y;
+}
+
 body {
     margin: 0;
     font-family: 'Outfit', sans-serif;
@@ -41,7 +45,8 @@ body {
     /* Allow scrolling if content overflows */
     display: flex;
     justify-content: center;
-    touch-action: manipulation;
+    touch-action: pan-x pan-y;
+    -webkit-text-size-adjust: none;
 }
 
 .mobile-container {

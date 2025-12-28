@@ -34,7 +34,7 @@
             {
                 "assets": [
                     "package.json",
-                    "manifest.json",
+                    "extension/manifest.json",
                     "CHANGELOG.md",
                     "README.md"
                 ],
