@@ -130,7 +130,11 @@ async function initGame() {
     if (!state.puzzle) {
         await loadDailyPuzzle();
     } else {
-        loadPuzzleById(state.puzzleId);
+        // Redundant but safe check to populate state.puzzle if somehow missing while puzzleId exists
+        const puzzles = getCurrentPuzzles();
+        if (!state.puzzle && puzzles[state.puzzleId]) {
+            state.puzzle = puzzles[state.puzzleId];
+        }
     }
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -180,11 +184,16 @@ function loadPuzzleById(id) {
     const puzzles = getCurrentPuzzles();
     const p = puzzles[id];
     if (p) {
+        const isNewPuzzle = state.puzzleId !== id;
         state.puzzleId = id;
         state.puzzle = p;
-        state.foundWords = [];
-        state.score = 0;
-        state.currentInput = '';
+
+        if (isNewPuzzle) {
+            state.foundWords = [];
+            state.score = 0;
+            state.currentInput = '';
+        }
+
         saveLocalState();
         renderPuzzle();
         updateScoreUI();
@@ -509,15 +518,19 @@ async function loadNYTDailyPuzzle(sync = true) {
 
         if (!foundLetters) throw new Error(t('matchesLetterError'));
 
-        state.puzzleId = 'nyt-' + new Date().toISOString().split('T')[0];
+        const pid = 'nyt-' + new Date().toISOString().split('T')[0];
+        const isNewPuzzle = state.puzzleId !== pid;
+        state.puzzleId = pid;
         state.puzzle = {
             letters: foundLetters,
             words,
             maxScore: words.reduce((acc, w) => acc + (w.length === 4 ? 1 : w.length + (new Set(w).size === 7 ? 7 : 0)), 0)
         };
 
-        state.foundWords = [];
-        state.score = 0;
+        if (isNewPuzzle) {
+            state.foundWords = [];
+            state.score = 0;
+        }
         saveLocalState();
         renderPuzzle();
         updateScoreUI();
@@ -570,6 +583,7 @@ async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
 
         const dateStr = new Date().toISOString().split('T')[0];
         const pid = 'apegramma-' + dateStr;
+        const isNewPuzzle = state.puzzleId !== pid;
 
         state.puzzleId = pid;
         state.puzzle = {
@@ -581,9 +595,11 @@ async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
         };
 
         // Success UI Update
-        state.foundWords = [];
-        state.score = 0;
-        state.currentInput = '';
+        if (isNewPuzzle) {
+            state.foundWords = [];
+            state.score = 0;
+            state.currentInput = '';
+        }
 
         saveLocalState();
         renderPuzzle();
