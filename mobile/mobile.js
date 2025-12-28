@@ -115,7 +115,10 @@ const els = {
         editNicknameMenu: document.getElementById('edit-nickname-menu'),
         editNicknameRoom: document.getElementById('edit-nickname-room'),
         banner: document.getElementById('multiplayer-banner'),
-        bannerRoomCode: document.getElementById('banner-room-code')
+        bannerRoomCode: document.getElementById('banner-room-code'),
+        shareRoomBtnMenu: document.getElementById('share-room-btn-menu'),
+        shareRoomBtnActive: document.getElementById('share-room-btn-active'),
+        shareBannerBtn: document.getElementById('share-banner-btn')
     }
 };
 
@@ -130,7 +133,15 @@ async function initGame() {
         loadPuzzleById(state.puzzleId);
     }
 
-    if (state.multiplayer.roomCode) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const roomFromUrl = urlParams.get('room');
+
+    if (roomFromUrl) {
+        joinFirebaseRoom(roomFromUrl, true).catch(err => {
+            console.warn("Failed to join room from URL:", err);
+            window.history.replaceState({}, document.title, window.location.pathname);
+        });
+    } else if (state.multiplayer.roomCode) {
         joinFirebaseRoom(state.multiplayer.roomCode, false).catch(() => {
             state.multiplayer.roomCode = null;
             saveLocalState();
@@ -283,6 +294,11 @@ function setupEventListeners() {
     els.multi.confirmJoinBtn.onclick = handleConfirmJoin;
     els.multi.backBtn.onclick = () => { state.multiplayer.step = 'menu'; renderMultiplayerScreen(); };
     els.multi.leaveBtn.onclick = handleLeaveRoom;
+
+    // Sharing
+    els.multi.shareRoomBtnMenu.onclick = handleShareRoom;
+    els.multi.shareRoomBtnActive.onclick = handleShareRoom;
+    els.multi.shareBannerBtn.onclick = handleShareRoom;
 
     els.toggleWordsBtn.onclick = () => {
         const isHidden = els.wordsList.classList.toggle('hidden');
@@ -796,6 +812,11 @@ async function joinFirebaseRoom(code, show = true) {
     subscribeToRoom(cleanCode);
     renderMultiplayerBanner();
     if (show) renderMultiplayerScreen();
+
+    // Clear URL if joined via link
+    if (window.location.search.includes('room=')) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
 }
 
 async function handleCreateRoom() {
@@ -806,12 +827,45 @@ async function handleCreateRoom() {
     await setDoc(doc(db, 'rooms', id), {
         code: code, // specific display code
         puzzleId: state.puzzleId,
+        language: state.language, // also sync language on create
         createdAt: Timestamp.now(),
         expiresAt: expiresAt,
         players: { [state.playerId]: { nickname: state.multiplayer.nickname, online: true, lastActive: Timestamp.now() } },
         foundWords: {}
     });
-    joinFirebaseRoom(code);
+    await joinFirebaseRoom(code);
+}
+
+async function handleShareRoom() {
+    if (!state.multiplayer.roomCode) {
+        try {
+            await handleCreateRoom();
+        } catch (e) {
+            console.error("Failed to create room for sharing:", e);
+            return;
+        }
+    }
+
+    const code = state.multiplayer.displayCode || state.multiplayer.roomCode.toUpperCase();
+    const url = `${window.location.origin}${window.location.pathname}?room=${code}`;
+    const shareText = state.language === 'it' ? 'Entra nella mia stanza di Spelling Bee!' : 'Join my Spelling Bee room!';
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Spelling Bee Multiplayer',
+            text: shareText,
+            url: url
+        }).catch(() => copyToClipboard(url));
+    } else {
+        copyToClipboard(url);
+    }
+}
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const msg = state.language === 'it' ? 'Link copiato negli appunti!' : 'Link copied to clipboard!';
+        showMessage(msg, 2000);
+    });
 }
 
 function handleConfirmJoin() {

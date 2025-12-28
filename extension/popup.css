@@ -286,6 +286,35 @@ header {
   display: none !important;
 }
 
+/* Sharing UI */
+.banner-share-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--highlight-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.share-btn-inline {
+  background: rgba(247, 218, 33, 0.15);
+  border: none;
+  color: var(--highlight-color);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
 .multi-step p {
   color: #aaa;
   font-size: 0.95rem;

@@ -132,10 +132,11 @@ const els = {
     displayNickname: document.getElementById('display-nickname'),
     editNicknameMenu: document.getElementById('edit-nickname-menu'),
     editNicknameRoom: document.getElementById('edit-nickname-room'),
-
-    // Banner
     banner: document.getElementById('multiplayer-banner'),
     bannerRoomCode: document.getElementById('banner-room-code'),
+    shareRoomBtnMenu: document.getElementById('share-room-btn-menu'),
+    shareRoomBtnActive: document.getElementById('share-room-btn-active'),
+    shareBannerBtn: document.getElementById('share-banner-btn'),
 
     // Legacy btn group if needed?
     btns: {
@@ -658,7 +659,16 @@ function generateRoomCode() {
 }
 
 async function joinFirebaseRoom(roomCode, showScreen = true) {
-  const cleanCode = roomCode.toLowerCase().trim();
+  let cleanCode = roomCode.trim();
+  if (cleanCode.includes('?room=')) {
+    try {
+      const url = new URL(cleanCode);
+      cleanCode = url.searchParams.get('room') || cleanCode;
+    } catch (e) {
+      // Not a valid URL, treat as code
+    }
+  }
+  cleanCode = cleanCode.toLowerCase();
   const roomRef = doc(db, 'rooms', cleanCode);
   const snapshot = await getDoc(roomRef);
   if (!snapshot.exists()) {
@@ -757,6 +767,31 @@ async function createFirebaseRoom() {
   renderMultiplayerScreen();
   return roomCode;
 }
+
+async function handleShareRoom() {
+  if (!state.multiplayer.roomCode) {
+    try {
+      await createFirebaseRoom();
+    } catch (e) {
+      console.error("Failed to create room for sharing:", e);
+      return;
+    }
+  }
+
+  const code = state.multiplayer.displayCode || state.multiplayer.roomCode.toUpperCase();
+  // Point to the mobile web app URL for sharing
+  const url = `https://spelling-bee-mobile.web.app/?room=${code}`;
+
+  copyToClipboard(url);
+}
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const msg = state.language === 'it' ? 'Link copiato negli appunti!' : 'Link copied to clipboard!';
+    showMessage(msg, 2000);
+  });
+}
+
 
 let unsubscribeRoom = null;
 
@@ -1322,6 +1357,11 @@ function setupEventListeners() {
     renderMultiplayerScreen();
   });
   els.multi.btns.leaveRoom.addEventListener('click', handleLeaveRoom);
+
+  // Sharing
+  if (els.multi.shareRoomBtnMenu) els.multi.shareRoomBtnMenu.addEventListener('click', handleShareRoom);
+  if (els.multi.shareRoomBtnActive) els.multi.shareRoomBtnActive.addEventListener('click', handleShareRoom);
+  if (els.multi.shareBannerBtn) els.multi.shareBannerBtn.addEventListener('click', handleShareRoom);
 
   // Edit Nickname Links (Menu & Room)
   const editHandler = (e) => {
