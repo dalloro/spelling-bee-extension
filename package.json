@@ -3,6 +3,7 @@
     "version": "4.2.1",
     "repository": "https://github.com/dalloro/spelling-bee-extension.git",
     "description": "Chrome extension for the Spelling Bee game",
+    "license": "MIT",
     "scripts": {
         "build": "node scripts/build.js",
         "watch": "esbuild popup.js --bundle --outfile=dist/popup_bundle.js --watch",

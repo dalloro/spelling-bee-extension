@@ -1,4 +1,8 @@
 // Firebase Imports
+// MIT License
+// Copyright (c) 2025 dalloro
+// See LICENSE file for details.
+
 import { initializeApp } from 'firebase/app';
 import {
   getFirestore, doc, setDoc, getDoc, updateDoc, onSnapshot, Timestamp, connectFirestoreEmulator, deleteField

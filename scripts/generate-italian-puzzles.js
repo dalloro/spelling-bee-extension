@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+// MIT License
+// Copyright (c) 2025 dalloro
+// See LICENSE file for details.
+
 /**
  * Script to generate pre-computed Italian puzzles
  * Creates puzzles similar to the English version with letter sets and valid words

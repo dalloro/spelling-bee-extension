@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+// MIT License
+// Copyright (c) 2025 dalloro
+// See LICENSE file for details.
+
 /**
  * Script to generate pre-computed English puzzles
  * Creates balanced puzzles targeting 1000 total.

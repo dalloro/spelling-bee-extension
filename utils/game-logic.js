@@ -1,3 +1,7 @@
+// MIT License
+// Copyright (c) 2025 dalloro
+// See LICENSE file for details.
+
 /**
  * Core Game Logic (Pure Functions)
  * Shared between Chrome Extension and Mobile Web App
