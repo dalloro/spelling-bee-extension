@@ -168,7 +168,11 @@ async function initGame() {
     if (!state.puzzle) {
       await loadDailyPuzzle(); // Language-aware daily puzzle
     } else {
-      loadPuzzle(state.puzzleId);
+      // Redundant but safe check to populate state.puzzle if somehow missing while puzzleId exists
+      const puzzles = getCurrentPuzzles();
+      if (!state.puzzle && (puzzles[state.puzzleId] || typeof state.puzzleId === 'string')) {
+        loadPuzzle(state.puzzleId);
+      }
     }
   } catch (e) {
     console.error("Init Error:", e);
@@ -256,11 +260,16 @@ function loadPuzzle(indexOrId) {
   }
 
   if (puzzle) {
+    const isNewPuzzle = state.puzzleId !== id;
     state.puzzleId = id;
     state.puzzle = puzzle;
-    state.foundWords = [];
-    state.score = 0;
-    state.currentInput = '';
+
+    if (isNewPuzzle) {
+      state.foundWords = [];
+      state.score = 0;
+      state.currentInput = '';
+    }
+
     saveState();
     renderPuzzle();
     updateScoreUI();
@@ -413,6 +422,7 @@ async function loadNYTDailyPuzzle(shouldBroadcast = true) {
     // --- Success Path ---
     const dateStr = new Date().toISOString().split('T')[0];
     const pid = 'nyt-' + dateStr;
+    const isNewPuzzle = state.puzzleId !== pid;
 
     const maxScore = wordList.reduce((acc, word) => {
       let s = (word.length === 4) ? 1 : word.length;
@@ -428,9 +438,12 @@ async function loadNYTDailyPuzzle(shouldBroadcast = true) {
       maxScore: maxScore,
       author: 'NYT Daily'
     };
-    state.foundWords = [];
-    state.score = 0;
-    state.currentInput = '';
+
+    if (isNewPuzzle) {
+      state.foundWords = [];
+      state.score = 0;
+      state.currentInput = '';
+    }
 
     saveState();
     renderPuzzle();
@@ -495,7 +508,7 @@ async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
     };
 
     // Common success path
-    finishLoadingPuzzle(shouldBroadcast);
+    finishLoadingPuzzle(shouldBroadcast, isNewPuzzle);
 
   } catch (scrapeErr) {
     console.warn("Scraping failed, trying local fallback", scrapeErr);
@@ -511,11 +524,12 @@ async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
 
       const dateStr = new Date().toISOString().split('T')[0];
       const pid = 'apegramma-' + dateStr;
+      const isNewPuzzle = state.puzzleId !== pid;
 
       state.puzzleId = pid;
       state.puzzle = { ...puzzle, id: pid, author: 'Apegramma Daily (Offline)' };
 
-      finishLoadingPuzzle(shouldBroadcast);
+      finishLoadingPuzzle(shouldBroadcast, isNewPuzzle);
     } catch (localErr) {
       console.error(localErr);
       showMessage(t('errorLoadingApegramma'), 3000);
@@ -523,10 +537,12 @@ async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
   }
 }
 
-function finishLoadingPuzzle(shouldBroadcast) {
-  state.foundWords = [];
-  state.score = 0;
-  state.currentInput = '';
+function finishLoadingPuzzle(shouldBroadcast, isNewPuzzle = true) {
+  if (isNewPuzzle) {
+    state.foundWords = [];
+    state.score = 0;
+    state.currentInput = '';
+  }
 
   saveState();
   renderPuzzle();
@@ -769,14 +785,20 @@ async function createFirebaseRoom() {
 }
 
 async function handleShareRoom() {
+  const originalText = els.multi.shareRoomBtnMenu ? els.multi.shareRoomBtnMenu.innerText : null;
+
   if (!state.multiplayer.roomCode) {
     try {
+      if (els.multi.shareRoomBtnMenu) els.multi.shareRoomBtnMenu.innerText = state.language === 'it' ? 'Creazione stanza...' : 'Creating room...';
       await createFirebaseRoom();
     } catch (e) {
       console.error("Failed to create room for sharing:", e);
+      if (originalText && els.multi.shareRoomBtnMenu) els.multi.shareRoomBtnMenu.innerText = originalText;
       return;
     }
   }
+
+  if (originalText && els.multi.shareRoomBtnMenu) els.multi.shareRoomBtnMenu.innerText = originalText;
 
   const code = state.multiplayer.displayCode || state.multiplayer.roomCode.toUpperCase();
   // Point to the mobile web app URL for sharing
@@ -786,10 +808,19 @@ async function handleShareRoom() {
 }
 
 function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(() => {
-    const msg = state.language === 'it' ? 'Link copiato negli appunti!' : 'Link copied to clipboard!';
+  // Robust method for extensions
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+  try {
+    document.execCommand('copy');
+    const msg = state.language === 'it' ? 'Link copiato!' : 'Link copied!';
     showMessage(msg, 2000);
-  });
+  } catch (err) {
+    console.error('Fallback copy failed', err);
+  }
+  document.body.removeChild(textArea);
 }
 
 
