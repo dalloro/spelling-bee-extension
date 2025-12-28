@@ -1,3 +1,11 @@
+## [4.0.3](https://github.com/dalloro/spelling-bee-extension/compare/v4.0.2...v4.0.3) (2025-12-28)
+
+
+### Bug Fixes
+
+* add localized ranking headers to webapp modal ([9ae19fd](https://github.com/dalloro/spelling-bee-extension/commit/9ae19fdb8f6bb37b3d88c710fa7363a1f8357a13))
+* resolve PUZZLES ReferenceError with path mismatch fix ([56c14bc](https://github.com/dalloro/spelling-bee-extension/commit/56c14bcd393facc637702d3d6cb6edf91f37d6ca))
+
 ## [4.0.2](https://github.com/dalloro/spelling-bee-extension/compare/v4.0.1...v4.0.2) (2025-12-27)
 
 
