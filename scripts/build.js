@@ -32,8 +32,11 @@ const defines = {
     'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY || "AIzaSyDummyKeyForFreeTier")
 };
 
+const syncVersion = require('./sync-version');
+
 async function build() {
     console.log('🚀 Starting Unified Build Process...');
+    syncVersion();
 
     // 1. CHROME EXTENSION BUILD
     console.log('📦 Building Chrome Extension...');
