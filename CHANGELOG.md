@@ -1,3 +1,10 @@
+## [4.5.4](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.3...v4.5.4) (2025-12-28)
+
+
+### Bug Fixes
+
+* restore share button listeners and track bundled extension files ([bfd2dc9](https://github.com/dalloro/spelling-bee-extension/commit/bfd2dc9ad37bb0551faa380b1aa30fd380f2a102))
+
 ## [4.5.3](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.2...v4.5.3) (2025-12-28)
 
 
