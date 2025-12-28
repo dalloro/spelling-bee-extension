@@ -177,6 +177,36 @@ function loadPuzzleById(id) {
     }
 }
 
+
+function selectRandomPuzzle() {
+    const puzzles = getCurrentPuzzles();
+    const keys = Object.keys(puzzles);
+    if (keys.length === 0) return;
+
+    if (keys.length === 1) {
+        loadPuzzleById(keys[0]);
+        return;
+    }
+
+    let nextId;
+    let attempts = 0;
+    const currentId = state.puzzleId;
+
+    do {
+        const randomKey = keys[Math.floor(Math.random() * keys.length)];
+        nextId = randomKey;
+        attempts++;
+    } while (nextId === currentId && attempts < 10);
+
+    loadPuzzleById(nextId);
+
+    if (state.multiplayer.roomCode) {
+        syncPuzzleToFirebase(state.puzzleId);
+    } else {
+        showMessage(t('newRandomPuzzle'), 1000);
+    }
+}
+
 function renderPuzzle() {
     if (!state.puzzle) return;
     els.cells.center.textContent = state.puzzle.letters[0].toUpperCase();
@@ -198,9 +228,7 @@ function setupEventListeners() {
     els.shuffleBtn.onclick = shuffleLetters;
     els.restartBtn.onclick = () => {
         if (state.multiplayer.roomCode && !confirm(t('confirmChangeGame'))) return;
-        const id = Math.floor(Math.random() * Object.keys(PUZZLES).length);
-        loadPuzzleById(id);
-        if (state.multiplayer.roomCode) syncPuzzleToFirebase(state.puzzleId);
+        selectRandomPuzzle();
     };
 
     els.nytDailyBtn = document.getElementById('nyt-daily-btn');
@@ -609,28 +637,12 @@ function switchLanguage(langCode) {
     state.score = 0;
     state.currentInput = '';
 
-    // Load new random puzzle for the language (or daily if preferred, but random is safer)
-    const puzzles = getCurrentPuzzles();
-    const ids = Object.keys(puzzles);
-    const randomId = ids[Math.floor(Math.random() * ids.length)];
+    // Load new random puzzle for the language using the helper
+    selectRandomPuzzle();
 
-    // Directly set puzzle data
-    state.puzzleId = randomId;
-    state.puzzle = puzzles[randomId];
-
-    saveLocalState();
-
-    // UI Updates
+    // UI Updates (selectRandomPuzzle handles loading and some UI, but we need language UI)
     updateLanguageUI();
-    renderPuzzle();
-    updateScoreUI();
-    renderFoundWords();
-
-    if (state.multiplayer.roomCode) {
-        syncPuzzleToFirebase(state.puzzleId);
-    } else {
-        showMessage(t('newRandomPuzzle'), 1000);
-    }
+    // renderPuzzle, updateScoreUI, renderFoundWords are called by loadPuzzleById inside selectRandomPuzzle
 }
 
 function updateLanguageUI() {
