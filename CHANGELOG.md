@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.1.0...v4.1.1) (2025-12-28)
+
+
+### Bug Fixes
+
+* increase Italian puzzle pool to 200 and prevent random game repeats ([7089d82](https://github.com/dalloro/spelling-bee-extension/commit/7089d823c123cf9108745c3e0cd6df502b499708))
+
 # [4.1.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.0.3...v4.1.0) (2025-12-28)
 
 
