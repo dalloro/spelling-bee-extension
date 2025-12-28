@@ -875,11 +875,13 @@ async function syncPuzzleToFirebase(puzzleId) {
   try {
     const roomId = state.multiplayer.roomCode.toLowerCase();
     const roomRef = doc(db, 'rooms', roomId);
+    const expiresAt = Timestamp.fromMillis(Date.now() + 168 * 60 * 60 * 1000);
     // Don't check for existence/difference here, force update to ensure language sync
     await updateDoc(roomRef, {
       puzzleId: puzzleId,
       language: state.language,
-      foundWords: {}
+      foundWords: {},
+      expiresAt: expiresAt
     });
   } catch (err) {
     console.error("Error syncing puzzle:", err);

@@ -962,10 +962,12 @@ async function syncPuzzleToFirebase(pid) {
     try {
         const ref = doc(db, 'rooms', state.multiplayer.roomCode.toLowerCase());
         // Sync Language AND Puzzle atomically
+        const expiresAt = Timestamp.fromMillis(Date.now() + 168 * 60 * 60 * 1000);
         await updateDoc(ref, {
             puzzleId: pid,
             language: state.language,
-            foundWords: {}
+            foundWords: {},
+            expiresAt: expiresAt
         });
     } catch (e) { console.warn("Sync failed", e); }
 }
