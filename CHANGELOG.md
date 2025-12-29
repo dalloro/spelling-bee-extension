@@ -1,3 +1,10 @@
+## [4.5.6](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.5...v4.5.6) (2025-12-29)
+
+
+### Bug Fixes
+
+* **multiplayer:** ensure quiet auto-join from URL and proper player cleanup on leave ([79802f4](https://github.com/dalloro/spelling-bee-extension/commit/79802f49aa52c8f273fa27698f68aaad310a5aa4))
+
 ## [4.5.5](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.4...v4.5.5) (2025-12-29)
 
 
