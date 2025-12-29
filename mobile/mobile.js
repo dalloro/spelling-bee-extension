@@ -141,7 +141,7 @@ async function initGame() {
     const roomFromUrl = urlParams.get('room');
 
     if (roomFromUrl) {
-        joinFirebaseRoom(roomFromUrl, true).catch(err => {
+        joinFirebaseRoom(roomFromUrl, false).catch(err => {
             console.warn("Failed to join room from URL:", err);
             window.history.replaceState({}, document.title, window.location.pathname);
         });
@@ -1013,7 +1013,22 @@ function handleSaveNickname() {
     }
 }
 
-function handleLeaveRoom() { if (confirm(t('leaveRoomConfirm'))) { state.multiplayer.roomCode = null; state.multiplayer.step = 'menu'; saveLocalState(); location.reload(); } }
+async function handleLeaveRoom() {
+    if (confirm(t('leaveRoomConfirm'))) {
+        if (state.multiplayer.roomCode) {
+            const ref = doc(db, 'rooms', state.multiplayer.roomCode);
+            try {
+                await updateDoc(ref, { [`players.${state.playerId}`]: deleteField() });
+            } catch (e) {
+                console.warn("Error removing player on leave:", e);
+            }
+        }
+        state.multiplayer.roomCode = null;
+        state.multiplayer.step = 'menu';
+        saveLocalState();
+        location.reload();
+    }
+}
 function handleEditNickname() {
     const n = prompt("New nickname:", state.multiplayer.nickname);
     if (n && n.trim()) {
