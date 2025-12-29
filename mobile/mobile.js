@@ -13,6 +13,7 @@ import { generateRoomCode } from '../utils/multiplayer.js';
 import { fetchNYTDailyPuzzle, fetchApegrammaDailyPuzzle } from '../utils/puzzle-loaders.js';
 import { submitWordToFirebase as coreSubmitWord, syncPuzzleToFirebase as coreSyncPuzzle, sendHeartbeat as coreSendHeartbeat } from '../utils/firebase-sync.js';
 import { createRoom as coreCreateRoom, addPlayerToRoom, removePlayerFromRoom } from '../utils/room-manager.js';
+import { copyToClipboard as coreCopyToClipboard } from '../utils/clipboard.js';
 
 // Firebase config (Injected at build time via esbuild)
 const firebaseConfig = {
@@ -810,8 +811,9 @@ async function handleShareRoom() {
     }
 }
 
+// copyToClipboard using shared clipboard.js
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
+    coreCopyToClipboard(text, () => {
         const msg = state.language === 'it' ? 'Link copiato negli appunti!' : 'Link copied to clipboard!';
         showMessage(msg, 2000);
     });

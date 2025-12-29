@@ -13,6 +13,7 @@ import { generateRoomCode } from '../utils/multiplayer.js';
 import { fetchNYTDailyPuzzle, fetchApegrammaDailyPuzzle } from '../utils/puzzle-loaders.js';
 import { submitWordToFirebase as coreSubmitWord, syncPuzzleToFirebase as coreSyncPuzzle, sendHeartbeat as coreSendHeartbeat } from '../utils/firebase-sync.js';
 import { createRoom as coreCreateRoom, addPlayerToRoom, removePlayerFromRoom } from '../utils/room-manager.js';
+import { copyToClipboard as coreCopyToClipboard } from '../utils/clipboard.js';
 
 // Firebase config (Injected at build time via esbuild)
 const firebaseConfig = {
@@ -714,47 +715,17 @@ async function handleShareRoom(e) {
   copyToClipboard(url);
 }
 
+// copyToClipboard using shared clipboard.js
 async function copyToClipboard(text) {
-  console.log("Attempting to copy to clipboard:", text);
-  try {
-    // Try modern API first (now with manifest permission)
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      console.log("Using navigator.clipboard.writeText");
-      await navigator.clipboard.writeText(text);
+  coreCopyToClipboard(
+    text,
+    () => {
       const msg = state.language === 'it' ? 'Link copiato!' : 'Link copied!';
       showMessage(msg, 2000);
-      return;
-    }
-  } catch (err) {
-    console.warn('Modern clipboard API failed, trying fallback', err);
-  }
-
-  // Fallback: Textarea method
-  console.log("Using textarea fallback for copy");
-  const textArea = document.createElement("textarea");
-  textArea.value = text;
-  // Ensure it's not visible but still works
-  textArea.style.position = "fixed";
-  textArea.style.left = "-9999px";
-  textArea.style.top = "0";
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-  try {
-    const successful = document.execCommand('copy');
-    console.log("execCommand copy status:", successful);
-    if (successful) {
-      const msg = state.language === 'it' ? 'Link copiato!' : 'Link copied!';
-      showMessage(msg, 2000);
-    } else {
-      throw new Error('execCommand returned false');
-    }
-  } catch (err) {
-    console.error('Fallback copy failed', err);
-    // Ultimate fallback for extension if everything fails: alert the user with the link
-    prompt(state.language === 'it' ? 'Copia questo link:' : 'Copy this link:', text);
-  }
-  document.body.removeChild(textArea);
+    },
+    (err) => console.error("Clipboard copy failed:", err),
+    (txt) => prompt(state.language === 'it' ? 'Copia questo link:' : 'Copy this link:', txt)
+  );
 }
 
 
