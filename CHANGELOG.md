@@ -1,3 +1,10 @@
+## [4.5.5](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.4...v4.5.5) (2025-12-29)
+
+
+### Bug Fixes
+
+* **mobile:** comprehensive localization for multiplayer and UI ([9942bbb](https://github.com/dalloro/spelling-bee-extension/commit/9942bbb30061aff8228e2ed15e0949f693883447))
+
 ## [4.5.4](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.3...v4.5.4) (2025-12-28)
 
 
