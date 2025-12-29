@@ -61,6 +61,10 @@ localStorage.setItem('sb_playerId', state.playerId);
 // Expose state globally for translations
 window.state = state;
 
+// Multiplayer Real-time state
+let unsub = null;
+let heartbeatInterval = null;
+
 // LANGUAGE_CONFIG imported from utils/constants.js
 
 // Language-specific data helpers
@@ -905,9 +909,25 @@ function handleConfirmJoin() {
     joinFirebaseRoom(code).catch(e => showMessage(t('roomNotFound'), 2000));
 }
 
-let unsub = null;
+async function sendHeartbeat() {
+    if (!state.multiplayer.roomCode) return;
+    const ref = doc(db, 'rooms', state.multiplayer.roomCode);
+    try {
+        await updateDoc(ref, {
+            [`players.${state.playerId}.online`]: true,
+            [`players.${state.playerId}.lastActive`]: Timestamp.now()
+        });
+    } catch (e) {
+        console.warn("Heartbeat failed:", e);
+    }
+}
+
 function subscribeToRoom(code) {
     if (unsub) unsub();
+    if (heartbeatInterval) clearInterval(heartbeatInterval);
+
+    heartbeatInterval = setInterval(sendHeartbeat, 30000); // 30s heartbeat
+
     unsub = onSnapshot(doc(db, 'rooms', code), (s) => {
         const d = s.data(); if (!d) return;
         state.multiplayer.rawPlayers = d.players || {}; // Store for resolve
@@ -920,7 +940,12 @@ function subscribeToRoom(code) {
                     return { playerId: id, nickname: p.nickname, online: isOnline };
                 });
             renderTeammates();
+        } else {
+            // Handle case where players map is completely missing or empty
+            state.multiplayer.teammates = [];
+            renderTeammates();
         }
+
         if (d.foundWords) {
             let changed = false;
             Object.keys(d.foundWords).forEach(w => {
@@ -1015,6 +1040,7 @@ function handleSaveNickname() {
 
 async function handleLeaveRoom() {
     if (confirm(t('leaveRoomConfirm'))) {
+        if (heartbeatInterval) clearInterval(heartbeatInterval);
         if (state.multiplayer.roomCode) {
             const ref = doc(db, 'rooms', state.multiplayer.roomCode);
             try {

@@ -907,6 +907,10 @@ function subscribeToRoom(roomCode) {
       state.multiplayer.teammates = playersList.filter(p => p.playerId !== state.playerId);
       renderTeammates();
       renderMultiplayerBanner();
+    } else {
+      state.multiplayer.teammates = [];
+      renderTeammates();
+      renderMultiplayerBanner();
     }
 
     // 2. Sync Found Words
