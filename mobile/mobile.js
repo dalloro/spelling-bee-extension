@@ -537,6 +537,7 @@ async function loadNYTDailyPuzzle(sync = true) {
         renderPuzzle();
         updateScoreUI();
         renderFoundWords();
+        showMessage(t('nytDailyLoaded'), 2000);
         if (sync && state.multiplayer.roomCode) syncPuzzleToFirebase(state.puzzleId);
     } catch (e) {
         console.error("NYT Load Error:", e);

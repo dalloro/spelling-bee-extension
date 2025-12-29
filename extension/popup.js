@@ -1039,10 +1039,10 @@ function calculateScore(word) {
 
 function renderMultiplayerBanner() {
   if (state.multiplayer.roomCode) {
-    els.multi.banner.style.display = 'flex';
+    els.multi.banner.classList.remove('hidden');
     els.multi.bannerRoomCode.innerText = state.multiplayer.displayCode || state.multiplayer.roomCode;
   } else {
-    els.multi.banner.style.display = 'none';
+    els.multi.banner.classList.add('hidden');
   }
 }
 
