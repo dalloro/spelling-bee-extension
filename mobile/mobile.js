@@ -10,6 +10,7 @@ import {
 import { validateWord as coreValidateWord, findWordsForLetters } from '../utils/game-logic.js';
 import { LEVELS, LANGUAGE_CONFIG } from '../utils/constants.js';
 import { generateRoomCode } from '../utils/multiplayer.js';
+import { fetchNYTDailyPuzzle, fetchApegrammaDailyPuzzle } from '../utils/puzzle-loaders.js';
 
 // Firebase config (Injected at build time via esbuild)
 const firebaseConfig = {
@@ -485,50 +486,12 @@ function getDisplayName(pid, players) {
 
 async function loadNYTDailyPuzzle(sync = true) {
     try {
-        const proxyUrl = "https://corsproxy.io/?";
-        const targetUrl = encodeURIComponent('https://nytbee.com/');
-        const res = await fetch(proxyUrl + targetUrl);
-        const html = await res.text();
-        const doc = new DOMParser().parseFromString(html, 'text/html');
+        // Use shared fetcher with proxy (required for mobile)
+        const { puzzleId, puzzle } = await fetchNYTDailyPuzzle(true);
 
-        // 1. Extract the words
-        const words = Array.from(doc.querySelectorAll('a[id^="link-definition-"]')).map(a => a.id.split('-').pop().toLowerCase());
-        if (!words.length) throw new Error(t('noWordsFound'));
-
-        // 2. Identify the true center letter (must be in every word)
-        let commonLetters = new Set(words[0].split(''));
-        words.forEach(w => {
-            const wordSet = new Set(w.split(''));
-            commonLetters = new Set([...commonLetters].filter(x => wordSet.has(x)));
-        });
-        const centerLetter = Array.from(commonLetters)[0]?.toUpperCase();
-        if (!centerLetter) throw new Error(t('centerLetterError'));
-
-        // 3. Extract all candidate 7-letter sets from scripts
-        const scripts = Array.from(doc.querySelectorAll('script')).map(s => s.textContent).join(' ');
-        const letterArrays = scripts.match(/\[\s*"[A-Z]"(?:\s*,\s*"[A-Z]"){6}\s*\]/gi) || [];
-
-        let foundLetters = null;
-        for (const arrStr of letterArrays) {
-            const candidate = arrStr.match(/[A-Z]/gi).map(l => l.toUpperCase());
-            if (candidate.includes(centerLetter)) {
-                // Return letters with the detected center letter at index 0
-                const others = candidate.filter(l => l !== centerLetter);
-                foundLetters = [centerLetter, ...others];
-                break;
-            }
-        }
-
-        if (!foundLetters) throw new Error(t('matchesLetterError'));
-
-        const pid = 'nyt-' + new Date().toISOString().split('T')[0];
-        const isNewPuzzle = state.puzzleId !== pid;
-        state.puzzleId = pid;
-        state.puzzle = {
-            letters: foundLetters,
-            words,
-            maxScore: words.reduce((acc, w) => acc + (w.length === 4 ? 1 : w.length + (new Set(w).size === 7 ? 7 : 0)), 0)
-        };
+        const isNewPuzzle = state.puzzleId !== puzzleId;
+        state.puzzleId = puzzleId;
+        state.puzzle = puzzle;
 
         if (isNewPuzzle) {
             state.foundWords = [];
@@ -555,50 +518,17 @@ async function loadDailyPuzzle(shouldBroadcast = true) {
     }
 }
 
-// Load Italian "Apegramma" (Mapped to local daily puzzle for reliability)
-// Load Italian "Apegramma" (Scraping laregione.ch via proxy with local fallback)
+// Load Italian "Apegramma" using shared fetcher with local fallback
 async function loadApegrammaDailyPuzzle(shouldBroadcast = true) {
-    showMessage(t('fetchingApegramma'), 2000); // reuse existing key
+    showMessage(t('fetchingApegramma'), 2000);
     try {
-        const proxyUrl = "https://corsproxy.io/?";
-        const targetUrl = encodeURIComponent('https://www.laregione.ch/giochi/apegramma');
-        const response = await fetch(proxyUrl + targetUrl);
-        if (!response.ok) throw new Error("Fetch failed");
-        const html = await response.text();
-        const match = html.match(/<div[^>]*id="jsonDati"[^>]*>(.*?)<\/div>/);
-        if (!match) throw new Error("Data not found");
+        // Use shared fetcher with proxy (required for mobile)
+        const { puzzleId, puzzle } = await fetchApegrammaDailyPuzzle(true);
 
-        const json = JSON.parse(match[1]);
-        if (!json.data || !json.data.letters) throw new Error("Invalid data structure");
+        const isNewPuzzle = state.puzzleId !== puzzleId;
+        state.puzzleId = puzzleId;
+        state.puzzle = puzzle;
 
-        const d = json.data;
-        const central = d.central.toLowerCase();
-        const lettersArr = d.letters.toLowerCase().split(' ').map(s => s.trim()).filter(l => l);
-        const others = lettersArr.filter(l => l !== central).sort();
-        const allLetters = [central, ...others];
-        const validWords = Object.keys(d.validWords);
-
-        let maxScore = 0;
-        validWords.forEach(w => {
-            let s = (w.length === 4) ? 1 : w.length;
-            if (new Set(w).size === 7) s += 7;
-            maxScore += s;
-        });
-
-        const dateStr = new Date().toISOString().split('T')[0];
-        const pid = 'apegramma-' + dateStr;
-        const isNewPuzzle = state.puzzleId !== pid;
-
-        state.puzzleId = pid;
-        state.puzzle = {
-            id: pid,
-            letters: allLetters,
-            words: validWords,
-            maxScore: maxScore,
-            author: 'Apegramma Daily'
-        };
-
-        // Success UI Update
         if (isNewPuzzle) {
             state.foundWords = [];
             state.score = 0;
