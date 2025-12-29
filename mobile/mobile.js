@@ -311,7 +311,7 @@ function setupEventListeners() {
 
     els.toggleWordsBtn.onclick = () => {
         const isHidden = els.wordsList.classList.toggle('hidden');
-        els.toggleWordsBtn.innerText = isHidden ? "Show" : "Hide";
+        els.toggleWordsBtn.innerText = isHidden ? t('show') : t('hide');
     };
 
     els.toggleAttributionBtn.onclick = () => {
@@ -706,10 +706,11 @@ function updateLanguageUI() {
     // Multiplayer Buttons
     setText('save-nickname-btn', 'continue');
     setText('create-room-btn', 'createRoom');
-    setText('join-room-btn', 'joinRoom');
+    setText('join-room-btn', 'joinRoomManually');
     setText('join-confirm-btn', 'join');
     setText('join-back-btn', 'back');
     setText('leave-room-btn', 'leaveRoom');
+    setText('share-room-link-text-menu', 'shareRoomLink');
 
     // Headings & Text
     const setupP = document.querySelector('#multi-setup p');
@@ -724,9 +725,23 @@ function updateLanguageUI() {
     const rankingHeader = document.querySelector('.modal-header h2');
     if (rankingHeader) rankingHeader.innerText = t('rankings');
 
+    // New multiplayer labels
+    setText('logged-in-label', 'loggedInAs');
+    setText('players-label', 'players');
+    setText('room-code-label', 'roomCode');
+    setText('banner-room-label', 'room');
+    setText('edit-label-menu', 'edit');
+    setText('edit-label-room', 'edit');
+
     // Placeholders
     setPlaceholder('nickname-input', 'anonymous');
     setPlaceholder('room-code-input', 'roomCode');
+
+    // Tooltips
+    const bannerShareBtn = document.getElementById('share-banner-btn');
+    if (bannerShareBtn) bannerShareBtn.title = t('shareRoomLink');
+    const activeShareBtn = document.getElementById('share-room-btn-active');
+    if (activeShareBtn) activeShareBtn.title = t('shareRoomLink');
 
     // Re-render dynamic text
     if (typeof updateScoreUI === 'function') updateScoreUI();

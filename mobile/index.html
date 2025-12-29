@@ -103,7 +103,8 @@ See LICENSE file for details.
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                 <circle cx="9" cy="7" r="4"></circle>
             </svg>
-            <span class="banner-text">Room: <span id="banner-room-code">-</span></span>
+            <span class="banner-text"><span id="banner-room-label">Room:</span> <span
+                    id="banner-room-code">-</span></span>
             <button id="share-banner-btn" class="banner-share-btn" title="Share Room Link">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
@@ -139,8 +140,8 @@ See LICENSE file for details.
             </div>
 
             <div id="multi-menu" class="multi-step hidden">
-                <p>Logged in as <strong id="display-nickname"></strong> <a href="#" id="edit-nickname-menu"
-                        class="edit-link">(edit)</a></p>
+                <p><span id="logged-in-label">Logged in as</span> <strong id="display-nickname"></strong> <a href="#"
+                        id="edit-nickname-menu" class="edit-link">(<span id="edit-label-menu">edit</span>)</a></p>
                 <div class="multi-actions">
                     <button id="share-room-btn-menu" class="primary-btn share-btn-alt">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
@@ -149,7 +150,7 @@ See LICENSE file for details.
                             <polyline points="16 6 12 2 8 6"></polyline>
                             <line x1="12" y1="2" x2="12" y2="15"></line>
                         </svg>
-                        Share Room Link
+                        <span id="share-room-link-text-menu">Share Room Link</span>
                     </button>
                     <button id="create-room-btn" class="secondary-btn">Create Room</button>
                     <button id="join-room-btn" class="secondary-btn">Join Room manually</button>
@@ -167,7 +168,7 @@ See LICENSE file for details.
 
             <div id="multi-active" class="multi-step hidden">
                 <div class="room-info">
-                    <span>ROOM CODE:</span>
+                    <span id="room-code-label">ROOM CODE:</span>
                     <strong id="active-room-code"></strong>
                     <button id="share-room-btn-active" class="share-btn-inline" title="Share Room Link">
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
@@ -179,7 +180,8 @@ See LICENSE file for details.
                     </button>
                 </div>
                 <div class="player-list-container">
-                    <p>Players: <a href="#" id="edit-nickname-room" class="edit-link">(edit)</a></p>
+                    <p><span id="players-label">Players:</span> <a href="#" id="edit-nickname-room"
+                            class="edit-link">(<span id="edit-label-room">edit</span>)</a></p>
                     <div id="player-list" class="player-list"></div>
                 </div>
                 <button id="leave-room-btn" class="danger-btn">Leave Room</button>
