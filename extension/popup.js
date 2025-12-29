@@ -9,6 +9,7 @@ import {
 } from 'firebase/firestore';
 import { validateWord as coreValidateWord, findWordsForLetters } from '../utils/game-logic.js';
 import { LEVELS, LANGUAGE_CONFIG } from '../utils/constants.js';
+import { generateRoomCode } from '../utils/multiplayer.js';
 
 // Firebase config (Injected at build time via esbuild)
 const firebaseConfig = {
@@ -673,14 +674,7 @@ async function loadDailyPuzzle(shouldBroadcast = true) {
 
 // --- MULTIPLAYER LOGIC (FIREBASE) ---
 
-function generateRoomCode() {
-  const adjs = ['Happy', 'Lucky', 'Sunny', 'Cool', 'Bright', 'Swift', 'Calm'];
-  const nouns = ['Bee', 'Hive', 'Honey', 'Comb', 'Wing', 'Pollen', 'Nectar'];
-  const num = Math.floor(Math.random() * 99) + 1;
-  const adj = adjs[Math.floor(Math.random() * adjs.length)];
-  const noun = nouns[Math.floor(Math.random() * nouns.length)];
-  return `${adj}-${noun}-${num}`;
-}
+// generateRoomCode is now imported from ../utils/multiplayer.js
 
 async function joinFirebaseRoom(roomCode, showScreen = true) {
   let cleanCode = roomCode.trim();
