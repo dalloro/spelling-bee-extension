@@ -8,7 +8,7 @@
     "scripts": {
         "build": "node scripts/build.js",
         "watch": "esbuild popup.js --bundle --outfile=dist/popup_bundle.js --watch",
-        "test": "vitest run",
+        "test": "firebase emulators:exec --only firestore \"vitest run\"",
         "generate:dictionary:it": "node scripts/generate-italian-dictionary.js",
         "generate:puzzles:it": "node scripts/generate-italian-puzzles.js"
     },
