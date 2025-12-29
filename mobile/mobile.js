@@ -697,6 +697,12 @@ function openRankingsModal() {
     const list = document.getElementById('rankings-list');
     list.innerHTML = '';
 
+    // Add Total Words info
+    const totalWords = document.createElement('div');
+    totalWords.className = 'ranking-row total-words-row';
+    totalWords.innerHTML = `<span class="rank-name">${t('totalWords')}:</span><span class="rank-score">${state.puzzle.words.length}</span>`;
+    list.appendChild(totalWords);
+
     // Add header
     const header = document.createElement('div');
     header.className = 'ranking-row ranking-header';

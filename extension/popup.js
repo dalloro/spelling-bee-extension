@@ -1171,6 +1171,13 @@ function renderRankingModal() {
   }
 
   list.innerHTML = '';
+
+  // Add Total Words info
+  const totalWords = document.createElement('div');
+  totalWords.className = 'ranking-item total-words-row';
+  totalWords.innerHTML = `<span class="rank-name">${t('totalWords')}:</span><span class="rank-score">${state.puzzle.words.length}</span>`;
+  list.appendChild(totalWords);
+
   LEVELS.forEach((lvl, i) => {
     const item = document.createElement('div');
     item.className = 'ranking-item';

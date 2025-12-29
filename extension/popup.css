@@ -20,6 +20,14 @@ See LICENSE file for details.
   --highlight-color: #f7da21;
 }
 
+/* Total Words Row Style */
+.total-words-row {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
 body {
   width: 375px;
   /* Slightly wider for better spacing */
