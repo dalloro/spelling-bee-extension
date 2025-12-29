@@ -1,3 +1,10 @@
+## [4.5.11](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.10...v4.5.11) (2025-12-29)
+
+
+### Bug Fixes
+
+* **extension:** resolva ReferenceError and CORS in Italian daily puzzle fetching ([d4aea0e](https://github.com/dalloro/spelling-bee-extension/commit/d4aea0eb522013e0902a824bd035d9937838326f))
+
 ## [4.5.10](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.9...v4.5.10) (2025-12-29)
 
 
