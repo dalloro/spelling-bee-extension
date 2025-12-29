@@ -1,3 +1,10 @@
+## [4.5.9](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.8...v4.5.9) (2025-12-29)
+
+
+### Bug Fixes
+
+* **mobile:** resolve localization lag by stabilizing state reference and refreshing dynamic UI ([e974e8b](https://github.com/dalloro/spelling-bee-extension/commit/e974e8b4e836580f1143f1b129973ba383037986))
+
 ## [4.5.8](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.7...v4.5.8) (2025-12-29)
 
 
