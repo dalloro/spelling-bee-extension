@@ -1,3 +1,10 @@
+## [4.5.10](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.9...v4.5.10) (2025-12-29)
+
+
+### Bug Fixes
+
+* restore NYT load notification in webapp and fix room banner visibility in extension ([31019e7](https://github.com/dalloro/spelling-bee-extension/commit/31019e7ea91c3217e7cb6ced60836063c6d7a0f3))
+
 ## [4.5.9](https://github.com/dalloro/spelling-bee-extension/compare/v4.5.8...v4.5.9) (2025-12-29)
 
 
