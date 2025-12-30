@@ -75,6 +75,12 @@ header {
     width: 100%;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .level-container {
     display: flex;
     flex-direction: column;
@@ -147,6 +153,8 @@ header {
     font-weight: 500;
     font-size: 1.1rem;
     color: var(--highlight-color);
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 #score {

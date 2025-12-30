@@ -71,6 +71,12 @@ header {
   width: 100%;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .header-row.top-row {
   padding-bottom: 4px;
 }
@@ -473,6 +479,8 @@ header {
   font-weight: 500;
   font-size: 0.95rem;
   color: var(--highlight-color);
+  margin-left: 20px;
+  white-space: nowrap;
 }
 
 .header-btn {
