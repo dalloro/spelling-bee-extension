@@ -57,21 +57,29 @@ body {
 /* Header & Progress Bar */
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 15px;
+  flex-direction: column;
+  padding-bottom: 12px;
   border-bottom: 1px solid #333;
   margin-bottom: 10px;
+  gap: 12px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-row.top-row {
+  padding-bottom: 4px;
 }
 
 .level-container {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-right: 15px;
   cursor: pointer;
-  /* Make it look clickable for the modal */
 }
 
 .level-text {
@@ -461,9 +469,10 @@ header {
 .score-display {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 400;
-  font-size: 0.9rem;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--highlight-color);
 }
 
 .header-btn {
@@ -484,8 +493,8 @@ header {
 /* Language Dropdown Menu */
 .dropdown-menu {
   position: absolute;
-  top: 60px;
-  right: 80px;
+  top: 45px;
+  right: 15px;
   background-color: #1e1e1e;
   border: 1px solid #444;
   border-radius: 8px;

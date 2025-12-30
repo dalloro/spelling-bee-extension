@@ -18,46 +18,63 @@ See LICENSE file for details.
 
 <body>
   <div class="container">
-    <header>
-      <div class="level-container">
-        <span class="level-text" id="current-level">Beginner</span>
-        <div class="dots-container">
-          <!-- Level dots will be injected here -->
+    <header class="two-rows">
+      <div class="header-row top-row">
+        <div class="header-left">
+          <a href="https://github.com/dalloro/spelling-bee-extension" target="_blank" class="header-btn github-link"
+            title="View on GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.58V22">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="header-right header-actions">
+          <button id="nyt-daily-btn" class="header-btn" title="Load Daily Puzzle">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </button>
+          <button id="lang-btn" class="header-btn" title="Language">
+            <span id="lang-flag">🇺🇸</span>
+          </button>
+          <div id="lang-menu" class="dropdown-menu hidden">
+            <button data-lang="en">🇺🇸 English</button>
+            <button data-lang="it">🇮🇹 Italiano</button>
+          </div>
+          <button id="multiplayer-btn" class="header-btn" title="Multiplayer">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </button>
+          <button id="restart-btn" class="header-btn" title="New Random Puzzle">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="score-display">
-        <span id="score-label">Score:</span> <span id="score">0</span>
-        <button id="nyt-daily-btn" class="header-btn" title="Load Daily Puzzle">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-        </button>
-        <button id="lang-btn" class="header-btn" title="Language">
-          <span id="lang-flag">🇺🇸</span>
-        </button>
-        <div id="lang-menu" class="dropdown-menu hidden">
-          <button data-lang="en">🇺🇸 English</button>
-          <button data-lang="it">🇮🇹 Italiano</button>
+      <div class="header-row bottom-row">
+        <div class="level-container">
+          <span class="level-text" id="current-level">Beginner</span>
+          <div class="dots-container">
+            <!-- Level dots will be injected here -->
+          </div>
         </div>
-        <button id="multiplayer-btn" class="header-btn" title="Multiplayer">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-        </button>
-        <button id="restart-btn" class="header-btn" title="New Random Puzzle">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="23 4 23 10 17 10"></polyline>
-            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
-          </svg>
-        </button>
+        <div class="score-display">
+          <span id="score-label">Score:</span> <span id="score">0</span>
+        </div>
       </div>
     </header>
 

@@ -61,20 +61,28 @@ body {
 
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 15px 0 10px 0;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+
+.header-row {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    width: 100%;
 }
 
 .level-container {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: 20px;
     padding: 5px;
     border-radius: 8px;
     transition: background 0.2s;
+    cursor: pointer;
 }
 
 .level-container:active {
@@ -135,10 +143,10 @@ header {
 .score-display {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #bbb;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--highlight-color);
 }
 
 #score {
@@ -172,7 +180,7 @@ header {
 /* Language Dropdown Menu */
 .dropdown-menu {
     position: fixed;
-    top: 60px;
+    top: 55px;
     right: 20px;
     background-color: rgba(30, 30, 30, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.1);
