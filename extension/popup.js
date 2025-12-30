@@ -1198,13 +1198,7 @@ function renderRankingModal() {
     list.appendChild(item);
   });
 
-  // Add Total Words info (Second to last, so appears below header in column-reverse)
-  const totalWords = document.createElement('div');
-  totalWords.className = 'ranking-item total-words-row';
-  totalWords.innerHTML = `<span class="rank-name">${t('totalWords')}:</span><span class="rank-score">${state.puzzle.words.length}</span>`;
-  list.appendChild(totalWords);
-
-  // Add header last so it appears at the top (due to column-reverse)
+  // Add header (Second to last in DOM -> Visual Middle)
   const header = document.createElement('div');
   header.className = 'ranking-item ranking-header';
   header.innerHTML = `
@@ -1212,6 +1206,12 @@ function renderRankingModal() {
     <span class="rank-score">${t('minimumScore')}</span>
   `;
   list.appendChild(header);
+
+  // Add Total Words info (Last in DOM -> Visual Top due to column-reverse)
+  const totalWords = document.createElement('div');
+  totalWords.className = 'ranking-item total-words-row';
+  totalWords.innerHTML = `<span class="rank-name">${t('totalWords')}:</span><span class="rank-score">${state.puzzle.words.length}</span>`;
+  list.appendChild(totalWords);
   modal.style.display = 'block';
 }
 
