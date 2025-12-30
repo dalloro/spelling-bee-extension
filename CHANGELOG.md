@@ -1,3 +1,17 @@
+# [4.7.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.5...v4.7.0) (2025-12-30)
+
+
+### Bug Fixes
+
+* **test:** use ESM imports for italian-logic test to fix CI failure ([f3cb131](https://github.com/dalloro/spelling-bee-extension/commit/f3cb131e4455e4ad57973c59813b3dd18223edf5))
+
+
+### Features
+
+* **it:** add lemma-based game logic with gendered singulars and 30-60 word limit ([f8ba213](https://github.com/dalloro/spelling-bee-extension/commit/f8ba21304a9067f14afb3c708af823f70c48a885))
+* **it:** final lemma logic update and readme credits ([0148363](https://github.com/dalloro/spelling-bee-extension/commit/014836312ac70bea290c50eb9745dceb6c1d7d5d))
+* **lang:** overhaul italian logic with lemmas and 30-60 word limit ([51c6872](https://github.com/dalloro/spelling-bee-extension/commit/51c687249799b2aca90e0fa4dc0db2b48c027feb))
+
 ## [4.6.5](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.4...v4.6.5) (2025-12-30)
 
 
