@@ -1,3 +1,11 @@
+# [4.11.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.10.0...v4.11.0) (2025-12-30)
+
+
+### Features
+
+* **it:** absolutely ensure 'marrano' and other allow-listed words are in the dictionary ([01116d9](https://github.com/dalloro/spelling-bee-extension/commit/01116d9570c39412ce31dae8c8360cf0c1ca7410))
+* **it:** force include all manual allow list words in dictionary ([b04bf91](https://github.com/dalloro/spelling-bee-extension/commit/b04bf915549f83d29c7a66dcc3d3b35d33138686))
+
 # [4.10.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.9.0...v4.10.0) (2025-12-30)
 
 
