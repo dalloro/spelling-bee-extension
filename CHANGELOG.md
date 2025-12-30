@@ -1,3 +1,10 @@
+## [4.6.5](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.4...v4.6.5) (2025-12-30)
+
+
+### Bug Fixes
+
+* **popup:** move total words to visual top (last in dom) ([0950192](https://github.com/dalloro/spelling-bee-extension/commit/0950192de5bbb6f4056654b9ecdbdcb805d1c77d))
+
 ## [4.6.4](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.3...v4.6.4) (2025-12-30)
 
 
