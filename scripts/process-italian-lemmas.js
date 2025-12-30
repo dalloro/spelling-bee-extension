@@ -6,7 +6,7 @@ const COLFIS_PATH = path.join(__dirname, '../lang/it/CoLFIS/lemmario/Lemmi_e_For
 const MORPHIT_PATH = path.join(__dirname, '../lang/it/morph-it/current_version/morph-it_048.txt');
 const OUTPUT_FILE = path.join(__dirname, '../lang/it/words_it_lemmas.js');
 
-const MAX_RANGO = 30000;
+const MAX_RANGO = 50000;
 const MIN_LENGTH = 4;
 
 // Manual Allow List for definitely common words missing from CoLFIS
