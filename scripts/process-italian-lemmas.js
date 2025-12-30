@@ -6,7 +6,7 @@ const COLFIS_PATH = path.join(__dirname, '../lang/it/CoLFIS/lemmario/Lemmi_e_For
 const MORPHIT_PATH = path.join(__dirname, '../lang/it/morph-it/current_version/morph-it_048.txt');
 const OUTPUT_FILE = path.join(__dirname, '../lang/it/words_it_lemmas.js');
 
-const MAX_RANGO = 15000;
+const MAX_RANGO = 30000;
 const MIN_LENGTH = 4;
 
 // Tags to accept (Morph-it format)
@@ -102,8 +102,9 @@ async function processWords() {
             continue;
         }
 
-        // Filter 4: Must be in CoLFIS common list
-        if (!commonLemmas.has(lemma)) {
+        // Filter 4: Must be in CoLFIS common list OR Manual Allow List
+        const isCommon = commonLemmas.has(lemma) || MANUAL_ALLOW_LIST.has(lemma) || MANUAL_ALLOW_LIST.has(form);
+        if (!isCommon) {
             stats.rare++;
             continue;
         }
