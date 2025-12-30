@@ -12,7 +12,12 @@ const MIN_LENGTH = 4;
 // Manual Allow List for definitely common words missing from CoLFIS
 const MANUAL_ALLOW_LIST = new Set([
     'predare',
-    'ardere'
+    'ardere',
+    'rampone',
+    'pomo',
+    'omone',
+    'marrano',
+    'mormone'
 ]);
 
 // Tags to accept (Morph-it format)
