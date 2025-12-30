@@ -1,3 +1,11 @@
+# [4.8.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.7.0...v4.8.0) (2025-12-30)
+
+
+### Features
+
+* **it:** expand frequency limits to 30k Rango and add manual allowlist for 'predare' ([818e44e](https://github.com/dalloro/spelling-bee-extension/commit/818e44ed0a065d4f578579e0b5dbe302b85da49e))
+* **it:** expand frequency limits to 30k Rango and fix manual allowlist ([b4955a8](https://github.com/dalloro/spelling-bee-extension/commit/b4955a8640f30446edb1c233854711fdad3f08c0))
+
 # [4.7.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.5...v4.7.0) (2025-12-30)
 
 
