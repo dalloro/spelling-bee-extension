@@ -1,3 +1,10 @@
+## [4.6.2](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.1...v4.6.2) (2025-12-30)
+
+
+### Bug Fixes
+
+* **l10n:** localize extension score label and tooltips ([436bf22](https://github.com/dalloro/spelling-bee-extension/commit/436bf22c6b89e88f13ecaeed5798f8445d6b74ad))
+
 ## [4.6.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.0...v4.6.1) (2025-12-29)
 
 
