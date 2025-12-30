@@ -1,3 +1,10 @@
+## [4.6.3](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.2...v4.6.3) (2025-12-30)
+
+
+### Bug Fixes
+
+* **popup:** correct rankings total words position for column-reverse layout ([3615bac](https://github.com/dalloro/spelling-bee-extension/commit/3615bacbbf7fb2709f51dc8b6d282515fc8b91be))
+
 ## [4.6.2](https://github.com/dalloro/spelling-bee-extension/compare/v4.6.1...v4.6.2) (2025-12-30)
 
 
