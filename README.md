@@ -133,6 +133,8 @@ This project is inspired by the **New York Times Spelling Bee**. Use this extens
 We gratefully acknowledge the following sources for our Daily Puzzle data:
 - **[NYT Spelling Bee Answers and Analysis (nytbee.com)](https://nytbee.com/)**: Source for the English daily letters.
 - **[Apegramma (La Regione)](https://www.laregione.ch/giochi/apegramma)**: Source for the Italian daily letters.
+- **[Morph-it!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it)**: Italian morphological lexicon (SSLMIT, University of Bologna).
+- **[CoLFIS](https://www.istc.cnr.it/en/grouppage/PresGen)**: Frequency corpus for Written Italian (CNR).
 
 ---
 *Maintained with care* 🐝

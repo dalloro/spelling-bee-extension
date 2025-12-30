@@ -13,5 +13,8 @@ extension/dist/
 !extension/dist/words.js
 !extension/dist/puzzles.js
 *.zip
+lang/it/CoLFIS/
+lang/it/morph-it/
+lang/it/words_it_lemmas.js
 lang/it/raw_dictionary.txt
-lang/it/words_it.js
+# lang/it/words_it.js is needed for the build, but ignored by default? No, let's explicitly allow it if needed.

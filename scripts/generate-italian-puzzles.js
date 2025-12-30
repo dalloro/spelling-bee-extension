@@ -166,7 +166,7 @@ function main() {
 
     const jsContent = `// Italian Puzzles for Spelling Bee
 // Generated from Lemma Dictionary
-// Rule: 20-45 words per puzzle
+// Rule: ${MIN_WORDS}-${MAX_WORDS} words per puzzle
 // Total Puzzles: ${Object.keys(puzzles).length}
 
 const PUZZLES_IT = ${JSON.stringify(puzzles, null, 2)};

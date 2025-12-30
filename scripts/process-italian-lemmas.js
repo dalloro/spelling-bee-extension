@@ -12,13 +12,13 @@ const MIN_LENGTH = 4;
 // Tags to accept (Morph-it format)
 // Only accepting base forms: Infinitive Verbs, Masculine Singular Nouns/Adjectives
 const VALID_TAGS = [
-    'VER:inf',   // Verb Infinitive (e.g., VER:inf+pres)
-    'NOUN-M:s',  // Noun Masculine Singular
-    'NOUN-F:s',  // Noun Feminine Singular
-    'NOUN:s',    // Generic Singular Noun
-    'ADJ-M:s',   // Adjective Masculine Singular
-    'ADJ-F:s',   // Adjective Feminine Singular
-    'ADJ:s'      // Generic Singular Adjective
+    'VER:inf',      // Verb Infinitive (e.g., VER:inf+pres)
+    'NOUN-M:s',     // Noun Masculine Singular
+    'NOUN-F:s',     // Noun Feminine Singular
+    'NOUN:s',       // Generic Singular Noun
+    'ADJ:pos+m+s',  // Adjective Masculine Singular (Correct Morph-it tag)
+    'ADJ:pos+f+s',  // Adjective Feminine Singular (Correct Morph-it tag)
+    'ADJ:s'         // Generic Singular Adjective (Fallback)
 ];
 
 async function processWords() {
@@ -83,11 +83,10 @@ async function processWords() {
         const lemma = parts[1].toLowerCase();
         const tag = parts[2];
 
-        // Filter 1: Must be base form (Form == Lemma)
-        if (form !== lemma) {
-            stats.notBase++;
-            continue;
-        }
+        // Filter 1: Lemma matching
+        // We rely on strict TAG matching (Singular only) to exclude plurals/conjugations.
+        // This allows gendered singulars (e.g. 'calda' which maps to lemma 'caldo') 
+        // while still ensuring base-form logic.
 
         // Filter 2: Length >= 4
         if (lemma.length < MIN_LENGTH) {
@@ -109,7 +108,7 @@ async function processWords() {
             continue;
         }
 
-        finalSet.add(lemma);
+        finalSet.add(form);
         stats.kept++;
     }
 
