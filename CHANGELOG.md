@@ -1,3 +1,10 @@
+# [4.12.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.11.0...v4.12.0) (2025-12-30)
+
+
+### Features
+
+* **it:** expand vocabulary with adverbs and prepositions, fix missing common words ([6d69b14](https://github.com/dalloro/spelling-bee-extension/commit/6d69b1444ffea84f05c75cabdc3f2fc83be1ce95))
+
 # [4.11.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.10.0...v4.11.0) (2025-12-30)
 
 
