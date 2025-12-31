@@ -59,22 +59,23 @@ async function build() {
         copy(path.join(EXTENSION_SRC, asset), path.join(EXTENSION_DIST, asset));
     });
 
-    // Copy language files (from lang/ folder)
+    // -----------------------------------------------------------------
+    // NEW SELECTIVE LANGUAGE ASSET COPYING
+    // -----------------------------------------------------------------
+    const LANG_DIST = path.join(EXTENSION_DIST, 'lang');
+    if (!fs.existsSync(LANG_DIST)) fs.mkdirSync(LANG_DIST, { recursive: true });
+    const IT_LANG_DIST = path.join(LANG_DIST, 'it');
+    if (!fs.existsSync(IT_LANG_DIST)) fs.mkdirSync(IT_LANG_DIST, { recursive: true });
+
+    // Copy only essential language files
+    copy(path.join(LANG_DIR, 'strings.js'), path.join(LANG_DIST, 'strings.js'));
     copy(path.join(LANG_DIR, 'en/puzzles.js'), path.join(EXTENSION_DIST, 'puzzles.js'));
     copy(path.join(LANG_DIR, 'en/words.js'), path.join(EXTENSION_DIST, 'words.js'));
-    copy(LANG_DIR, path.join(EXTENSION_DIST, 'lang'));
+    copy(path.join(LANG_DIR, 'it/puzzles_it.js'), path.join(IT_LANG_DIST, 'puzzles_it.js'));
 
-    // Remove massive Italian dictionary from extension bundle
-    const itWordsPath = path.join(EXTENSION_DIST, 'lang/it/words_it.js');
-    const itRawPath = path.join(EXTENSION_DIST, 'lang/it/raw_dictionary.txt');
-    if (fs.existsSync(itWordsPath)) {
-        console.log('🗑️  Removing large Italian dictionary from extension bundle...');
-        fs.unlinkSync(itWordsPath);
-    }
-    if (fs.existsSync(itRawPath)) {
-        console.log('🗑️  Removing raw source dictionary from extension bundle...');
-        fs.unlinkSync(itRawPath);
-    }
+    // We don't copy words_it.js or words_enriched.js to keep bundle size small.
+    // The puzzles themselves contain the words for validation.
+
 
     // Adjust HTML: Remove the massive dictionary script tag and swap bundle path
     adjustHtml(path.join(EXTENSION_DIST, 'popup.html'), '<script src="dist/lang/it/words_it.js"></script>', '<!-- words_it.js excluded -->');
