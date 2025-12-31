@@ -170,10 +170,22 @@ async function initGame() {
 }
 
 function loadLocalState() {
-    const saved = localStorage.getItem('sb_mobile_state');
-    if (saved) {
-        const parsed = JSON.parse(saved);
-        Object.assign(state, parsed);
+    try {
+        const saved = localStorage.getItem('sb_mobile_state');
+        if (saved) {
+            const parsed = JSON.parse(saved);
+
+            // Validate puzzle structure before accepting it
+            if (parsed.puzzle && (!Array.isArray(parsed.puzzle.letters) || parsed.puzzle.letters.length < 7)) {
+                console.warn("Discarding invalid puzzle state from localStorage");
+                delete parsed.puzzle;
+                delete parsed.puzzleId;
+            }
+
+            Object.assign(state, parsed);
+        }
+    } catch (e) {
+        console.error("Failed to load local state:", e);
     }
 }
 
@@ -268,9 +280,9 @@ function renderPuzzle() {
 }
 
 function setupEventListeners() {
-    els.cells.center.onclick = () => handleInput(state.puzzle.letters[0]);
+    els.cells.center.onclick = () => { if (state.puzzle) handleInput(state.puzzle.letters[0]); };
     els.cells.outer.forEach(cell => {
-        cell.onclick = () => handleInput(cell.dataset.letter);
+        cell.onclick = () => { if (cell.dataset.letter) handleInput(cell.dataset.letter); };
     });
 
     els.deleteBtn.onclick = handleDelete;
@@ -320,7 +332,6 @@ function setupEventListeners() {
 
     els.multi.btn.onclick = renderMultiplayerScreen;
     els.multi.closeBtn.onclick = () => els.multi.screen.style.display = 'none';
-    els.multi.saveNicknameBtn.onclick = handleSaveNickname;
     els.multi.saveNicknameBtn.onclick = handleSaveNickname;
     els.multi.createRoomBtn.onclick = handleCreateRoom;
     document.getElementById('join-room-btn').onclick = () => { state.multiplayer.step = 'join'; renderMultiplayerScreen(); };
@@ -819,7 +830,7 @@ async function handleShareRoom() {
         }
     }
 
-    const code = state.multiplayer.displayCode || state.multiplayer.roomCode.toUpperCase();
+    const code = state.multiplayer.displayCode || (state.multiplayer.roomCode ? state.multiplayer.roomCode.toUpperCase() : '');
     const url = `${window.location.origin}${window.location.pathname}?room=${code}`;
 
     if (navigator.share) {
