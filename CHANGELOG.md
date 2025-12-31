@@ -1,3 +1,10 @@
+## [4.13.1](https://github.com/dalloro/spelling-bee-extension/compare/v4.13.0...v4.13.1) (2025-12-31)
+
+
+### Bug Fixes
+
+* **puzzles:** fix data structure incompatibility that broke the webapp ([5010a79](https://github.com/dalloro/spelling-bee-extension/commit/5010a797efbc9b5031d9a908b77903b45a2b1c07))
+
 # [4.13.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.12.0...v4.13.0) (2025-12-31)
 
 
