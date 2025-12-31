@@ -1,3 +1,11 @@
+## [4.13.3](https://github.com/dalloro/spelling-bee-extension/compare/v4.13.2...v4.13.3) (2025-12-31)
+
+
+### Bug Fixes
+
+* **mobile:** add emergency repair script for broken localStorage ([1150883](https://github.com/dalloro/spelling-bee-extension/commit/11508830fc1db70b07ba6907b25b818a0c486895))
+* **mobile:** strictly validate puzzle state on load to prevent cached crashes ([7734116](https://github.com/dalloro/spelling-bee-extension/commit/7734116be5693ed0e0dd6ae3307b927dd72c178e))
+
 ## [4.13.2](https://github.com/dalloro/spelling-bee-extension/compare/v4.13.1...v4.13.2) (2025-12-31)
 
 
