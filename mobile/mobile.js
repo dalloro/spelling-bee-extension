@@ -3,7 +3,7 @@
 // See LICENSE file for details.
 
 // Firebase Imports - v4.13.5
-const APP_VERSION = '4.13.5';
+const APP_VERSION = '4.13.6';
 console.log(`🚀 Spelling Bee Mobile v${APP_VERSION} starting...`);
 
 import { initializeApp } from 'firebase/app';
