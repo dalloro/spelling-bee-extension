@@ -1,3 +1,10 @@
+## [4.13.4](https://github.com/dalloro/spelling-bee-extension/compare/v4.13.3...v4.13.4) (2025-12-31)
+
+
+### Bug Fixes
+
+* **build:** atomic cache-busting by renaming mobile bundle ([ace583c](https://github.com/dalloro/spelling-bee-extension/commit/ace583c8873c3578571d4cefcb3402d65fb09229))
+
 ## [4.13.3](https://github.com/dalloro/spelling-bee-extension/compare/v4.13.2...v4.13.3) (2025-12-31)
 
 
