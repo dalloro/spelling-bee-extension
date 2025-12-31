@@ -127,7 +127,8 @@ picked.forEach(p => {
     finalPuzzles[key] = {
         center: p.center,
         letters: p.letters,
-        words: p.words
+        words: p.words,
+        maxScore: p.qbScore
     };
 });
 

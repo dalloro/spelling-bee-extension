@@ -58,7 +58,8 @@ const PUZZLES = {
       "titties",
       "tube",
       "tubes"
-    ]
+    ],
+    "maxScore": 248
   },
   "eaclnru": {
     "center": "e",
@@ -122,7 +123,8 @@ const PUZZLES = {
       "uncle",
       "unclean",
       "unclear"
-    ]
+    ],
+    "maxScore": 250
   },
   "racdelw": {
     "center": "r",
@@ -185,7 +187,8 @@ const PUZZLES = {
       "ware",
       "wear",
       "weller"
-    ]
+    ],
+    "maxScore": 250
   },
   "eabcilr": {
     "center": "e",
@@ -246,7 +249,8 @@ const PUZZLES = {
       "reel",
       "relic",
       "rice"
-    ]
+    ],
+    "maxScore": 242
   },
   "ebglnos": {
     "center": "e",
@@ -308,7 +312,8 @@ const PUZZLES = {
       "senses",
       "sole",
       "soles"
-    ]
+    ],
+    "maxScore": 245
   },
   "eacdhpt": {
     "center": "e",
@@ -368,7 +373,8 @@ const PUZZLES = {
       "tech",
       "teeth",
       "theta"
-    ]
+    ],
+    "maxScore": 251
   },
   "acdehpt": {
     "center": "a",
@@ -433,7 +439,8 @@ const PUZZLES = {
       "teach",
       "that",
       "theta"
-    ]
+    ],
+    "maxScore": 247
   },
   "rdefmop": {
     "center": "r",
@@ -499,7 +506,8 @@ const PUZZLES = {
       "rope",
       "roped",
       "roper"
-    ]
+    ],
+    "maxScore": 254
   },
   "ebdhort": {
     "center": "e",
@@ -557,7 +565,8 @@ const PUZZLES = {
       "three",
       "tore",
       "tree"
-    ]
+    ],
+    "maxScore": 251
   },
   "ladefrt": {
     "center": "l",
@@ -621,7 +630,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 246
   },
   "ednprtv": {
     "center": "e",
@@ -680,7 +690,8 @@ const PUZZLES = {
       "trend",
       "veer",
       "vent"
-    ]
+    ],
+    "maxScore": 249
   },
   "ndefiot": {
     "center": "n",
@@ -739,7 +750,8 @@ const PUZZLES = {
       "tintin",
       "tone",
       "tonino"
-    ]
+    ],
+    "maxScore": 248
   },
   "hadenrt": {
     "center": "h",
@@ -797,7 +809,8 @@ const PUZZLES = {
       "threaten",
       "threatened",
       "three"
-    ]
+    ],
+    "maxScore": 253
   },
   "oelnstv": {
     "center": "o",
@@ -868,7 +881,8 @@ const PUZZLES = {
       "veto",
       "vote",
       "votes"
-    ]
+    ],
+    "maxScore": 253
   },
   "nadeghi": {
     "center": "n",
@@ -926,7 +940,8 @@ const PUZZLES = {
       "needn",
       "nigh",
       "nine"
-    ]
+    ],
+    "maxScore": 249
   },
   "ehmorsw": {
     "center": "e",
@@ -984,7 +999,8 @@ const PUZZLES = {
       "whores",
       "whose",
       "worse"
-    ]
+    ],
+    "maxScore": 241
   },
   "eablrvy": {
     "center": "e",
@@ -1048,7 +1064,8 @@ const PUZZLES = {
       "very",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 249
   },
   "lacenry": {
     "center": "l",
@@ -1103,7 +1120,8 @@ const PUZZLES = {
       "reel",
       "relay",
       "yearly"
-    ]
+    ],
+    "maxScore": 243
   },
   "pacehis": {
     "center": "p",
@@ -1158,7 +1176,8 @@ const PUZZLES = {
       "speeches",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 251
   },
   "laehrty": {
     "center": "l",
@@ -1218,7 +1237,8 @@ const PUZZLES = {
       "telly",
       "tyrell",
       "yearly"
-    ]
+    ],
+    "maxScore": 252
   },
   "laefrty": {
     "center": "l",
@@ -1281,7 +1301,8 @@ const PUZZLES = {
       "telly",
       "tyrell",
       "yearly"
-    ]
+    ],
+    "maxScore": 247
   },
   "beilstu": {
     "center": "b",
@@ -1339,7 +1360,8 @@ const PUZZLES = {
       "subtle",
       "tube",
       "tubes"
-    ]
+    ],
+    "maxScore": 250
   },
   "racelny": {
     "center": "r",
@@ -1398,7 +1420,8 @@ const PUZZLES = {
       "year",
       "yearly",
       "yearn"
-    ]
+    ],
+    "maxScore": 251
   },
   "daeorsu": {
     "center": "d",
@@ -1460,7 +1483,8 @@ const PUZZLES = {
       "sodas",
       "suede",
       "used"
-    ]
+    ],
+    "maxScore": 248
   },
   "eablsuv": {
     "center": "e",
@@ -1524,7 +1548,8 @@ const PUZZLES = {
       "veal",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 260
   },
   "adenorw": {
     "center": "a",
@@ -1591,7 +1616,8 @@ const PUZZLES = {
       "warner",
       "warren",
       "wear"
-    ]
+    ],
+    "maxScore": 249
   },
   "nghiosw": {
     "center": "n",
@@ -1645,7 +1671,8 @@ const PUZZLES = {
       "winning",
       "winnings",
       "wishing"
-    ]
+    ],
+    "maxScore": 249
   },
   "tadeisv": {
     "center": "t",
@@ -1702,7 +1729,8 @@ const PUZZLES = {
       "visit",
       "visited",
       "visits"
-    ]
+    ],
+    "maxScore": 254
   },
   "abceilr": {
     "center": "a",
@@ -1770,7 +1798,8 @@ const PUZZLES = {
       "real",
       "rear",
       "recall"
-    ]
+    ],
+    "maxScore": 257
   },
   "lacertv": {
     "center": "l",
@@ -1828,7 +1857,8 @@ const PUZZLES = {
       "valet",
       "valve",
       "veal"
-    ]
+    ],
+    "maxScore": 247
   },
   "labcert": {
     "center": "l",
@@ -1890,7 +1920,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 266
   },
   "teghosu": {
     "center": "t",
@@ -1947,7 +1978,8 @@ const PUZZLES = {
       "tout",
       "tush",
       "tutu"
-    ]
+    ],
+    "maxScore": 248
   },
   "hceostu": {
     "center": "h",
@@ -2007,7 +2039,8 @@ const PUZZLES = {
       "touch",
       "touches",
       "tush"
-    ]
+    ],
+    "maxScore": 245
   },
   "aelnrtu": {
     "center": "a",
@@ -2073,7 +2106,8 @@ const PUZZLES = {
       "treat",
       "tuna",
       "ultra"
-    ]
+    ],
+    "maxScore": 258
   },
   "aehopst": {
     "center": "a",
@@ -2140,7 +2174,8 @@ const PUZZLES = {
       "theta",
       "toast",
       "toothpaste"
-    ]
+    ],
+    "maxScore": 255
   },
   "taehpry": {
     "center": "t",
@@ -2203,7 +2238,8 @@ const PUZZLES = {
       "trey",
       "type",
       "tyre"
-    ]
+    ],
+    "maxScore": 242
   },
   "sdeiotu": {
     "center": "s",
@@ -2260,7 +2296,8 @@ const PUZZLES = {
       "toss",
       "tossed",
       "used"
-    ]
+    ],
+    "maxScore": 243
   },
   "tabegos": {
     "center": "t",
@@ -2322,7 +2359,8 @@ const PUZZLES = {
       "toot",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 239
   },
   "taegops": {
     "center": "t",
@@ -2392,7 +2430,8 @@ const PUZZLES = {
       "toots",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 255
   },
   "acdehmt": {
     "center": "a",
@@ -2459,7 +2498,8 @@ const PUZZLES = {
       "teammate",
       "that",
       "theta"
-    ]
+    ],
+    "maxScore": 254
   },
   "bdemors": {
     "center": "b",
@@ -2509,7 +2549,8 @@ const PUZZLES = {
       "robes",
       "sober",
       "somber"
-    ]
+    ],
+    "maxScore": 245
   },
   "badeils": {
     "center": "b",
@@ -2569,7 +2610,8 @@ const PUZZLES = {
       "libel",
       "sable",
       "slab"
-    ]
+    ],
+    "maxScore": 250
   },
   "ecdhinr": {
     "center": "e",
@@ -2628,7 +2670,8 @@ const PUZZLES = {
       "ridden",
       "ride",
       "rider"
-    ]
+    ],
+    "maxScore": 240
   },
   "tceinsz": {
     "center": "t",
@@ -2677,7 +2720,8 @@ const PUZZLES = {
       "tests",
       "tintin",
       "titties"
-    ]
+    ],
+    "maxScore": 249
   },
   "tabceks": {
     "center": "t",
@@ -2738,7 +2782,8 @@ const PUZZLES = {
       "tease",
       "test",
       "tests"
-    ]
+    ],
+    "maxScore": 242
   },
   "naghisv": {
     "center": "n",
@@ -2791,7 +2836,8 @@ const PUZZLES = {
       "vain",
       "vanish",
       "vanishing"
-    ]
+    ],
+    "maxScore": 251
   },
   "sacfort": {
     "center": "s",
@@ -2851,7 +2897,8 @@ const PUZZLES = {
       "torso",
       "toss",
       "tractors"
-    ]
+    ],
+    "maxScore": 251
   },
   "rbdehot": {
     "center": "r",
@@ -2907,7 +2954,8 @@ const PUZZLES = {
       "tore",
       "tree",
       "trot"
-    ]
+    ],
+    "maxScore": 242
   },
   "sbcdeir": {
     "center": "s",
@@ -2956,7 +3004,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sire"
-    ]
+    ],
+    "maxScore": 252
   },
   "adeflnt": {
     "center": "a",
@@ -3022,7 +3071,8 @@ const PUZZLES = {
       "tanned",
       "teal",
       "tenant"
-    ]
+    ],
+    "maxScore": 248
   },
   "laberty": {
     "center": "l",
@@ -3085,7 +3135,8 @@ const PUZZLES = {
       "telly",
       "tyrell",
       "yearly"
-    ]
+    ],
+    "maxScore": 265
   },
   "idenrtu": {
     "center": "i",
@@ -3140,7 +3191,8 @@ const PUZZLES = {
       "united",
       "untie",
       "untied"
-    ]
+    ],
+    "maxScore": 245
   },
   "laceinp": {
     "center": "l",
@@ -3199,7 +3251,8 @@ const PUZZLES = {
       "plan",
       "plane",
       "plea"
-    ]
+    ],
+    "maxScore": 254
   },
   "ceinprs": {
     "center": "c",
@@ -3245,7 +3298,8 @@ const PUZZLES = {
       "specs",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 255
   },
   "aceistv": {
     "center": "a",
@@ -3298,7 +3352,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 247
   },
   "tbelmrs": {
     "center": "t",
@@ -3354,7 +3409,8 @@ const PUZZLES = {
       "trees",
       "tremble",
       "trembles"
-    ]
+    ],
+    "maxScore": 248
   },
   "nadehrt": {
     "center": "n",
@@ -3412,7 +3468,8 @@ const PUZZLES = {
       "threaten",
       "threatened",
       "trend"
-    ]
+    ],
+    "maxScore": 246
   },
   "taeglmr": {
     "center": "t",
@@ -3475,7 +3532,8 @@ const PUZZLES = {
       "tram",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 240
   },
   "ladefit": {
     "center": "l",
@@ -3549,7 +3607,8 @@ const PUZZLES = {
       "tilted",
       "title",
       "titled"
-    ]
+    ],
+    "maxScore": 246
   },
   "eabdorw": {
     "center": "e",
@@ -3613,7 +3672,8 @@ const PUZZLES = {
       "weber",
       "wedded",
       "weed"
-    ]
+    ],
+    "maxScore": 250
   },
   "ecinotv": {
     "center": "e",
@@ -3669,7 +3729,8 @@ const PUZZLES = {
       "vinnie",
       "voice",
       "vote"
-    ]
+    ],
+    "maxScore": 250
   },
   "daenruw": {
     "center": "d",
@@ -3734,7 +3795,8 @@ const PUZZLES = {
       "warned",
       "wedded",
       "weed"
-    ]
+    ],
+    "maxScore": 255
   },
   "eghilnt": {
     "center": "e",
@@ -3784,7 +3846,8 @@ const PUZZLES = {
       "tile",
       "tingle",
       "title"
-    ]
+    ],
+    "maxScore": 247
   },
   "daelstu": {
     "center": "d",
@@ -3849,7 +3912,8 @@ const PUZZLES = {
       "teased",
       "tested",
       "used"
-    ]
+    ],
+    "maxScore": 252
   },
   "eclortu": {
     "center": "e",
@@ -3909,7 +3973,8 @@ const PUZZLES = {
       "turtle",
       "ulcer",
       "utter"
-    ]
+    ],
+    "maxScore": 249
   },
   "scdehlo": {
     "center": "s",
@@ -3968,7 +4033,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 237
   },
   "deipstu": {
     "center": "d",
@@ -4025,7 +4091,8 @@ const PUZZLES = {
       "tipped",
       "upside",
       "used"
-    ]
+    ],
+    "maxScore": 250
   },
   "aeglrvy": {
     "center": "a",
@@ -4089,7 +4156,8 @@ const PUZZLES = {
       "veal",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 255
   },
   "rcelotu": {
     "center": "r",
@@ -4149,7 +4217,8 @@ const PUZZLES = {
       "turtle",
       "ulcer",
       "utter"
-    ]
+    ],
+    "maxScore": 253
   },
   "laegrty": {
     "center": "l",
@@ -4206,7 +4275,8 @@ const PUZZLES = {
       "telly",
       "tyrell",
       "yearly"
-    ]
+    ],
+    "maxScore": 242
   },
   "lehistw": {
     "center": "l",
@@ -4267,7 +4337,8 @@ const PUZZLES = {
       "willis",
       "wills",
       "wilt"
-    ]
+    ],
+    "maxScore": 245
   },
   "ecilnot": {
     "center": "e",
@@ -4327,7 +4398,8 @@ const PUZZLES = {
       "title",
       "toilet",
       "tone"
-    ]
+    ],
+    "maxScore": 261
   },
   "rbdegit": {
     "center": "r",
@@ -4387,7 +4459,8 @@ const PUZZLES = {
       "tried",
       "trigger",
       "triggered"
-    ]
+    ],
+    "maxScore": 246
   },
   "haderty": {
     "center": "h",
@@ -4445,7 +4518,8 @@ const PUZZLES = {
       "threat",
       "three",
       "yeah"
-    ]
+    ],
+    "maxScore": 255
   },
   "dacensv": {
     "center": "d",
@@ -4497,7 +4571,8 @@ const PUZZLES = {
       "send",
       "sends",
       "sensed"
-    ]
+    ],
+    "maxScore": 249
   },
   "dceinov": {
     "center": "d",
@@ -4546,7 +4621,8 @@ const PUZZLES = {
       "node",
       "video",
       "voodoo"
-    ]
+    ],
+    "maxScore": 248
   },
   "adelmno": {
     "center": "a",
@@ -4617,7 +4693,8 @@ const PUZZLES = {
       "named",
       "nomad",
       "noona"
-    ]
+    ],
+    "maxScore": 249
   },
   "eadflru": {
     "center": "e",
@@ -4693,7 +4770,8 @@ const PUZZLES = {
       "rule",
       "ruled",
       "ruler"
-    ]
+    ],
+    "maxScore": 254
   },
   "ncdegil": {
     "center": "n",
@@ -4745,7 +4823,8 @@ const PUZZLES = {
       "nice",
       "niece",
       "nine"
-    ]
+    ],
+    "maxScore": 254
   },
   "lceopsu": {
     "center": "l",
@@ -4814,7 +4893,8 @@ const PUZZLES = {
       "spell",
       "spells",
       "supple"
-    ]
+    ],
+    "maxScore": 255
   },
   "rabelop": {
     "center": "r",
@@ -4882,7 +4962,8 @@ const PUZZLES = {
       "rollo",
       "rope",
       "roper"
-    ]
+    ],
+    "maxScore": 248
   },
   "rcenotv": {
     "center": "r",
@@ -4936,7 +5017,8 @@ const PUZZLES = {
       "vector",
       "veer",
       "voter"
-    ]
+    ],
+    "maxScore": 247
   },
   "ldemost": {
     "center": "l",
@@ -5003,7 +5085,8 @@ const PUZZLES = {
       "toledo",
       "tool",
       "tools"
-    ]
+    ],
+    "maxScore": 251
   },
   "icegnor": {
     "center": "i",
@@ -5052,7 +5135,8 @@ const PUZZLES = {
       "ringer",
       "ringing",
       "ringo"
-    ]
+    ],
+    "maxScore": 250
   },
   "ebilmos": {
     "center": "e",
@@ -5113,7 +5197,8 @@ const PUZZLES = {
       "sole",
       "soles",
       "some"
-    ]
+    ],
+    "maxScore": 254
   },
   "laceimr": {
     "center": "l",
@@ -5175,7 +5260,8 @@ const PUZZLES = {
       "reclaim",
       "reel",
       "relic"
-    ]
+    ],
+    "maxScore": 246
   },
   "eadginv": {
     "center": "e",
@@ -5236,7 +5322,8 @@ const PUZZLES = {
       "vein",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 249
   },
   "labcden": {
     "center": "l",
@@ -5298,7 +5385,8 @@ const PUZZLES = {
       "leanne",
       "lend",
       "needle"
-    ]
+    ],
+    "maxScore": 250
   },
   "cadehlr": {
     "center": "c",
@@ -5353,7 +5441,8 @@ const PUZZLES = {
       "reached",
       "recall",
       "recalled"
-    ]
+    ],
+    "maxScore": 245
   },
   "lacehrt": {
     "center": "l",
@@ -5411,7 +5500,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 239
   },
   "eabflpr": {
     "center": "e",
@@ -5485,7 +5575,8 @@ const PUZZLES = {
       "referee",
       "referral",
       "repel"
-    ]
+    ],
+    "maxScore": 255
   },
   "acelnru": {
     "center": "a",
@@ -5545,7 +5636,8 @@ const PUZZLES = {
       "recall",
       "unclean",
       "unclear"
-    ]
+    ],
+    "maxScore": 239
   },
   "oehmrsw": {
     "center": "o",
@@ -5608,7 +5700,8 @@ const PUZZLES = {
       "worm",
       "worms",
       "worse"
-    ]
+    ],
+    "maxScore": 265
   },
   "seghotu": {
     "center": "s",
@@ -5666,7 +5759,8 @@ const PUZZLES = {
       "tosh",
       "toss",
       "tush"
-    ]
+    ],
+    "maxScore": 261
   },
   "ncdefio": {
     "center": "n",
@@ -5723,7 +5817,8 @@ const PUZZLES = {
       "offended",
       "once",
       "onion"
-    ]
+    ],
+    "maxScore": 254
   },
   "rbdeimo": {
     "center": "r",
@@ -5785,7 +5880,8 @@ const PUZZLES = {
       "rodeo",
       "room",
       "roomie"
-    ]
+    ],
+    "maxScore": 256
   },
   "hadeist": {
     "center": "h",
@@ -5840,7 +5936,8 @@ const PUZZLES = {
       "thats",
       "thesis",
       "theta"
-    ]
+    ],
+    "maxScore": 249
   },
   "eabckst": {
     "center": "e",
@@ -5907,7 +6004,8 @@ const PUZZLES = {
       "tease",
       "test",
       "tests"
-    ]
+    ],
+    "maxScore": 264
   },
   "odefmrs": {
     "center": "o",
@@ -5973,7 +6071,8 @@ const PUZZLES = {
       "some",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 237
   },
   "oaehlrs": {
     "center": "o",
@@ -6037,7 +6136,8 @@ const PUZZLES = {
       "solos",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 258
   },
   "sabegot": {
     "center": "s",
@@ -6095,7 +6195,8 @@ const PUZZLES = {
       "toast",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 229
   },
   "sabelov": {
     "center": "s",
@@ -6161,7 +6262,8 @@ const PUZZLES = {
       "vassal",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 259
   },
   "pcdeort": {
     "center": "p",
@@ -6220,7 +6322,8 @@ const PUZZLES = {
       "torpedo",
       "troop",
       "trooper"
-    ]
+    ],
+    "maxScore": 247
   },
   "naghiks": {
     "center": "n",
@@ -6280,7 +6383,8 @@ const PUZZLES = {
       "skin",
       "skins",
       "snag"
-    ]
+    ],
+    "maxScore": 249
   },
   "radegow": {
     "center": "r",
@@ -6348,7 +6452,8 @@ const PUZZLES = {
       "ware",
       "wear",
       "word"
-    ]
+    ],
+    "maxScore": 255
   },
   "scelmou": {
     "center": "s",
@@ -6408,7 +6513,8 @@ const PUZZLES = {
       "success",
       "successes",
       "sumo"
-    ]
+    ],
+    "maxScore": 253
   },
   "paeortv": {
     "center": "p",
@@ -6471,7 +6577,8 @@ const PUZZLES = {
       "troop",
       "trooper",
       "vapor"
-    ]
+    ],
+    "maxScore": 247
   },
   "cenrstu": {
     "center": "c",
@@ -6519,7 +6626,8 @@ const PUZZLES = {
       "sunscreen",
       "truce",
       "uncut"
-    ]
+    ],
+    "maxScore": 249
   },
   "eabdorv": {
     "center": "e",
@@ -6584,7 +6692,8 @@ const PUZZLES = {
       "rover",
       "veer",
       "verb"
-    ]
+    ],
+    "maxScore": 245
   },
   "eacmopr": {
     "center": "e",
@@ -6652,7 +6761,8 @@ const PUZZLES = {
       "rear",
       "rope",
       "roper"
-    ]
+    ],
+    "maxScore": 248
   },
   "ielmost": {
     "center": "i",
@@ -6720,7 +6830,8 @@ const PUZZLES = {
       "titties",
       "toilet",
       "toilets"
-    ]
+    ],
+    "maxScore": 251
   },
   "definot": {
     "center": "d",
@@ -6777,7 +6888,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "tinted"
-    ]
+    ],
+    "maxScore": 248
   },
   "icegnpr": {
     "center": "i",
@@ -6830,7 +6942,8 @@ const PUZZLES = {
       "ripe",
       "ripper",
       "ripping"
-    ]
+    ],
+    "maxScore": 242
   },
   "oeklnst": {
     "center": "o",
@@ -6897,7 +7010,8 @@ const PUZZLES = {
       "toot",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 240
   },
   "eadnpsx": {
     "center": "e",
@@ -6954,7 +7068,8 @@ const PUZZLES = {
       "speeds",
       "spend",
       "spends"
-    ]
+    ],
+    "maxScore": 250
   },
   "rdeinow": {
     "center": "r",
@@ -7013,7 +7128,8 @@ const PUZZLES = {
       "worn",
       "worried",
       "wren"
-    ]
+    ],
+    "maxScore": 255
   },
   "echnstu": {
     "center": "e",
@@ -7067,7 +7183,8 @@ const PUZZLES = {
       "tune",
       "tunes",
       "unseen"
-    ]
+    ],
+    "maxScore": 242
   },
   "taegnpr": {
     "center": "t",
@@ -7127,7 +7244,8 @@ const PUZZLES = {
       "trapper",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 258
   },
   "sdehotu": {
     "center": "s",
@@ -7193,7 +7311,8 @@ const PUZZLES = {
       "tossed",
       "tush",
       "used"
-    ]
+    ],
+    "maxScore": 255
   },
   "eaclmor": {
     "center": "e",
@@ -7259,7 +7378,8 @@ const PUZZLES = {
       "reel",
       "role",
       "roller"
-    ]
+    ],
+    "maxScore": 244
   },
   "neprstv": {
     "center": "n",
@@ -7309,7 +7429,8 @@ const PUZZLES = {
       "tents",
       "vent",
       "vents"
-    ]
+    ],
+    "maxScore": 242
   },
   "hcorstu": {
     "center": "h",
@@ -7366,7 +7487,8 @@ const PUZZLES = {
       "truth",
       "truths",
       "tush"
-    ]
+    ],
+    "maxScore": 240
   },
   "tceilos": {
     "center": "t",
@@ -7431,7 +7553,8 @@ const PUZZLES = {
       "toot",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 256
   },
   "ndegilw": {
     "center": "n",
@@ -7483,7 +7606,8 @@ const PUZZLES = {
       "winged",
       "winnie",
       "winning"
-    ]
+    ],
+    "maxScore": 242
   },
   "sceiklp": {
     "center": "s",
@@ -7542,7 +7666,8 @@ const PUZZLES = {
       "spikes",
       "spill",
       "spills"
-    ]
+    ],
+    "maxScore": 258
   },
   "eblortu": {
     "center": "e",
@@ -7607,7 +7732,8 @@ const PUZZLES = {
       "turret",
       "turtle",
       "utter"
-    ]
+    ],
+    "maxScore": 241
   },
   "ebilrty": {
     "center": "e",
@@ -7665,7 +7791,8 @@ const PUZZLES = {
       "tyre",
       "tyrell",
       "yeti"
-    ]
+    ],
+    "maxScore": 249
   },
   "lefiosw": {
     "center": "l",
@@ -7736,7 +7863,8 @@ const PUZZLES = {
       "wolfe",
       "wolff",
       "wool"
-    ]
+    ],
+    "maxScore": 256
   },
   "gaelrst": {
     "center": "g",
@@ -7795,7 +7923,8 @@ const PUZZLES = {
       "stagger",
       "target",
       "targets"
-    ]
+    ],
+    "maxScore": 253
   },
   "daeklst": {
     "center": "d",
@@ -7853,7 +7982,8 @@ const PUZZLES = {
       "tasted",
       "teased",
       "tested"
-    ]
+    ],
+    "maxScore": 251
   },
   "ghiknst": {
     "center": "g",
@@ -7904,7 +8034,8 @@ const PUZZLES = {
       "thinking",
       "tight",
       "tights"
-    ]
+    ],
+    "maxScore": 260
   },
   "oacehls": {
     "center": "o",
@@ -7965,7 +8096,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 243
   },
   "defhins": {
     "center": "d",
@@ -8023,7 +8155,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sinned"
-    ]
+    ],
+    "maxScore": 255
   },
   "pcdeoru": {
     "center": "p",
@@ -8080,7 +8213,8 @@ const PUZZLES = {
       "roper",
       "rupee",
       "upper"
-    ]
+    ],
+    "maxScore": 254
   },
   "obdersv": {
     "center": "o",
@@ -8135,7 +8269,8 @@ const PUZZLES = {
       "sore",
       "sores",
       "voodoo"
-    ]
+    ],
+    "maxScore": 239
   },
   "ecilost": {
     "center": "e",
@@ -8195,7 +8330,8 @@ const PUZZLES = {
       "titties",
       "toilet",
       "toilets"
-    ]
+    ],
+    "maxScore": 260
   },
   "oaehpst": {
     "center": "o",
@@ -8265,7 +8401,8 @@ const PUZZLES = {
       "tops",
       "tosh",
       "toss"
-    ]
+    ],
+    "maxScore": 256
   },
   "abeilrv": {
     "center": "a",
@@ -8330,7 +8467,8 @@ const PUZZLES = {
       "vial",
       "villa",
       "viva"
-    ]
+    ],
+    "maxScore": 244
   },
   "rdefipt": {
     "center": "r",
@@ -8395,7 +8533,8 @@ const PUZZLES = {
       "tripe",
       "tripp",
       "tripped"
-    ]
+    ],
+    "maxScore": 256
   },
   "oefilns": {
     "center": "o",
@@ -8456,7 +8595,8 @@ const PUZZLES = {
       "solo",
       "solos",
       "soon"
-    ]
+    ],
+    "maxScore": 248
   },
   "deflors": {
     "center": "d",
@@ -8519,7 +8659,8 @@ const PUZZLES = {
       "seed",
       "seeds",
       "sled"
-    ]
+    ],
+    "maxScore": 242
   },
   "nadelpt": {
     "center": "n",
@@ -8578,7 +8719,8 @@ const PUZZLES = {
       "tend",
       "tended",
       "tent"
-    ]
+    ],
+    "maxScore": 249
   },
   "daefrtw": {
     "center": "d",
@@ -8637,7 +8779,8 @@ const PUZZLES = {
       "watered",
       "wedded",
       "weed"
-    ]
+    ],
+    "maxScore": 253
   },
   "aeilmpr": {
     "center": "a",
@@ -8713,7 +8856,8 @@ const PUZZLES = {
       "reappear",
       "rear",
       "repair"
-    ]
+    ],
+    "maxScore": 251
   },
   "scghint": {
     "center": "s",
@@ -8762,7 +8906,8 @@ const PUZZLES = {
       "thighs",
       "things",
       "tights"
-    ]
+    ],
+    "maxScore": 253
   },
   "caeorsw": {
     "center": "c",
@@ -8817,7 +8962,8 @@ const PUZZLES = {
       "soccer",
       "sorcerer",
       "sorceress"
-    ]
+    ],
+    "maxScore": 248
   },
   "sainotv": {
     "center": "s",
@@ -8861,7 +9007,8 @@ const PUZZLES = {
       "visions",
       "visit",
       "visits"
-    ]
+    ],
+    "maxScore": 238
   },
   "mabdeor": {
     "center": "m",
@@ -8925,7 +9072,8 @@ const PUZZLES = {
       "remember",
       "remembered",
       "room"
-    ]
+    ],
+    "maxScore": 257
   },
   "ngikmos": {
     "center": "n",
@@ -8983,7 +9131,8 @@ const PUZZLES = {
       "song",
       "songs",
       "soon"
-    ]
+    ],
+    "maxScore": 248
   },
   "dbenoru": {
     "center": "d",
@@ -9044,7 +9193,8 @@ const PUZZLES = {
       "undo",
       "undone",
       "undue"
-    ]
+    ],
+    "maxScore": 247
   },
   "laceirv": {
     "center": "l",
@@ -9105,7 +9255,8 @@ const PUZZLES = {
       "vial",
       "villa",
       "virile"
-    ]
+    ],
+    "maxScore": 253
   },
   "ecdpstu": {
     "center": "e",
@@ -9161,7 +9312,8 @@ const PUZZLES = {
       "upset",
       "upsets",
       "used"
-    ]
+    ],
+    "maxScore": 247
   },
   "lehnost": {
     "center": "l",
@@ -9226,7 +9378,8 @@ const PUZZLES = {
       "tool",
       "tools",
       "toothless"
-    ]
+    ],
+    "maxScore": 264
   },
   "ecdgiln": {
     "center": "e",
@@ -9281,7 +9434,8 @@ const PUZZLES = {
       "nice",
       "niece",
       "nine"
-    ]
+    ],
+    "maxScore": 243
   },
   "ediknsy": {
     "center": "e",
@@ -9341,7 +9495,8 @@ const PUZZLES = {
       "sides",
       "sidney",
       "sinned"
-    ]
+    ],
+    "maxScore": 243
   },
   "dcefint": {
     "center": "d",
@@ -9393,7 +9548,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "tinted"
-    ]
+    ],
+    "maxScore": 244
   },
   "daelorv": {
     "center": "d",
@@ -9456,7 +9612,8 @@ const PUZZLES = {
       "rodeo",
       "rolled",
       "voodoo"
-    ]
+    ],
+    "maxScore": 247
   },
   "racdekn": {
     "center": "r",
@@ -9522,7 +9679,8 @@ const PUZZLES = {
       "reek",
       "render",
       "rendered"
-    ]
+    ],
+    "maxScore": 250
   },
   "eabdgns": {
     "center": "e",
@@ -9584,7 +9742,8 @@ const PUZZLES = {
       "sense",
       "sensed",
       "senses"
-    ]
+    ],
+    "maxScore": 240
   },
   "vbeilrs": {
     "center": "v",
@@ -9636,7 +9795,8 @@ const PUZZLES = {
       "viii",
       "virile",
       "visible"
-    ]
+    ],
+    "maxScore": 248
   },
   "lacdeno": {
     "center": "l",
@@ -9705,7 +9865,8 @@ const PUZZLES = {
       "needle",
       "noodle",
       "olden"
-    ]
+    ],
+    "maxScore": 253
   },
   "acdelrw": {
     "center": "a",
@@ -9776,7 +9937,8 @@ const PUZZLES = {
       "ward",
       "ware",
       "wear"
-    ]
+    ],
+    "maxScore": 266
   },
   "lbeimsu": {
     "center": "l",
@@ -9837,7 +9999,8 @@ const PUZZLES = {
       "smile",
       "smiles",
       "sublime"
-    ]
+    ],
+    "maxScore": 241
   },
   "ecginrv": {
     "center": "e",
@@ -9891,7 +10054,8 @@ const PUZZLES = {
       "vice",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 245
   },
   "radegvy": {
     "center": "r",
@@ -9951,7 +10115,8 @@ const PUZZLES = {
       "very",
       "yard",
       "year"
-    ]
+    ],
+    "maxScore": 237
   },
   "tabeisu": {
     "center": "t",
@@ -10018,7 +10183,8 @@ const PUZZLES = {
       "tube",
       "tubes",
       "tutu"
-    ]
+    ],
+    "maxScore": 265
   },
   "raefltw": {
     "center": "r",
@@ -10080,7 +10246,8 @@ const PUZZLES = {
       "wear",
       "welfare",
       "weller"
-    ]
+    ],
+    "maxScore": 244
   },
   "sbemnot": {
     "center": "s",
@@ -10142,7 +10309,8 @@ const PUZZLES = {
       "tons",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 242
   },
   "eacirsz": {
     "center": "e",
@@ -10203,7 +10371,8 @@ const PUZZLES = {
       "sire",
       "size",
       "sizes"
-    ]
+    ],
+    "maxScore": 262
   },
   "ibdersu": {
     "center": "i",
@@ -10257,7 +10426,8 @@ const PUZZLES = {
       "sides",
       "sire",
       "sirius"
-    ]
+    ],
+    "maxScore": 250
   },
   "ienqstu": {
     "center": "i",
@@ -10307,7 +10477,8 @@ const PUZZLES = {
       "unites",
       "units",
       "untie"
-    ]
+    ],
+    "maxScore": 250
   },
   "hadertw": {
     "center": "h",
@@ -10366,7 +10537,8 @@ const PUZZLES = {
       "where",
       "wrath",
       "wreath"
-    ]
+    ],
+    "maxScore": 259
   },
   "rbdeosu": {
     "center": "r",
@@ -10428,7 +10600,8 @@ const PUZZLES = {
       "sure",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 250
   },
   "eailmnr": {
     "center": "e",
@@ -10499,7 +10672,8 @@ const PUZZLES = {
       "reina",
       "remain",
       "rimmer"
-    ]
+    ],
+    "maxScore": 251
   },
   "scdeilo": {
     "center": "s",
@@ -10560,7 +10734,8 @@ const PUZZLES = {
       "solid",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 250
   },
   "ealnrtx": {
     "center": "e",
@@ -10630,7 +10805,8 @@ const PUZZLES = {
       "text",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 265
   },
   "eadhlty": {
     "center": "e",
@@ -10694,7 +10870,8 @@ const PUZZLES = {
       "they",
       "yeah",
       "yelled"
-    ]
+    ],
+    "maxScore": 238
   },
   "daeglnt": {
     "center": "d",
@@ -10755,7 +10932,8 @@ const PUZZLES = {
       "tanned",
       "tend",
       "tended"
-    ]
+    ],
+    "maxScore": 254
   },
   "acegilr": {
     "center": "a",
@@ -10820,7 +10998,8 @@ const PUZZLES = {
       "rear",
       "recall",
       "reggae"
-    ]
+    ],
+    "maxScore": 238
   },
   "dehimns": {
     "center": "d",
@@ -10879,7 +11058,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sinned"
-    ]
+    ],
+    "maxScore": 255
   },
   "rcdelou": {
     "center": "r",
@@ -10941,7 +11121,8 @@ const PUZZLES = {
       "ruled",
       "ruler",
       "ulcer"
-    ]
+    ],
+    "maxScore": 246
   },
   "pacehst": {
     "center": "p",
@@ -11003,7 +11184,8 @@ const PUZZLES = {
       "tape",
       "tapes",
       "taps"
-    ]
+    ],
+    "maxScore": 252
   },
   "haelmrt": {
     "center": "h",
@@ -11065,7 +11247,8 @@ const PUZZLES = {
       "theta",
       "threat",
       "three"
-    ]
+    ],
+    "maxScore": 253
   },
   "labegrt": {
     "center": "l",
@@ -11125,7 +11308,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 242
   },
   "ignprsu": {
     "center": "i",
@@ -11172,7 +11356,8 @@ const PUZZLES = {
       "uprising",
       "urging",
       "using"
-    ]
+    ],
+    "maxScore": 253
   },
   "daelnrv": {
     "center": "d",
@@ -11234,7 +11419,8 @@ const PUZZLES = {
       "reverend",
       "vandal",
       "veranda"
-    ]
+    ],
+    "maxScore": 247
   },
   "wadenor": {
     "center": "w",
@@ -11289,7 +11475,8 @@ const PUZZLES = {
       "word",
       "worn",
       "wren"
-    ]
+    ],
+    "maxScore": 242
   },
   "sabilot": {
     "center": "s",
@@ -11359,7 +11546,8 @@ const PUZZLES = {
       "tools",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 254
   },
   "nabcdel": {
     "center": "n",
@@ -11417,7 +11605,8 @@ const PUZZLES = {
       "needed",
       "needle",
       "needn"
-    ]
+    ],
+    "maxScore": 246
   },
   "saeinov": {
     "center": "s",
@@ -11469,7 +11658,8 @@ const PUZZLES = {
       "visas",
       "vision",
       "visions"
-    ]
+    ],
+    "maxScore": 249
   },
   "cenortu": {
     "center": "c",
@@ -11520,7 +11710,8 @@ const PUZZLES = {
       "renounce",
       "truce",
       "uncut"
-    ]
+    ],
+    "maxScore": 239
   },
   "daeglst": {
     "center": "d",
@@ -11580,7 +11771,8 @@ const PUZZLES = {
       "tasted",
       "teased",
       "tested"
-    ]
+    ],
+    "maxScore": 255
   },
   "labesuv": {
     "center": "l",
@@ -11647,7 +11839,8 @@ const PUZZLES = {
       "veal",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 263
   },
   "dabeorw": {
     "center": "d",
@@ -11710,7 +11903,8 @@ const PUZZLES = {
       "weed",
       "wood",
       "word"
-    ]
+    ],
+    "maxScore": 246
   },
   "rcdehot": {
     "center": "r",
@@ -11768,7 +11962,8 @@ const PUZZLES = {
       "tore",
       "tree",
       "trot"
-    ]
+    ],
+    "maxScore": 254
   },
   "sabegln": {
     "center": "s",
@@ -11830,7 +12025,8 @@ const PUZZLES = {
       "slab",
       "slag",
       "snag"
-    ]
+    ],
+    "maxScore": 248
   },
   "lefisty": {
     "center": "l",
@@ -11894,7 +12090,8 @@ const PUZZLES = {
       "tilt",
       "title",
       "titles"
-    ]
+    ],
+    "maxScore": 242
   },
   "echiprt": {
     "center": "e",
@@ -11956,7 +12153,8 @@ const PUZZLES = {
       "tire",
       "tree",
       "tripe"
-    ]
+    ],
+    "maxScore": 245
   },
   "oahrstu": {
     "center": "o",
@@ -12022,7 +12220,8 @@ const PUZZLES = {
       "tout",
       "trot",
       "trout"
-    ]
+    ],
+    "maxScore": 248
   },
   "timoprs": {
     "center": "t",
@@ -12087,7 +12286,8 @@ const PUZZLES = {
       "troop",
       "troops",
       "trot"
-    ]
+    ],
+    "maxScore": 246
   },
   "neiortu": {
     "center": "n",
@@ -12145,7 +12345,8 @@ const PUZZLES = {
       "unite",
       "untie",
       "untrue"
-    ]
+    ],
+    "maxScore": 242
   },
   "nabgikr": {
     "center": "n",
@@ -12201,7 +12402,8 @@ const PUZZLES = {
       "ring",
       "ringing",
       "rink"
-    ]
+    ],
+    "maxScore": 250
   },
   "lceikns": {
     "center": "l",
@@ -12258,7 +12460,8 @@ const PUZZLES = {
       "slices",
       "slick",
       "slink"
-    ]
+    ],
+    "maxScore": 249
   },
   "acelmor": {
     "center": "a",
@@ -12332,7 +12535,8 @@ const PUZZLES = {
       "rear",
       "recall",
       "roar"
-    ]
+    ],
+    "maxScore": 264
   },
   "tceimno": {
     "center": "t",
@@ -12388,7 +12592,8 @@ const PUZZLES = {
       "tonino",
       "toot",
       "totem"
-    ]
+    ],
+    "maxScore": 246
   },
   "lehrstu": {
     "center": "l",
@@ -12447,7 +12652,8 @@ const PUZZLES = {
       "tells",
       "turtle",
       "turtles"
-    ]
+    ],
+    "maxScore": 255
   },
   "edfintv": {
     "center": "e",
@@ -12508,7 +12714,8 @@ const PUZZLES = {
       "vent",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 243
   },
   "aeghirt": {
     "center": "a",
@@ -12573,7 +12780,8 @@ const PUZZLES = {
       "trait",
       "treat",
       "triage"
-    ]
+    ],
+    "maxScore": 253
   },
   "aceiost": {
     "center": "a",
@@ -12630,7 +12838,8 @@ const PUZZLES = {
       "tattoos",
       "tease",
       "toast"
-    ]
+    ],
+    "maxScore": 262
   },
   "sceimot": {
     "center": "s",
@@ -12686,7 +12895,8 @@ const PUZZLES = {
       "titties",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 250
   },
   "sdelopx": {
     "center": "s",
@@ -12744,7 +12954,8 @@ const PUZZLES = {
       "spell",
       "spelled",
       "spells"
-    ]
+    ],
+    "maxScore": 255
   },
   "ocelmps": {
     "center": "o",
@@ -12817,7 +13028,8 @@ const PUZZLES = {
       "solo",
       "solos",
       "some"
-    ]
+    ],
+    "maxScore": 251
   },
   "ncdegit": {
     "center": "n",
@@ -12870,7 +13082,8 @@ const PUZZLES = {
       "tent",
       "tinted",
       "tintin"
-    ]
+    ],
+    "maxScore": 251
   },
   "caeilpr": {
     "center": "c",
@@ -12929,7 +13142,8 @@ const PUZZLES = {
       "replace",
       "replica",
       "rice"
-    ]
+    ],
+    "maxScore": 259
   },
   "eadhnru": {
     "center": "e",
@@ -12995,7 +13209,8 @@ const PUZZLES = {
       "under",
       "undue",
       "unheard"
-    ]
+    ],
+    "maxScore": 241
   },
   "ecimnot": {
     "center": "e",
@@ -13058,7 +13273,8 @@ const PUZZLES = {
       "tome",
       "tone",
       "totem"
-    ]
+    ],
+    "maxScore": 259
   },
   "tcehisw": {
     "center": "t",
@@ -13116,7 +13332,8 @@ const PUZZLES = {
       "with",
       "wits",
       "witsec"
-    ]
+    ],
+    "maxScore": 247
   },
   "meforst": {
     "center": "m",
@@ -13176,7 +13393,8 @@ const PUZZLES = {
       "totem",
       "tremor",
       "tremors"
-    ]
+    ],
+    "maxScore": 240
   },
   "edlnpru": {
     "center": "e",
@@ -13241,7 +13459,8 @@ const PUZZLES = {
       "under",
       "undue",
       "upper"
-    ]
+    ],
+    "maxScore": 250
   },
   "aelorsv": {
     "center": "a",
@@ -13303,7 +13522,8 @@ const PUZZLES = {
       "vases",
       "vassal",
       "veal"
-    ]
+    ],
+    "maxScore": 245
   },
   "raceisz": {
     "center": "r",
@@ -13365,7 +13585,8 @@ const PUZZLES = {
       "series",
       "sierra",
       "sire"
-    ]
+    ],
+    "maxScore": 256
   },
   "ndefhis": {
     "center": "n",
@@ -13418,7 +13639,8 @@ const PUZZLES = {
       "shined",
       "shines",
       "sinned"
-    ]
+    ],
+    "maxScore": 244
   },
   "ebdloru": {
     "center": "e",
@@ -13485,7 +13707,8 @@ const PUZZLES = {
       "rule",
       "ruled",
       "ruler"
-    ]
+    ],
+    "maxScore": 252
   },
   "daempst": {
     "center": "d",
@@ -13541,7 +13764,8 @@ const PUZZLES = {
       "teamed",
       "teased",
       "tested"
-    ]
+    ],
+    "maxScore": 249
   },
   "eabdglm": {
     "center": "e",
@@ -13609,7 +13833,8 @@ const PUZZLES = {
       "mead",
       "meade",
       "meal"
-    ]
+    ],
+    "maxScore": 249
   },
   "eamprtu": {
     "center": "e",
@@ -13678,7 +13903,8 @@ const PUZZLES = {
       "turret",
       "upper",
       "utter"
-    ]
+    ],
+    "maxScore": 258
   },
   "rcehstw": {
     "center": "r",
@@ -13726,7 +13952,8 @@ const PUZZLES = {
       "where",
       "wretch",
       "wretches"
-    ]
+    ],
+    "maxScore": 240
   },
   "aceortv": {
     "center": "a",
@@ -13787,7 +14014,8 @@ const PUZZLES = {
       "tract",
       "tractor",
       "treat"
-    ]
+    ],
+    "maxScore": 251
   },
   "aegnost": {
     "center": "a",
@@ -13852,7 +14080,8 @@ const PUZZLES = {
       "tenants",
       "toast",
       "toga"
-    ]
+    ],
+    "maxScore": 262
   },
   "nadeimx": {
     "center": "n",
@@ -13912,7 +14141,8 @@ const PUZZLES = {
       "needed",
       "needn",
       "nine"
-    ]
+    ],
+    "maxScore": 248
   },
   "seghnrt": {
     "center": "s",
@@ -13961,7 +14191,8 @@ const PUZZLES = {
       "therese",
       "threes",
       "trees"
-    ]
+    ],
+    "maxScore": 251
   },
   "iefgnor": {
     "center": "i",
@@ -14011,7 +14242,8 @@ const PUZZLES = {
       "ringer",
       "ringing",
       "ringo"
-    ]
+    ],
+    "maxScore": 257
   },
   "ldehors": {
     "center": "l",
@@ -14076,7 +14308,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 243
   },
   "hacegrs": {
     "center": "h",
@@ -14132,7 +14365,8 @@ const PUZZLES = {
       "shares",
       "shears",
       "sheer"
-    ]
+    ],
+    "maxScore": 244
   },
   "efnortu": {
     "center": "e",
@@ -14193,7 +14427,8 @@ const PUZZLES = {
       "turret",
       "untrue",
       "utter"
-    ]
+    ],
+    "maxScore": 251
   },
   "laciost": {
     "center": "l",
@@ -14262,7 +14497,8 @@ const PUZZLES = {
       "tool",
       "tools",
       "total"
-    ]
+    ],
+    "maxScore": 247
   },
   "idepstu": {
     "center": "i",
@@ -14315,7 +14551,8 @@ const PUZZLES = {
       "tissues",
       "titties",
       "upside"
-    ]
+    ],
+    "maxScore": 259
   },
   "daegmno": {
     "center": "d",
@@ -14382,7 +14619,8 @@ const PUZZLES = {
       "nodded",
       "node",
       "nomad"
-    ]
+    ],
+    "maxScore": 258
   },
   "laeortv": {
     "center": "l",
@@ -14443,7 +14681,8 @@ const PUZZLES = {
       "valet",
       "valve",
       "veal"
-    ]
+    ],
+    "maxScore": 243
   },
   "cdehrsu": {
     "center": "c",
@@ -14493,7 +14732,8 @@ const PUZZLES = {
       "success",
       "successes",
       "such"
-    ]
+    ],
+    "maxScore": 256
   },
   "dceginr": {
     "center": "d",
@@ -14548,7 +14788,8 @@ const PUZZLES = {
       "rider",
       "ridge",
       "riding"
-    ]
+    ],
+    "maxScore": 262
   },
   "taelorv": {
     "center": "t",
@@ -14612,7 +14853,8 @@ const PUZZLES = {
       "veto",
       "vote",
       "voter"
-    ]
+    ],
+    "maxScore": 251
   },
   "radefow": {
     "center": "r",
@@ -14675,7 +14917,8 @@ const PUZZLES = {
       "warfare",
       "wear",
       "word"
-    ]
+    ],
+    "maxScore": 231
   },
   "egnostu": {
     "center": "e",
@@ -14735,7 +14978,8 @@ const PUZZLES = {
       "tune",
       "tunes",
       "unseen"
-    ]
+    ],
+    "maxScore": 246
   },
   "lacenrt": {
     "center": "l",
@@ -14796,7 +15040,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 275
   },
   "nagikos": {
     "center": "n",
@@ -14856,7 +15101,8 @@ const PUZZLES = {
       "song",
       "songs",
       "soon"
-    ]
+    ],
+    "maxScore": 249
   },
   "daegrtx": {
     "center": "d",
@@ -14912,7 +15158,8 @@ const PUZZLES = {
       "trader",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 247
   },
   "ibdegrs": {
     "center": "i",
@@ -14968,7 +15215,8 @@ const PUZZLES = {
       "sides",
       "siege",
       "sire"
-    ]
+    ],
+    "maxScore": 246
   },
   "eahilpr": {
     "center": "e",
@@ -15042,7 +15290,8 @@ const PUZZLES = {
       "ripe",
       "ripper",
       "ripple"
-    ]
+    ],
+    "maxScore": 257
   },
   "telrsuv": {
     "center": "t",
@@ -15097,7 +15346,8 @@ const PUZZLES = {
       "vests",
       "vulture",
       "vultures"
-    ]
+    ],
+    "maxScore": 253
   },
   "edintuv": {
     "center": "e",
@@ -15161,7 +15411,8 @@ const PUZZLES = {
       "venue",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 252
   },
   "nadefgi": {
     "center": "n",
@@ -15219,7 +15470,8 @@ const PUZZLES = {
       "needing",
       "needn",
       "nine"
-    ]
+    ],
+    "maxScore": 263
   },
   "daekmrt": {
     "center": "d",
@@ -15278,7 +15530,8 @@ const PUZZLES = {
       "trader",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 252
   },
   "ncekors": {
     "center": "n",
@@ -15337,7 +15590,8 @@ const PUZZLES = {
       "soon",
       "sooner",
       "soren"
-    ]
+    ],
+    "maxScore": 247
   },
   "rahostu": {
     "center": "r",
@@ -15403,7 +15657,8 @@ const PUZZLES = {
       "trusts",
       "truth",
       "truths"
-    ]
+    ],
+    "maxScore": 254
   },
   "odeinst": {
     "center": "o",
@@ -15463,7 +15718,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "tossed"
-    ]
+    ],
+    "maxScore": 257
   },
   "rdegnov": {
     "center": "r",
@@ -15519,7 +15775,8 @@ const PUZZLES = {
       "rover",
       "veer",
       "verge"
-    ]
+    ],
+    "maxScore": 248
   },
   "daehrty": {
     "center": "d",
@@ -15579,7 +15836,8 @@ const PUZZLES = {
       "tread",
       "treated",
       "yard"
-    ]
+    ],
+    "maxScore": 260
   },
   "oceintv": {
     "center": "o",
@@ -15631,7 +15889,8 @@ const PUZZLES = {
       "veto",
       "voice",
       "vote"
-    ]
+    ],
+    "maxScore": 248
   },
   "reinotv": {
     "center": "r",
@@ -15688,7 +15947,8 @@ const PUZZLES = {
       "trot",
       "veer",
       "voter"
-    ]
+    ],
+    "maxScore": 250
   },
   "tbemnor": {
     "center": "t",
@@ -15752,7 +16012,8 @@ const PUZZLES = {
       "tremor",
       "trombone",
       "trot"
-    ]
+    ],
+    "maxScore": 252
   },
   "degnorw": {
     "center": "d",
@@ -15811,7 +16072,8 @@ const PUZZLES = {
       "wooden",
       "word",
       "wronged"
-    ]
+    ],
+    "maxScore": 243
   },
   "laeiort": {
     "center": "l",
@@ -15877,7 +16139,8 @@ const PUZZLES = {
       "trailer",
       "trial",
       "troll"
-    ]
+    ],
+    "maxScore": 258
   },
   "aceklmr": {
     "center": "a",
@@ -15951,7 +16214,8 @@ const PUZZLES = {
       "recall",
       "remake",
       "remark"
-    ]
+    ],
+    "maxScore": 237
   },
   "rehmnos": {
     "center": "r",
@@ -16008,7 +16272,8 @@ const PUZZLES = {
       "sore",
       "soren",
       "sores"
-    ]
+    ],
+    "maxScore": 253
   },
   "obcersu": {
     "center": "o",
@@ -16061,7 +16326,8 @@ const PUZZLES = {
       "source",
       "sources",
       "successor"
-    ]
+    ],
+    "maxScore": 246
   },
   "mdeilos": {
     "center": "m",
@@ -16130,7 +16396,8 @@ const PUZZLES = {
       "smiles",
       "sodom",
       "some"
-    ]
+    ],
+    "maxScore": 263
   },
   "caehlns": {
     "center": "c",
@@ -16188,7 +16455,8 @@ const PUZZLES = {
       "scans",
       "scene",
       "scenes"
-    ]
+    ],
+    "maxScore": 261
   },
   "caeorsy": {
     "center": "c",
@@ -16243,7 +16511,8 @@ const PUZZLES = {
       "sorcerer",
       "sorceress",
       "sorcery"
-    ]
+    ],
+    "maxScore": 254
   },
   "idelrvy": {
     "center": "i",
@@ -16300,7 +16569,8 @@ const PUZZLES = {
       "virile",
       "yield",
       "yielded"
-    ]
+    ],
+    "maxScore": 254
   },
   "racelnv": {
     "center": "r",
@@ -16358,7 +16628,8 @@ const PUZZLES = {
       "reverence",
       "valera",
       "veer"
-    ]
+    ],
+    "maxScore": 257
   },
   "sacinpt": {
     "center": "s",
@@ -16411,7 +16682,8 @@ const PUZZLES = {
       "statistics",
       "stint",
       "taps"
-    ]
+    ],
+    "maxScore": 252
   },
   "nacghit": {
     "center": "n",
@@ -16465,7 +16737,8 @@ const PUZZLES = {
       "thin",
       "thing",
       "tintin"
-    ]
+    ],
+    "maxScore": 248
   },
   "echikns": {
     "center": "e",
@@ -16515,7 +16788,8 @@ const PUZZLES = {
       "shine",
       "shines",
       "sickness"
-    ]
+    ],
+    "maxScore": 234
   },
   "rcelnot": {
     "center": "r",
@@ -16570,7 +16844,8 @@ const PUZZLES = {
       "tree",
       "troll",
       "trot"
-    ]
+    ],
+    "maxScore": 245
   },
   "ndehrtu": {
     "center": "n",
@@ -16626,7 +16901,8 @@ const PUZZLES = {
       "under",
       "undue",
       "untrue"
-    ]
+    ],
+    "maxScore": 239
   },
   "tabdery": {
     "center": "t",
@@ -16684,7 +16960,8 @@ const PUZZLES = {
       "tree",
       "trey",
       "tyre"
-    ]
+    ],
+    "maxScore": 247
   },
   "ndeimru": {
     "center": "n",
@@ -16737,7 +17014,8 @@ const PUZZLES = {
       "undermine",
       "undermined",
       "undue"
-    ]
+    ],
+    "maxScore": 242
   },
   "naghisw": {
     "center": "n",
@@ -16794,7 +17072,8 @@ const PUZZLES = {
       "winning",
       "winnings",
       "wishing"
-    ]
+    ],
+    "maxScore": 258
   },
   "teilosv": {
     "center": "t",
@@ -16855,7 +17134,8 @@ const PUZZLES = {
       "visits",
       "vote",
       "votes"
-    ]
+    ],
+    "maxScore": 234
   },
   "maegort": {
     "center": "m",
@@ -16922,7 +17202,8 @@ const PUZZLES = {
       "totem",
       "tram",
       "tremor"
-    ]
+    ],
+    "maxScore": 244
   },
   "meinstu": {
     "center": "m",
@@ -16985,7 +17266,8 @@ const PUZZLES = {
       "summit",
       "time",
       "times"
-    ]
+    ],
+    "maxScore": 250
   },
   "racfost": {
     "center": "r",
@@ -17045,7 +17327,8 @@ const PUZZLES = {
       "tractor",
       "tractors",
       "trot"
-    ]
+    ],
+    "maxScore": 246
   },
   "helopst": {
     "center": "h",
@@ -17104,7 +17387,8 @@ const PUZZLES = {
       "tooth",
       "toothless",
       "tosh"
-    ]
+    ],
+    "maxScore": 239
   },
   "eachmnt": {
     "center": "e",
@@ -17167,7 +17451,8 @@ const PUZZLES = {
       "theme",
       "then",
       "theta"
-    ]
+    ],
+    "maxScore": 248
   },
   "aeilpsy": {
     "center": "a",
@@ -17228,7 +17513,8 @@ const PUZZLES = {
       "seals",
       "slap",
       "slaps"
-    ]
+    ],
+    "maxScore": 247
   },
   "daersvy": {
     "center": "d",
@@ -17284,7 +17570,8 @@ const PUZZLES = {
       "versed",
       "yard",
       "yards"
-    ]
+    ],
+    "maxScore": 263
   },
   "sdegimu": {
     "center": "s",
@@ -17336,7 +17623,8 @@ const PUZZLES = {
       "smudge",
       "suede",
       "used"
-    ]
+    ],
+    "maxScore": 245
   },
   "dehinrt": {
     "center": "d",
@@ -17399,7 +17687,8 @@ const PUZZLES = {
       "trend",
       "trident",
       "tried"
-    ]
+    ],
+    "maxScore": 263
   },
   "rbemotu": {
     "center": "r",
@@ -17459,7 +17748,8 @@ const PUZZLES = {
       "turret",
       "umberto",
       "utter"
-    ]
+    ],
+    "maxScore": 234
   },
   "eacnosu": {
     "center": "e",
@@ -17514,7 +17804,8 @@ const PUZZLES = {
       "success",
       "successes",
       "unseen"
-    ]
+    ],
+    "maxScore": 249
   },
   "raefnot": {
     "center": "r",
@@ -17583,7 +17874,8 @@ const PUZZLES = {
       "treat",
       "tree",
       "trot"
-    ]
+    ],
+    "maxScore": 246
   },
   "acehnpr": {
     "center": "a",
@@ -17656,7 +17948,8 @@ const PUZZLES = {
       "reappear",
       "rear",
       "rhea"
-    ]
+    ],
+    "maxScore": 252
   },
   "edhirtw": {
     "center": "e",
@@ -17721,7 +18014,8 @@ const PUZZLES = {
       "withered",
       "write",
       "writer"
-    ]
+    ],
+    "maxScore": 237
   },
   "ebfginr": {
     "center": "e",
@@ -17776,7 +18070,8 @@ const PUZZLES = {
       "reigning",
       "rein",
       "ringer"
-    ]
+    ],
+    "maxScore": 246
   },
   "udegist": {
     "center": "u",
@@ -17825,7 +18120,8 @@ const PUZZLES = {
       "tissues",
       "tutu",
       "used"
-    ]
+    ],
+    "maxScore": 243
   },
   "adehiln": {
     "center": "a",
@@ -17890,7 +18186,8 @@ const PUZZLES = {
       "nada",
       "nail",
       "nailed"
-    ]
+    ],
+    "maxScore": 255
   },
   "gadhinr": {
     "center": "g",
@@ -17944,7 +18241,8 @@ const PUZZLES = {
       "riding",
       "ring",
       "ringing"
-    ]
+    ],
+    "maxScore": 247
   },
   "tafhirs": {
     "center": "t",
@@ -18001,7 +18299,8 @@ const PUZZLES = {
       "trait",
       "traits",
       "trash"
-    ]
+    ],
+    "maxScore": 240
   },
   "dceprst": {
     "center": "d",
@@ -18048,7 +18347,8 @@ const PUZZLES = {
       "stepped",
       "stressed",
       "tested"
-    ]
+    ],
+    "maxScore": 257
   },
   "ealqrsu": {
     "center": "e",
@@ -18111,7 +18411,8 @@ const PUZZLES = {
       "surreal",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 255
   },
   "tacefru": {
     "center": "t",
@@ -18171,7 +18472,8 @@ const PUZZLES = {
       "turret",
       "tutu",
       "utter"
-    ]
+    ],
+    "maxScore": 258
   },
   "tehilsw": {
     "center": "t",
@@ -18230,7 +18532,8 @@ const PUZZLES = {
       "wisest",
       "with",
       "wits"
-    ]
+    ],
+    "maxScore": 236
   },
   "acdeilm": {
     "center": "a",
@@ -18298,7 +18601,8 @@ const PUZZLES = {
       "meal",
       "mecca",
       "medical"
-    ]
+    ],
+    "maxScore": 244
   },
   "labdeor": {
     "center": "l",
@@ -18365,7 +18669,8 @@ const PUZZLES = {
       "rolled",
       "roller",
       "rollo"
-    ]
+    ],
+    "maxScore": 247
   },
   "tacinou": {
     "center": "t",
@@ -18417,7 +18722,8 @@ const PUZZLES = {
       "tutu",
       "uncut",
       "unit"
-    ]
+    ],
+    "maxScore": 249
   },
   "ueginst": {
     "center": "u",
@@ -18469,7 +18775,8 @@ const PUZZLES = {
       "unseen",
       "untie",
       "using"
-    ]
+    ],
+    "maxScore": 251
   },
   "rcehiot": {
     "center": "r",
@@ -18527,7 +18834,8 @@ const PUZZLES = {
       "tree",
       "trio",
       "trot"
-    ]
+    ],
+    "maxScore": 243
   },
   "rabceil": {
     "center": "r",
@@ -18588,7 +18896,8 @@ const PUZZLES = {
       "reel",
       "relic",
       "rice"
-    ]
+    ],
+    "maxScore": 232
   },
   "eahlosw": {
     "center": "e",
@@ -18653,7 +18962,8 @@ const PUZZLES = {
       "wholesale",
       "whooshes",
       "whose"
-    ]
+    ],
+    "maxScore": 268
   },
   "echopst": {
     "center": "e",
@@ -18712,7 +19022,8 @@ const PUZZLES = {
       "teeth",
       "test",
       "tests"
-    ]
+    ],
+    "maxScore": 248
   },
   "eacinsu": {
     "center": "e",
@@ -18764,7 +19075,8 @@ const PUZZLES = {
       "success",
       "successes",
       "unseen"
-    ]
+    ],
+    "maxScore": 250
   },
   "sdehmot": {
     "center": "s",
@@ -18832,7 +19144,8 @@ const PUZZLES = {
       "tosh",
       "toss",
       "tossed"
-    ]
+    ],
+    "maxScore": 263
   },
   "ecdinpt": {
     "center": "e",
@@ -18894,7 +19207,8 @@ const PUZZLES = {
       "tied",
       "tinted",
       "tipped"
-    ]
+    ],
+    "maxScore": 264
   },
   "reginsy": {
     "center": "r",
@@ -18944,7 +19258,8 @@ const PUZZLES = {
       "sirens",
       "syringe",
       "syringes"
-    ]
+    ],
+    "maxScore": 256
   },
   "iaghnsw": {
     "center": "i",
@@ -18997,7 +19312,8 @@ const PUZZLES = {
       "winnings",
       "wish",
       "wishing"
-    ]
+    ],
+    "maxScore": 248
   },
   "aelnopr": {
     "center": "a",
@@ -19063,7 +19379,8 @@ const PUZZLES = {
       "rear",
       "roan",
       "roar"
-    ]
+    ],
+    "maxScore": 242
   },
   "ebilmsu": {
     "center": "e",
@@ -19123,7 +19440,8 @@ const PUZZLES = {
       "smile",
       "smiles",
       "sublime"
-    ]
+    ],
+    "maxScore": 257
   },
   "obhrstu": {
     "center": "o",
@@ -19188,7 +19506,8 @@ const PUZZLES = {
       "tout",
       "trot",
       "trout"
-    ]
+    ],
+    "maxScore": 244
   },
   "tghnosu": {
     "center": "t",
@@ -19245,7 +19564,8 @@ const PUZZLES = {
       "tung",
       "tush",
       "tutu"
-    ]
+    ],
+    "maxScore": 243
   },
   "ebdglno": {
     "center": "e",
@@ -19308,7 +19628,8 @@ const PUZZLES = {
       "noodle",
       "noone",
       "olden"
-    ]
+    ],
+    "maxScore": 243
   },
   "baeilns": {
     "center": "b",
@@ -19363,7 +19684,8 @@ const PUZZLES = {
       "sabine",
       "sable",
       "slab"
-    ]
+    ],
+    "maxScore": 244
   },
   "cenostu": {
     "center": "c",
@@ -19416,7 +19738,8 @@ const PUZZLES = {
       "success",
       "successes",
       "uncut"
-    ]
+    ],
+    "maxScore": 246
   },
   "sefhiln": {
     "center": "s",
@@ -19471,7 +19794,8 @@ const PUZZLES = {
       "shin",
       "shine",
       "shines"
-    ]
+    ],
+    "maxScore": 250
   },
   "ibcders": {
     "center": "i",
@@ -19526,7 +19850,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sire"
-    ]
+    ],
+    "maxScore": 260
   },
   "sadeglv": {
     "center": "s",
@@ -19588,7 +19913,8 @@ const PUZZLES = {
       "vassal",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 263
   },
   "daelnru": {
     "center": "d",
@@ -19659,7 +19985,8 @@ const PUZZLES = {
       "ruled",
       "under",
       "undue"
-    ]
+    ],
+    "maxScore": 255
   },
   "daegorw": {
     "center": "d",
@@ -19724,7 +20051,8 @@ const PUZZLES = {
       "weed",
       "wood",
       "word"
-    ]
+    ],
+    "maxScore": 255
   },
   "radenuw": {
     "center": "r",
@@ -19784,7 +20112,8 @@ const PUZZLES = {
       "warren",
       "wear",
       "wren"
-    ]
+    ],
+    "maxScore": 232
   },
   "dacelrw": {
     "center": "d",
@@ -19845,7 +20174,8 @@ const PUZZLES = {
       "weed",
       "weld",
       "welded"
-    ]
+    ],
+    "maxScore": 246
   },
   "denprtu": {
     "center": "d",
@@ -19900,7 +20230,8 @@ const PUZZLES = {
       "under",
       "undue",
       "uttered"
-    ]
+    ],
+    "maxScore": 250
   },
   "rdentuv": {
     "center": "r",
@@ -19955,7 +20286,8 @@ const PUZZLES = {
       "veer",
       "venture",
       "ventured"
-    ]
+    ],
+    "maxScore": 250
   },
   "tacekps": {
     "center": "t",
@@ -20021,7 +20353,8 @@ const PUZZLES = {
       "tease",
       "test",
       "tests"
-    ]
+    ],
+    "maxScore": 260
   },
   "raeiptz": {
     "center": "r",
@@ -20088,7 +20421,8 @@ const PUZZLES = {
       "trip",
       "tripe",
       "tripp"
-    ]
+    ],
+    "maxScore": 250
   },
   "ladegnr": {
     "center": "l",
@@ -20151,7 +20485,8 @@ const PUZZLES = {
       "needle",
       "real",
       "reel"
-    ]
+    ],
+    "maxScore": 255
   },
   "vaenrst": {
     "center": "v",
@@ -20201,7 +20536,8 @@ const PUZZLES = {
       "vests",
       "veteran",
       "veterans"
-    ]
+    ],
+    "maxScore": 244
   },
   "eagilmn": {
     "center": "e",
@@ -20265,7 +20601,8 @@ const PUZZLES = {
       "minnie",
       "name",
       "nine"
-    ]
+    ],
+    "maxScore": 246
   },
   "iacdenr": {
     "center": "i",
@@ -20324,7 +20661,8 @@ const PUZZLES = {
       "ridden",
       "ride",
       "rider"
-    ]
+    ],
+    "maxScore": 248
   },
   "eacdipt": {
     "center": "e",
@@ -20383,7 +20721,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "tipped"
-    ]
+    ],
+    "maxScore": 246
   },
   "hcekors": {
     "center": "h",
@@ -20434,7 +20773,8 @@ const PUZZLES = {
       "shook",
       "shore",
       "shores"
-    ]
+    ],
+    "maxScore": 234
   },
   "gefinrt": {
     "center": "g",
@@ -20479,7 +20819,8 @@ const PUZZLES = {
       "tiring",
       "trigger",
       "triggering"
-    ]
+    ],
+    "maxScore": 240
   },
   "deimops": {
     "center": "d",
@@ -20537,7 +20878,8 @@ const PUZZLES = {
       "sodom",
       "speed",
       "speeds"
-    ]
+    ],
+    "maxScore": 249
   },
   "cefoprs": {
     "center": "c",
@@ -20587,7 +20929,8 @@ const PUZZLES = {
       "sorcerer",
       "sorceress",
       "specs"
-    ]
+    ],
+    "maxScore": 247
   },
   "ebmnost": {
     "center": "e",
@@ -20657,7 +21000,8 @@ const PUZZLES = {
       "tones",
       "tonnes",
       "totem"
-    ]
+    ],
+    "maxScore": 259
   },
   "paeinrt": {
     "center": "p",
@@ -20720,7 +21064,8 @@ const PUZZLES = {
       "tripe",
       "tripp",
       "trippin"
-    ]
+    ],
+    "maxScore": 241
   },
   "racemno": {
     "center": "r",
@@ -20787,7 +21132,8 @@ const PUZZLES = {
       "roar",
       "romance",
       "room"
-    ]
+    ],
+    "maxScore": 258
   },
   "ecdmoru": {
     "center": "e",
@@ -20848,7 +21194,8 @@ const PUZZLES = {
       "rodeo",
       "rudder",
       "rude"
-    ]
+    ],
+    "maxScore": 254
   },
   "tdelmos": {
     "center": "t",
@@ -20909,7 +21256,8 @@ const PUZZLES = {
       "toss",
       "tossed",
       "totem"
-    ]
+    ],
+    "maxScore": 252
   },
   "naeglry": {
     "center": "n",
@@ -20963,7 +21311,8 @@ const PUZZLES = {
       "yang",
       "yarn",
       "yearn"
-    ]
+    ],
+    "maxScore": 236
   },
   "oemnrsw": {
     "center": "o",
@@ -21029,7 +21378,8 @@ const PUZZLES = {
       "worms",
       "worn",
       "worse"
-    ]
+    ],
+    "maxScore": 245
   },
   "seioptv": {
     "center": "s",
@@ -21086,7 +21436,8 @@ const PUZZLES = {
       "visit",
       "visits",
       "votes"
-    ]
+    ],
+    "maxScore": 241
   },
   "paeilmr": {
     "center": "p",
@@ -21154,7 +21505,8 @@ const PUZZLES = {
       "ripe",
       "ripper",
       "ripple"
-    ]
+    ],
+    "maxScore": 250
   },
   "obemnst": {
     "center": "o",
@@ -21224,7 +21576,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "totem"
-    ]
+    ],
+    "maxScore": 241
   },
   "gaenprt": {
     "center": "g",
@@ -21281,7 +21634,8 @@ const PUZZLES = {
       "target",
       "teenage",
       "teenager"
-    ]
+    ],
+    "maxScore": 257
   },
   "caeilmr": {
     "center": "c",
@@ -21337,7 +21691,8 @@ const PUZZLES = {
       "reclaim",
       "relic",
       "rice"
-    ]
+    ],
+    "maxScore": 254
   },
   "naehrst": {
     "center": "n",
@@ -21392,7 +21747,8 @@ const PUZZLES = {
       "then",
       "threaten",
       "threatens"
-    ]
+    ],
+    "maxScore": 247
   },
   "racegil": {
     "center": "r",
@@ -21451,7 +21807,8 @@ const PUZZLES = {
       "reggae",
       "relic",
       "rice"
-    ]
+    ],
+    "maxScore": 229
   },
   "eacgilr": {
     "center": "e",
@@ -21509,7 +21866,8 @@ const PUZZLES = {
       "reggae",
       "relic",
       "rice"
-    ]
+    ],
+    "maxScore": 226
   },
   "eacdlot": {
     "center": "e",
@@ -21568,7 +21926,8 @@ const PUZZLES = {
       "tell",
       "toledo",
       "totaled"
-    ]
+    ],
+    "maxScore": 250
   },
   "dbemors": {
     "center": "d",
@@ -21628,7 +21987,8 @@ const PUZZLES = {
       "seeds",
       "seemed",
       "sodom"
-    ]
+    ],
+    "maxScore": 261
   },
   "naeiosv": {
     "center": "n",
@@ -21688,7 +22048,8 @@ const PUZZLES = {
       "vinnie",
       "vision",
       "visions"
-    ]
+    ],
+    "maxScore": 257
   },
   "oaclmrs": {
     "center": "o",
@@ -21750,7 +22111,8 @@ const PUZZLES = {
       "soar",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 245
   },
   "aelnrtx": {
     "center": "a",
@@ -21810,7 +22172,8 @@ const PUZZLES = {
       "tear",
       "tenant",
       "treat"
-    ]
+    ],
+    "maxScore": 231
   },
   "scilnot": {
     "center": "s",
@@ -21865,7 +22228,8 @@ const PUZZLES = {
       "tools",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 246
   },
   "eacghnr": {
     "center": "e",
@@ -21932,7 +22296,8 @@ const PUZZLES = {
       "recharge",
       "reggae",
       "rhea"
-    ]
+    ],
+    "maxScore": 264
   },
   "dceikns": {
     "center": "d",
@@ -21991,7 +22356,8 @@ const PUZZLES = {
       "sides",
       "sinned",
       "skid"
-    ]
+    ],
+    "maxScore": 258
   },
   "rabdost": {
     "center": "r",
@@ -22055,7 +22421,8 @@ const PUZZLES = {
       "tarts",
       "torso",
       "trot"
-    ]
+    ],
+    "maxScore": 245
   },
   "nacdegl": {
     "center": "n",
@@ -22116,7 +22483,8 @@ const PUZZLES = {
       "needed",
       "needle",
       "needn"
-    ]
+    ],
+    "maxScore": 265
   },
   "ealmosu": {
     "center": "e",
@@ -22180,7 +22548,8 @@ const PUZZLES = {
       "soles",
       "some",
       "soulless"
-    ]
+    ],
+    "maxScore": 257
   },
   "gadinru": {
     "center": "g",
@@ -22235,7 +22604,8 @@ const PUZZLES = {
       "rung",
       "running",
       "urging"
-    ]
+    ],
+    "maxScore": 247
   },
   "taempru": {
     "center": "t",
@@ -22298,7 +22668,8 @@ const PUZZLES = {
       "turret",
       "tutu",
       "utter"
-    ]
+    ],
+    "maxScore": 242
   },
   "ngiprsu": {
     "center": "n",
@@ -22344,7 +22715,8 @@ const PUZZLES = {
       "uprising",
       "urging",
       "using"
-    ]
+    ],
+    "maxScore": 243
   },
   "ocenrtv": {
     "center": "o",
@@ -22409,7 +22781,8 @@ const PUZZLES = {
       "veto",
       "vote",
       "voter"
-    ]
+    ],
+    "maxScore": 254
   },
   "edmpstu": {
     "center": "e",
@@ -22473,7 +22846,8 @@ const PUZZLES = {
       "upset",
       "upsets",
       "used"
-    ]
+    ],
+    "maxScore": 256
   },
   "timnops": {
     "center": "t",
@@ -22529,7 +22903,8 @@ const PUZZLES = {
       "toots",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 242
   },
   "ebmnrsu": {
     "center": "e",
@@ -22584,7 +22959,8 @@ const PUZZLES = {
       "unseen",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 250
   },
   "pdelosv": {
     "center": "p",
@@ -22641,7 +23017,8 @@ const PUZZLES = {
       "spell",
       "spelled",
       "spells"
-    ]
+    ],
+    "maxScore": 249
   },
   "maceost": {
     "center": "m",
@@ -22711,7 +23088,8 @@ const PUZZLES = {
       "tomcat",
       "tome",
       "totem"
-    ]
+    ],
+    "maxScore": 251
   },
   "caehips": {
     "center": "c",
@@ -22761,7 +23139,8 @@ const PUZZLES = {
       "speeches",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 234
   },
   "ebmorsy": {
     "center": "e",
@@ -22816,7 +23195,8 @@ const PUZZLES = {
       "some",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 231
   },
   "eabfilr": {
     "center": "e",
@@ -22888,7 +23268,8 @@ const PUZZLES = {
       "refill",
       "relief",
       "rifle"
-    ]
+    ],
+    "maxScore": 265
   },
   "radehnp": {
     "center": "r",
@@ -22955,7 +23336,8 @@ const PUZZLES = {
       "render",
       "rendered",
       "rhea"
-    ]
+    ],
+    "maxScore": 257
   },
   "geilnrv": {
     "center": "g",
@@ -23004,7 +23386,8 @@ const PUZZLES = {
       "verge",
       "vigil",
       "virgin"
-    ]
+    ],
+    "maxScore": 246
   },
   "idehmns": {
     "center": "i",
@@ -23063,7 +23446,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sinned"
-    ]
+    ],
+    "maxScore": 249
   },
   "oimprst": {
     "center": "o",
@@ -23130,7 +23514,8 @@ const PUZZLES = {
       "troop",
       "troops",
       "trot"
-    ]
+    ],
+    "maxScore": 244
   },
   "dcehirs": {
     "center": "d",
@@ -23186,7 +23571,8 @@ const PUZZLES = {
       "side",
       "sided",
       "sides"
-    ]
+    ],
+    "maxScore": 246
   },
   "oehimrs": {
     "center": "o",
@@ -23245,7 +23631,8 @@ const PUZZLES = {
       "some",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 242
   },
   "safhirt": {
     "center": "s",
@@ -23307,7 +23694,8 @@ const PUZZLES = {
       "thrash",
       "traits",
       "trash"
-    ]
+    ],
+    "maxScore": 262
   },
   "sdeimrz": {
     "center": "s",
@@ -23362,7 +23750,8 @@ const PUZZLES = {
       "size",
       "sized",
       "sizes"
-    ]
+    ],
+    "maxScore": 257
   },
   "einortu": {
     "center": "e",
@@ -23422,7 +23811,8 @@ const PUZZLES = {
       "untie",
       "untrue",
       "utter"
-    ]
+    ],
+    "maxScore": 238
   },
   "nadgisv": {
     "center": "n",
@@ -23475,7 +23865,8 @@ const PUZZLES = {
       "sings",
       "snag",
       "vain"
-    ]
+    ],
+    "maxScore": 244
   },
   "rabeglm": {
     "center": "r",
@@ -23537,7 +23928,8 @@ const PUZZLES = {
       "reel",
       "reggae",
       "remember"
-    ]
+    ],
+    "maxScore": 238
   },
   "lenostv": {
     "center": "l",
@@ -23602,7 +23994,8 @@ const PUZZLES = {
       "tools",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 272
   },
   "raeilnp": {
     "center": "r",
@@ -23670,7 +24063,8 @@ const PUZZLES = {
       "ripe",
       "ripper",
       "ripple"
-    ]
+    ],
+    "maxScore": 249
   },
   "taceisv": {
     "center": "t",
@@ -23720,7 +24114,8 @@ const PUZZLES = {
       "vests",
       "visit",
       "visits"
-    ]
+    ],
+    "maxScore": 240
   },
   "lcekors": {
     "center": "l",
@@ -23785,7 +24180,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 259
   },
   "mceiost": {
     "center": "m",
@@ -23846,7 +24242,8 @@ const PUZZLES = {
       "times",
       "tome",
       "totem"
-    ]
+    ],
+    "maxScore": 250
   },
   "nabemst": {
     "center": "n",
@@ -23900,7 +24297,8 @@ const PUZZLES = {
       "tent",
       "tents",
       "testament"
-    ]
+    ],
+    "maxScore": 239
   },
   "nbegilo": {
     "center": "n",
@@ -23965,7 +24363,8 @@ const PUZZLES = {
       "ongoing",
       "onion",
       "online"
-    ]
+    ],
+    "maxScore": 256
   },
   "dabelms": {
     "center": "d",
@@ -24026,7 +24425,8 @@ const PUZZLES = {
       "seemed",
       "sled",
       "smelled"
-    ]
+    ],
+    "maxScore": 251
   },
   "uademrs": {
     "center": "u",
@@ -24076,7 +24476,8 @@ const PUZZLES = {
       "used",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 250
   },
   "habeort": {
     "center": "h",
@@ -24134,7 +24535,8 @@ const PUZZLES = {
       "three",
       "throat",
       "tooth"
-    ]
+    ],
+    "maxScore": 231
   },
   "gchinst": {
     "center": "g",
@@ -24182,7 +24584,8 @@ const PUZZLES = {
       "things",
       "tight",
       "tights"
-    ]
+    ],
+    "maxScore": 247
   },
   "sehmorw": {
     "center": "s",
@@ -24241,7 +24644,8 @@ const PUZZLES = {
       "whose",
       "worms",
       "worse"
-    ]
+    ],
+    "maxScore": 264
   },
   "rabcdeu": {
     "center": "r",
@@ -24309,7 +24713,8 @@ const PUZZLES = {
       "rube",
       "rudder",
       "rude"
-    ]
+    ],
+    "maxScore": 250
   },
   "labemrt": {
     "center": "l",
@@ -24378,7 +24783,8 @@ const PUZZLES = {
       "tell",
       "teller",
       "tremble"
-    ]
+    ],
+    "maxScore": 264
   },
   "pceilns": {
     "center": "p",
@@ -24432,7 +24838,8 @@ const PUZZLES = {
       "spineless",
       "spines",
       "spins"
-    ]
+    ],
+    "maxScore": 248
   },
   "sdehilv": {
     "center": "s",
@@ -24488,7 +24895,8 @@ const PUZZLES = {
       "slides",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 250
   },
   "ienostx": {
     "center": "i",
@@ -24534,7 +24942,8 @@ const PUZZLES = {
       "toxin",
       "toxins",
       "xiii"
-    ]
+    ],
+    "maxScore": 252
   },
   "aceirsz": {
     "center": "a",
@@ -24592,7 +25001,8 @@ const PUZZLES = {
       "scars",
       "sears",
       "sierra"
-    ]
+    ],
+    "maxScore": 243
   },
   "ladeimn": {
     "center": "l",
@@ -24661,7 +25071,8 @@ const PUZZLES = {
       "nail",
       "nailed",
       "needle"
-    ]
+    ],
+    "maxScore": 257
   },
   "ecginor": {
     "center": "e",
@@ -24717,7 +25128,8 @@ const PUZZLES = {
       "rein",
       "rice",
       "ringer"
-    ]
+    ],
+    "maxScore": 257
   },
   "nadegmo": {
     "center": "n",
@@ -24783,7 +25195,8 @@ const PUZZLES = {
       "noona",
       "noone",
       "omen"
-    ]
+    ],
+    "maxScore": 252
   },
   "efginor": {
     "center": "e",
@@ -24841,7 +25254,8 @@ const PUZZLES = {
       "reigning",
       "rein",
       "ringer"
-    ]
+    ],
+    "maxScore": 255
   },
   "selmopy": {
     "center": "s",
@@ -24902,7 +25316,8 @@ const PUZZLES = {
       "some",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 262
   },
   "baeglrt": {
     "center": "b",
@@ -24962,7 +25377,8 @@ const PUZZLES = {
       "regrettable",
       "table",
       "tablet"
-    ]
+    ],
+    "maxScore": 247
   },
   "tabeglr": {
     "center": "t",
@@ -25024,7 +25440,8 @@ const PUZZLES = {
       "teller",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 266
   },
   "hceiors": {
     "center": "h",
@@ -25079,7 +25496,8 @@ const PUZZLES = {
       "shoo",
       "shore",
       "shores"
-    ]
+    ],
+    "maxScore": 263
   },
   "aceflnr": {
     "center": "a",
@@ -25151,7 +25569,8 @@ const PUZZLES = {
       "rear",
       "recall",
       "referral"
-    ]
+    ],
+    "maxScore": 268
   },
   "rehmosw": {
     "center": "r",
@@ -25202,7 +25621,8 @@ const PUZZLES = {
       "worm",
       "worms",
       "worse"
-    ]
+    ],
+    "maxScore": 230
   },
   "tacdeno": {
     "center": "t",
@@ -25260,7 +25680,8 @@ const PUZZLES = {
       "toad",
       "tone",
       "toot"
-    ]
+    ],
+    "maxScore": 261
   },
   "gaeimrs": {
     "center": "g",
@@ -25315,7 +25736,8 @@ const PUZZLES = {
       "sergei",
       "siege",
       "sigma"
-    ]
+    ],
+    "maxScore": 253
   },
   "ebciprs": {
     "center": "e",
@@ -25371,7 +25793,8 @@ const PUZZLES = {
       "spice",
       "spices",
       "spree"
-    ]
+    ],
+    "maxScore": 239
   },
   "ecdirsx": {
     "center": "e",
@@ -25426,7 +25849,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sire"
-    ]
+    ],
+    "maxScore": 258
   },
   "sbelmtu": {
     "center": "s",
@@ -25484,7 +25908,8 @@ const PUZZLES = {
       "test",
       "tests",
       "tubes"
-    ]
+    ],
+    "maxScore": 238
   },
   "deinotv": {
     "center": "d",
@@ -25542,7 +25967,8 @@ const PUZZLES = {
       "video",
       "voodoo",
       "voted"
-    ]
+    ],
+    "maxScore": 258
   },
   "paeimrt": {
     "center": "p",
@@ -25606,7 +26032,8 @@ const PUZZLES = {
       "trip",
       "tripe",
       "tripp"
-    ]
+    ],
+    "maxScore": 245
   },
   "negirvw": {
     "center": "n",
@@ -25658,7 +26085,8 @@ const PUZZLES = {
       "wiring",
       "wren",
       "wring"
-    ]
+    ],
+    "maxScore": 243
   },
   "icdehrs": {
     "center": "i",
@@ -25714,7 +26142,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sire"
-    ]
+    ],
+    "maxScore": 236
   },
   "aegilnv": {
     "center": "a",
@@ -25778,7 +26207,8 @@ const PUZZLES = {
       "village",
       "villain",
       "viva"
-    ]
+    ],
+    "maxScore": 249
   },
   "cehnost": {
     "center": "c",
@@ -25832,7 +26262,8 @@ const PUZZLES = {
       "tech",
       "techno",
       "techs"
-    ]
+    ],
+    "maxScore": 248
   },
   "ucelors": {
     "center": "u",
@@ -25887,7 +26318,8 @@ const PUZZLES = {
       "ulcers",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 254
   },
   "odinpst": {
     "center": "o",
@@ -25941,7 +26373,8 @@ const PUZZLES = {
       "toots",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 233
   },
   "scilopt": {
     "center": "s",
@@ -26008,7 +26441,8 @@ const PUZZLES = {
       "topics",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 257
   },
   "ngilosv": {
     "center": "n",
@@ -26062,7 +26496,8 @@ const PUZZLES = {
       "violins",
       "vision",
       "visions"
-    ]
+    ],
+    "maxScore": 239
   },
   "simoprt": {
     "center": "s",
@@ -26120,7 +26555,8 @@ const PUZZLES = {
       "toss",
       "trips",
       "troops"
-    ]
+    ],
+    "maxScore": 236
   },
   "oaeprsv": {
     "center": "o",
@@ -26175,7 +26611,8 @@ const PUZZLES = {
       "sores",
       "spores",
       "vapor"
-    ]
+    ],
+    "maxScore": 251
   },
   "tbeinru": {
     "center": "t",
@@ -26237,7 +26674,8 @@ const PUZZLES = {
       "untie",
       "untrue",
       "utter"
-    ]
+    ],
+    "maxScore": 258
   },
   "eaglnpt": {
     "center": "e",
@@ -26304,7 +26742,8 @@ const PUZZLES = {
       "tell",
       "tenant",
       "tent"
-    ]
+    ],
+    "maxScore": 237
   },
   "lacekns": {
     "center": "l",
@@ -26367,7 +26806,8 @@ const PUZZLES = {
       "slack",
       "slacks",
       "sleek"
-    ]
+    ],
+    "maxScore": 254
   },
   "eacistu": {
     "center": "e",
@@ -26424,7 +26864,8 @@ const PUZZLES = {
       "tissue",
       "tissues",
       "titties"
-    ]
+    ],
+    "maxScore": 273
   },
   "lacemor": {
     "center": "l",
@@ -26489,7 +26930,8 @@ const PUZZLES = {
       "roll",
       "roller",
       "rollo"
-    ]
+    ],
+    "maxScore": 239
   },
   "ladegnt": {
     "center": "l",
@@ -26549,7 +26991,8 @@ const PUZZLES = {
       "tangled",
       "teal",
       "tell"
-    ]
+    ],
+    "maxScore": 242
   },
   "laenopt": {
     "center": "l",
@@ -26620,7 +27063,8 @@ const PUZZLES = {
       "tool",
       "topple",
       "total"
-    ]
+    ],
+    "maxScore": 247
   },
   "icnostu": {
     "center": "i",
@@ -26662,7 +27106,8 @@ const PUZZLES = {
       "unison",
       "unit",
       "units"
-    ]
+    ],
+    "maxScore": 246
   },
   "eacdhin": {
     "center": "e",
@@ -26717,7 +27162,8 @@ const PUZZLES = {
       "niche",
       "niece",
       "nine"
-    ]
+    ],
+    "maxScore": 236
   },
   "ienopsu": {
     "center": "i",
@@ -26764,7 +27210,8 @@ const PUZZLES = {
       "union",
       "unions",
       "unison"
-    ]
+    ],
+    "maxScore": 246
   },
   "tdefinr": {
     "center": "t",
@@ -26821,7 +27268,8 @@ const PUZZLES = {
       "trend",
       "trident",
       "tried"
-    ]
+    ],
+    "maxScore": 252
   },
   "gadinrw": {
     "center": "g",
@@ -26874,7 +27322,8 @@ const PUZZLES = {
       "winning",
       "wiring",
       "wring"
-    ]
+    ],
+    "maxScore": 252
   },
   "eaginos": {
     "center": "e",
@@ -26928,7 +27377,8 @@ const PUZZLES = {
       "siege",
       "sienna",
       "signe"
-    ]
+    ],
+    "maxScore": 247
   },
   "hadegrt": {
     "center": "h",
@@ -26982,7 +27432,8 @@ const PUZZLES = {
       "thread",
       "threat",
       "three"
-    ]
+    ],
+    "maxScore": 234
   },
   "oceirsu": {
     "center": "o",
@@ -27031,7 +27482,8 @@ const PUZZLES = {
       "source",
       "sources",
       "successor"
-    ]
+    ],
+    "maxScore": 252
   },
   "pcdeior": {
     "center": "p",
@@ -27098,7 +27550,8 @@ const PUZZLES = {
       "rope",
       "roped",
       "roper"
-    ]
+    ],
+    "maxScore": 258
   },
   "oceilnt": {
     "center": "o",
@@ -27163,7 +27616,8 @@ const PUZZLES = {
       "tonino",
       "tool",
       "toot"
-    ]
+    ],
+    "maxScore": 256
   },
   "eacfinr": {
     "center": "e",
@@ -27227,7 +27681,8 @@ const PUZZLES = {
       "rein",
       "reina",
       "rice"
-    ]
+    ],
+    "maxScore": 233
   },
   "oabdrst": {
     "center": "o",
@@ -27292,7 +27747,8 @@ const PUZZLES = {
       "torso",
       "toss",
       "trot"
-    ]
+    ],
+    "maxScore": 242
   },
   "eagilnv": {
     "center": "e",
@@ -27355,7 +27811,8 @@ const PUZZLES = {
       "village",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 239
   },
   "eadgrvy": {
     "center": "e",
@@ -27416,7 +27873,8 @@ const PUZZLES = {
       "verge",
       "very",
       "year"
-    ]
+    ],
+    "maxScore": 236
   },
   "iadgnrw": {
     "center": "i",
@@ -27470,7 +27928,8 @@ const PUZZLES = {
       "winning",
       "wiring",
       "wring"
-    ]
+    ],
+    "maxScore": 250
   },
   "ladeorv": {
     "center": "l",
@@ -27530,7 +27989,8 @@ const PUZZLES = {
       "valera",
       "valve",
       "veal"
-    ]
+    ],
+    "maxScore": 242
   },
   "nbdeilo": {
     "center": "n",
@@ -27595,7 +28055,8 @@ const PUZZLES = {
       "olden",
       "onion",
       "online"
-    ]
+    ],
+    "maxScore": 261
   },
   "saceknp": {
     "center": "s",
@@ -27655,7 +28116,8 @@ const PUZZLES = {
       "speaks",
       "speck",
       "specs"
-    ]
+    ],
+    "maxScore": 260
   },
   "hadelps": {
     "center": "h",
@@ -27714,7 +28176,8 @@ const PUZZLES = {
       "splash",
       "splashed",
       "splashes"
-    ]
+    ],
+    "maxScore": 244
   },
   "baelors": {
     "center": "b",
@@ -27781,7 +28244,8 @@ const PUZZLES = {
       "slab",
       "slob",
       "sober"
-    ]
+    ],
+    "maxScore": 254
   },
   "vbdeors": {
     "center": "v",
@@ -27827,7 +28291,8 @@ const PUZZLES = {
       "versed",
       "verses",
       "voodoo"
-    ]
+    ],
+    "maxScore": 246
   },
   "rabefil": {
     "center": "r",
@@ -27892,7 +28357,8 @@ const PUZZLES = {
       "relief",
       "riffraff",
       "rifle"
-    ]
+    ],
+    "maxScore": 246
   },
   "tefnoru": {
     "center": "t",
@@ -27955,7 +28421,8 @@ const PUZZLES = {
       "tutu",
       "untrue",
       "utter"
-    ]
+    ],
+    "maxScore": 244
   },
   "haelosw": {
     "center": "h",
@@ -28015,7 +28482,8 @@ const PUZZLES = {
       "whoosh",
       "whooshes",
       "whose"
-    ]
+    ],
+    "maxScore": 242
   },
   "edgintx": {
     "center": "e",
@@ -28072,7 +28540,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "tinted"
-    ]
+    ],
+    "maxScore": 239
   },
   "nabegrs": {
     "center": "n",
@@ -28132,7 +28601,8 @@ const PUZZLES = {
       "serene",
       "snag",
       "snare"
-    ]
+    ],
+    "maxScore": 255
   },
   "odelpsx": {
     "center": "o",
@@ -28196,7 +28666,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 245
   },
   "daceimt": {
     "center": "d",
@@ -28257,7 +28728,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "timed"
-    ]
+    ],
+    "maxScore": 254
   },
   "ibelstu": {
     "center": "i",
@@ -28310,7 +28782,8 @@ const PUZZLES = {
       "titles",
       "titties",
       "utilities"
-    ]
+    ],
+    "maxScore": 242
   },
   "adegmno": {
     "center": "a",
@@ -28375,7 +28848,8 @@ const PUZZLES = {
       "nomad",
       "noona",
       "omega"
-    ]
+    ],
+    "maxScore": 258
   },
   "scehipt": {
     "center": "s",
@@ -28432,7 +28906,8 @@ const PUZZLES = {
       "tests",
       "thesis",
       "titties"
-    ]
+    ],
+    "maxScore": 256
   },
   "oabdemr": {
     "center": "o",
@@ -28493,7 +28968,8 @@ const PUZZLES = {
       "robe",
       "rodeo",
       "room"
-    ]
+    ],
+    "maxScore": 229
   },
   "daenpsw": {
     "center": "d",
@@ -28551,7 +29027,8 @@ const PUZZLES = {
       "wedded",
       "weed",
       "weeds"
-    ]
+    ],
+    "maxScore": 244
   },
   "nagimry": {
     "center": "n",
@@ -28605,7 +29082,8 @@ const PUZZLES = {
       "ringing",
       "yang",
       "yarn"
-    ]
+    ],
+    "maxScore": 244
   },
   "ainostv": {
     "center": "a",
@@ -28650,7 +29128,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 247
   },
   "eclmops": {
     "center": "e",
@@ -28718,7 +29197,8 @@ const PUZZLES = {
       "specs",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 272
   },
   "ldeimps": {
     "center": "l",
@@ -28781,7 +29261,8 @@ const PUZZLES = {
       "spill",
       "spilled",
       "spills"
-    ]
+    ],
+    "maxScore": 263
   },
   "ladehin": {
     "center": "l",
@@ -28846,7 +29327,8 @@ const PUZZLES = {
       "nail",
       "nailed",
       "needle"
-    ]
+    ],
+    "maxScore": 244
   },
   "rbefgin": {
     "center": "r",
@@ -28897,7 +29379,8 @@ const PUZZLES = {
       "ring",
       "ringer",
       "ringing"
-    ]
+    ],
+    "maxScore": 242
   },
   "laerswy": {
     "center": "l",
@@ -28958,7 +29441,8 @@ const PUZZLES = {
       "welles",
       "wells",
       "yearly"
-    ]
+    ],
+    "maxScore": 265
   },
   "sgiknrt": {
     "center": "s",
@@ -29009,7 +29493,8 @@ const PUZZLES = {
       "string",
       "stringing",
       "strings"
-    ]
+    ],
+    "maxScore": 235
   },
   "rabegmo": {
     "center": "r",
@@ -29077,7 +29562,8 @@ const PUZZLES = {
       "robber",
       "robe",
       "room"
-    ]
+    ],
+    "maxScore": 238
   },
   "daelrtv": {
     "center": "d",
@@ -29135,7 +29621,8 @@ const PUZZLES = {
       "travelled",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 260
   },
   "oachlrs": {
     "center": "o",
@@ -29195,7 +29682,8 @@ const PUZZLES = {
       "soar",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 254
   },
   "icefnos": {
     "center": "i",
@@ -29237,7 +29725,8 @@ const PUZZLES = {
       "session",
       "sessions",
       "sonic"
-    ]
+    ],
+    "maxScore": 239
   },
   "ndefisv": {
     "center": "n",
@@ -29293,7 +29782,8 @@ const PUZZLES = {
       "vine",
       "vines",
       "vinnie"
-    ]
+    ],
+    "maxScore": 255
   },
   "sdemnou": {
     "center": "s",
@@ -29356,7 +29846,8 @@ const PUZZLES = {
       "unseen",
       "unused",
       "used"
-    ]
+    ],
+    "maxScore": 259
   },
   "dacertx": {
     "center": "d",
@@ -29409,7 +29900,8 @@ const PUZZLES = {
       "trader",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 242
   },
   "aceghnr": {
     "center": "a",
@@ -29480,7 +29972,8 @@ const PUZZLES = {
       "recharge",
       "reggae",
       "rhea"
-    ]
+    ],
+    "maxScore": 260
   },
   "aeglnpt": {
     "center": "a",
@@ -29553,7 +30046,8 @@ const PUZZLES = {
       "teal",
       "teenage",
       "tenant"
-    ]
+    ],
+    "maxScore": 255
   },
   "odelprv": {
     "center": "o",
@@ -29624,7 +30118,8 @@ const PUZZLES = {
       "roper",
       "rover",
       "voodoo"
-    ]
+    ],
+    "maxScore": 263
   },
   "ibekrst": {
     "center": "i",
@@ -29683,7 +30178,8 @@ const PUZZLES = {
       "titties",
       "tribe",
       "tribes"
-    ]
+    ],
+    "maxScore": 242
   },
   "caelmor": {
     "center": "c",
@@ -29748,7 +30244,8 @@ const PUZZLES = {
       "race",
       "racer",
       "recall"
-    ]
+    ],
+    "maxScore": 257
   },
   "lbemstu": {
     "center": "l",
@@ -29807,7 +30304,8 @@ const PUZZLES = {
       "tell",
       "tells",
       "tumble"
-    ]
+    ],
+    "maxScore": 239
   },
   "ueioprs": {
     "center": "u",
@@ -29858,7 +30356,8 @@ const PUZZLES = {
       "upper",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 246
   },
   "daeimnx": {
     "center": "d",
@@ -29919,7 +30418,8 @@ const PUZZLES = {
       "need",
       "needed",
       "needn"
-    ]
+    ],
+    "maxScore": 243
   },
   "icdekrt": {
     "center": "i",
@@ -29980,7 +30480,8 @@ const PUZZLES = {
       "trick",
       "tricked",
       "tried"
-    ]
+    ],
+    "maxScore": 252
   },
   "nabegim": {
     "center": "n",
@@ -30040,7 +30541,8 @@ const PUZZLES = {
       "name",
       "naming",
       "nine"
-    ]
+    ],
+    "maxScore": 254
   },
   "iacehrs": {
     "center": "i",
@@ -30094,7 +30596,8 @@ const PUZZLES = {
       "series",
       "sierra",
       "sire"
-    ]
+    ],
+    "maxScore": 237
   },
   "iafgmnr": {
     "center": "i",
@@ -30150,7 +30653,8 @@ const PUZZLES = {
       "riffraff",
       "ring",
       "ringing"
-    ]
+    ],
+    "maxScore": 254
   },
   "iaghnsv": {
     "center": "i",
@@ -30203,7 +30707,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 245
   },
   "baelrty": {
     "center": "b",
@@ -30261,7 +30766,8 @@ const PUZZLES = {
       "tabby",
       "table",
       "tablet"
-    ]
+    ],
+    "maxScore": 239
   },
   "daefilt": {
     "center": "d",
@@ -30327,7 +30833,8 @@ const PUZZLES = {
       "tied",
       "tilted",
       "titled"
-    ]
+    ],
+    "maxScore": 247
   },
   "raegmop": {
     "center": "r",
@@ -30397,7 +30904,8 @@ const PUZZLES = {
       "room",
       "rope",
       "roper"
-    ]
+    ],
+    "maxScore": 256
   },
   "denoruw": {
     "center": "d",
@@ -30460,7 +30968,8 @@ const PUZZLES = {
       "word",
       "wound",
       "wounded"
-    ]
+    ],
+    "maxScore": 261
   },
   "eabilmt": {
     "center": "e",
@@ -30529,7 +31038,8 @@ const PUZZLES = {
       "time",
       "timetable",
       "title"
-    ]
+    ],
+    "maxScore": 231
   },
   "ecimnps": {
     "center": "e",
@@ -30586,7 +31096,8 @@ const PUZZLES = {
       "spices",
       "spine",
       "spines"
-    ]
+    ],
+    "maxScore": 259
   },
   "eaglrvy": {
     "center": "e",
@@ -30652,7 +31163,8 @@ const PUZZLES = {
       "very",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 266
   },
   "icdelpr": {
     "center": "i",
@@ -30712,7 +31224,8 @@ const PUZZLES = {
       "ripped",
       "ripper",
       "ripple"
-    ]
+    ],
+    "maxScore": 245
   },
   "scekorw": {
     "center": "s",
@@ -30761,7 +31274,8 @@ const PUZZLES = {
       "workers",
       "works",
       "worse"
-    ]
+    ],
+    "maxScore": 239
   },
   "pegilns": {
     "center": "p",
@@ -30812,7 +31326,8 @@ const PUZZLES = {
       "spineless",
       "spines",
       "spins"
-    ]
+    ],
+    "maxScore": 250
   },
   "neloprs": {
     "center": "n",
@@ -30868,7 +31383,8 @@ const PUZZLES = {
       "sponsors",
       "spoon",
       "spoons"
-    ]
+    ],
+    "maxScore": 253
   },
   "afhirst": {
     "center": "a",
@@ -30930,7 +31446,8 @@ const PUZZLES = {
       "trait",
       "traits",
       "trash"
-    ]
+    ],
+    "maxScore": 252
   },
   "tcghins": {
     "center": "t",
@@ -30978,7 +31495,8 @@ const PUZZLES = {
       "tight",
       "tights",
       "tintin"
-    ]
+    ],
+    "maxScore": 245
   },
   "sacdenv": {
     "center": "s",
@@ -31033,7 +31551,8 @@ const PUZZLES = {
       "sevens",
       "vase",
       "vases"
-    ]
+    ],
+    "maxScore": 262
   },
   "gadeint": {
     "center": "g",
@@ -31088,7 +31607,8 @@ const PUZZLES = {
       "tanning",
       "teenage",
       "tending"
-    ]
+    ],
+    "maxScore": 253
   },
   "ocekrsw": {
     "center": "o",
@@ -31145,7 +31665,8 @@ const PUZZLES = {
       "workers",
       "works",
       "worse"
-    ]
+    ],
+    "maxScore": 242
   },
   "madegno": {
     "center": "m",
@@ -31211,7 +31732,8 @@ const PUZZLES = {
       "nomad",
       "omega",
       "omen"
-    ]
+    ],
+    "maxScore": 257
   },
   "elmopsy": {
     "center": "e",
@@ -31275,7 +31797,8 @@ const PUZZLES = {
       "some",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 270
   },
   "mdelost": {
     "center": "m",
@@ -31339,7 +31862,8 @@ const PUZZLES = {
       "stems",
       "tome",
       "totem"
-    ]
+    ],
+    "maxScore": 247
   },
   "leknost": {
     "center": "l",
@@ -31396,7 +31920,8 @@ const PUZZLES = {
       "tells",
       "tool",
       "tools"
-    ]
+    ],
+    "maxScore": 227
   },
   "tdeghin": {
     "center": "t",
@@ -31449,7 +31974,8 @@ const PUZZLES = {
       "tightening",
       "tinted",
       "tintin"
-    ]
+    ],
+    "maxScore": 250
   },
   "idemrsu": {
     "center": "i",
@@ -31503,7 +32029,8 @@ const PUZZLES = {
       "sides",
       "sire",
       "sirius"
-    ]
+    ],
+    "maxScore": 249
   },
   "oaelrsv": {
     "center": "o",
@@ -31559,7 +32086,8 @@ const PUZZLES = {
       "solves",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 235
   },
   "eailrtu": {
     "center": "e",
@@ -31626,7 +32154,8 @@ const PUZZLES = {
       "turret",
       "turtle",
       "utter"
-    ]
+    ],
+    "maxScore": 265
   },
   "ngimosu": {
     "center": "n",
@@ -31680,7 +32209,8 @@ const PUZZLES = {
       "unions",
       "unison",
       "using"
-    ]
+    ],
+    "maxScore": 246
   },
   "ceiprst": {
     "center": "c",
@@ -31728,7 +32258,8 @@ const PUZZLES = {
       "specter",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 250
   },
   "scehntu": {
     "center": "s",
@@ -31782,7 +32313,8 @@ const PUZZLES = {
       "tunes",
       "tush",
       "unseen"
-    ]
+    ],
+    "maxScore": 242
   },
   "daenorv": {
     "center": "d",
@@ -31844,7 +32376,8 @@ const PUZZLES = {
       "rodeo",
       "veranda",
       "voodoo"
-    ]
+    ],
+    "maxScore": 242
   },
   "deilorw": {
     "center": "d",
@@ -31913,7 +32446,8 @@ const PUZZLES = {
       "world",
       "worldwide",
       "worried"
-    ]
+    ],
+    "maxScore": 253
   },
   "raegilv": {
     "center": "r",
@@ -31972,7 +32506,8 @@ const PUZZLES = {
       "verge",
       "villager",
       "virile"
-    ]
+    ],
+    "maxScore": 239
   },
   "nadehls": {
     "center": "n",
@@ -32028,7 +32563,8 @@ const PUZZLES = {
       "sensed",
       "senseless",
       "senses"
-    ]
+    ],
+    "maxScore": 238
   },
   "sabcilt": {
     "center": "s",
@@ -32085,7 +32621,8 @@ const PUZZLES = {
       "still",
       "stills",
       "tails"
-    ]
+    ],
+    "maxScore": 244
   },
   "sbdegir": {
     "center": "s",
@@ -32135,7 +32672,8 @@ const PUZZLES = {
       "sides",
       "siege",
       "sire"
-    ]
+    ],
+    "maxScore": 237
   },
   "rabeilv": {
     "center": "r",
@@ -32195,7 +32733,8 @@ const PUZZLES = {
       "verb",
       "verbal",
       "virile"
-    ]
+    ],
+    "maxScore": 241
   },
   "semnorw": {
     "center": "s",
@@ -32253,7 +32792,8 @@ const PUZZLES = {
       "sworn",
       "worms",
       "worse"
-    ]
+    ],
+    "maxScore": 243
   },
   "eaimrsy": {
     "center": "e",
@@ -32317,7 +32857,8 @@ const PUZZLES = {
       "smear",
       "year",
       "years"
-    ]
+    ],
+    "maxScore": 246
   },
   "heoprsw": {
     "center": "h",
@@ -32370,7 +32911,8 @@ const PUZZLES = {
       "whore",
       "whores",
       "whose"
-    ]
+    ],
+    "maxScore": 241
   },
   "eaclnpt": {
     "center": "e",
@@ -32440,7 +32982,8 @@ const PUZZLES = {
       "tell",
       "tenant",
       "tent"
-    ]
+    ],
+    "maxScore": 260
   },
   "acdginr": {
     "center": "a",
@@ -32501,7 +33044,8 @@ const PUZZLES = {
       "randi",
       "ranging",
       "rani"
-    ]
+    ],
+    "maxScore": 247
   },
   "sehoruw": {
     "center": "s",
@@ -32557,7 +33101,8 @@ const PUZZLES = {
       "whose",
       "worse",
       "wuss"
-    ]
+    ],
+    "maxScore": 235
   },
   "silnotu": {
     "center": "s",
@@ -32618,7 +33163,8 @@ const PUZZLES = {
       "unions",
       "unison",
       "units"
-    ]
+    ],
+    "maxScore": 260
   },
   "vaegirs": {
     "center": "v",
@@ -32670,7 +33216,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 245
   },
   "echlstu": {
     "center": "e",
@@ -32724,7 +33271,8 @@ const PUZZLES = {
       "tells",
       "test",
       "tests"
-    ]
+    ],
+    "maxScore": 230
   },
   "edimnpt": {
     "center": "e",
@@ -32791,7 +33339,8 @@ const PUZZLES = {
       "timed",
       "tinted",
       "tipped"
-    ]
+    ],
+    "maxScore": 248
   },
   "aeflrtw": {
     "center": "a",
@@ -32859,7 +33408,8 @@ const PUZZLES = {
       "watt",
       "wear",
       "welfare"
-    ]
+    ],
+    "maxScore": 232
   },
   "acdeilt": {
     "center": "a",
@@ -32922,7 +33472,8 @@ const PUZZLES = {
       "tale",
       "tall",
       "teal"
-    ]
+    ],
+    "maxScore": 260
   },
   "mbdeors": {
     "center": "m",
@@ -32984,7 +33535,8 @@ const PUZZLES = {
       "sodom",
       "somber",
       "some"
-    ]
+    ],
+    "maxScore": 263
   },
   "vaelrsy": {
     "center": "v",
@@ -33040,7 +33592,8 @@ const PUZZLES = {
       "very",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 262
   },
   "cabemrs": {
     "center": "c",
@@ -33094,7 +33647,8 @@ const PUZZLES = {
       "scram",
       "scream",
       "screams"
-    ]
+    ],
+    "maxScore": 248
   },
   "saghinr": {
     "center": "s",
@@ -33152,7 +33706,8 @@ const PUZZLES = {
       "singing",
       "sings",
       "snag"
-    ]
+    ],
+    "maxScore": 255
   },
   "nbdgior": {
     "center": "n",
@@ -33206,7 +33761,8 @@ const PUZZLES = {
       "ringing",
       "ringo",
       "robin"
-    ]
+    ],
+    "maxScore": 248
   },
   "scefior": {
     "center": "s",
@@ -33255,7 +33811,8 @@ const PUZZLES = {
       "sorceress",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 247
   },
   "tadelnp": {
     "center": "t",
@@ -33313,7 +33870,8 @@ const PUZZLES = {
       "tend",
       "tended",
       "tent"
-    ]
+    ],
+    "maxScore": 247
   },
   "caeirtv": {
     "center": "c",
@@ -33365,7 +33923,8 @@ const PUZZLES = {
       "tracer",
       "tract",
       "vice"
-    ]
+    ],
+    "maxScore": 247
   },
   "eablmru": {
     "center": "e",
@@ -33430,7 +33989,8 @@ const PUZZLES = {
       "ruler",
       "rumble",
       "umbrella"
-    ]
+    ],
+    "maxScore": 231
   },
   "eabgiln": {
     "center": "e",
@@ -33491,7 +34051,8 @@ const PUZZLES = {
       "lineage",
       "linen",
       "nine"
-    ]
+    ],
+    "maxScore": 255
   },
   "oelmpsy": {
     "center": "o",
@@ -33556,7 +34117,8 @@ const PUZZLES = {
       "solo",
       "solos",
       "some"
-    ]
+    ],
+    "maxScore": 241
   },
   "nacelrt": {
     "center": "n",
@@ -33616,7 +34178,8 @@ const PUZZLES = {
       "tenner",
       "tent",
       "trance"
-    ]
+    ],
+    "maxScore": 268
   },
   "scehimt": {
     "center": "s",
@@ -33674,7 +34237,8 @@ const PUZZLES = {
       "thesis",
       "times",
       "titties"
-    ]
+    ],
+    "maxScore": 252
   },
   "caeklns": {
     "center": "c",
@@ -33729,7 +34293,8 @@ const PUZZLES = {
       "slacks",
       "snack",
       "snacks"
-    ]
+    ],
+    "maxScore": 234
   },
   "ncdeiov": {
     "center": "n",
@@ -33785,7 +34350,8 @@ const PUZZLES = {
       "vein",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 247
   },
   "echimst": {
     "center": "e",
@@ -33847,7 +34413,8 @@ const PUZZLES = {
       "time",
       "times",
       "titties"
-    ]
+    ],
+    "maxScore": 255
   },
   "ocilpst": {
     "center": "o",
@@ -33923,7 +34490,8 @@ const PUZZLES = {
       "topics",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 254
   },
   "lbeirsv": {
     "center": "l",
@@ -33975,7 +34543,8 @@ const PUZZLES = {
       "vessels",
       "virile",
       "visible"
-    ]
+    ],
+    "maxScore": 236
   },
   "feilrst": {
     "center": "f",
@@ -34037,7 +34606,8 @@ const PUZZLES = {
       "stifle",
       "strife",
       "trifle"
-    ]
+    ],
+    "maxScore": 248
   },
   "eadqrsu": {
     "center": "e",
@@ -34101,7 +34671,8 @@ const PUZZLES = {
       "used",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 266
   },
   "ecdhipr": {
     "center": "e",
@@ -34168,7 +34739,8 @@ const PUZZLES = {
       "ripe",
       "ripped",
       "ripper"
-    ]
+    ],
+    "maxScore": 265
   },
   "iacderv": {
     "center": "i",
@@ -34227,7 +34799,8 @@ const PUZZLES = {
       "vice",
       "viii",
       "viva"
-    ]
+    ],
+    "maxScore": 260
   },
   "scekopt": {
     "center": "s",
@@ -34288,7 +34861,8 @@ const PUZZLES = {
       "toots",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 245
   },
   "scioprt": {
     "center": "s",
@@ -34348,7 +34922,8 @@ const PUZZLES = {
       "trips",
       "troops",
       "tropics"
-    ]
+    ],
+    "maxScore": 261
   },
   "nbdeoru": {
     "center": "n",
@@ -34410,7 +34985,8 @@ const PUZZLES = {
       "undo",
       "undone",
       "undue"
-    ]
+    ],
+    "maxScore": 251
   },
   "nbgimos": {
     "center": "n",
@@ -34464,7 +35040,8 @@ const PUZZLES = {
       "song",
       "songs",
       "soon"
-    ]
+    ],
+    "maxScore": 248
   },
   "saghirt": {
     "center": "s",
@@ -34524,7 +35101,8 @@ const PUZZLES = {
       "tights",
       "traits",
       "trash"
-    ]
+    ],
+    "maxScore": 242
   },
   "badenrt": {
     "center": "b",
@@ -34587,7 +35165,8 @@ const PUZZLES = {
       "debated",
       "debt",
       "drab"
-    ]
+    ],
+    "maxScore": 247
   },
   "oacfrst": {
     "center": "o",
@@ -34650,7 +35229,8 @@ const PUZZLES = {
       "tractor",
       "tractors",
       "trot"
-    ]
+    ],
+    "maxScore": 240
   },
   "ngirstw": {
     "center": "n",
@@ -34699,7 +35279,8 @@ const PUZZLES = {
       "wring",
       "writing",
       "writings"
-    ]
+    ],
+    "maxScore": 258
   },
   "eabcils": {
     "center": "e",
@@ -34762,7 +35343,8 @@ const PUZZLES = {
       "sells",
       "slice",
       "slices"
-    ]
+    ],
+    "maxScore": 272
   },
   "tegimnr": {
     "center": "t",
@@ -34821,7 +35403,8 @@ const PUZZLES = {
       "triggering",
       "trim",
       "trimming"
-    ]
+    ],
+    "maxScore": 256
   },
   "dcefnos": {
     "center": "d",
@@ -34879,7 +35462,8 @@ const PUZZLES = {
       "send",
       "sends",
       "sensed"
-    ]
+    ],
+    "maxScore": 262
   },
   "oabcmst": {
     "center": "o",
@@ -34950,7 +35534,8 @@ const PUZZLES = {
       "toot",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 261
   },
   "admnort": {
     "center": "a",
@@ -35015,7 +35600,8 @@ const PUZZLES = {
       "tomato",
       "tornado",
       "tram"
-    ]
+    ],
+    "maxScore": 250
   },
   "sdehimn": {
     "center": "s",
@@ -35076,7 +35662,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sinned"
-    ]
+    ],
+    "maxScore": 263
   },
   "negilrv": {
     "center": "n",
@@ -35131,7 +35718,8 @@ const PUZZLES = {
       "vine",
       "vinnie",
       "virgin"
-    ]
+    ],
+    "maxScore": 260
   },
   "idehlrt": {
     "center": "i",
@@ -35195,7 +35783,8 @@ const PUZZLES = {
       "title",
       "titled",
       "tried"
-    ]
+    ],
+    "maxScore": 241
   },
   "tdefils": {
     "center": "t",
@@ -35257,7 +35846,8 @@ const PUZZLES = {
       "titled",
       "titles",
       "titties"
-    ]
+    ],
+    "maxScore": 259
   },
   "geilnsw": {
     "center": "g",
@@ -35309,7 +35899,8 @@ const PUZZLES = {
       "wings",
       "winning",
       "winnings"
-    ]
+    ],
+    "maxScore": 258
   },
   "scehiop": {
     "center": "s",
@@ -35365,7 +35956,8 @@ const PUZZLES = {
       "speeches",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 259
   },
   "laimrst": {
     "center": "l",
@@ -35434,7 +36026,8 @@ const PUZZLES = {
       "trails",
       "trial",
       "trials"
-    ]
+    ],
+    "maxScore": 255
   },
   "caeprtu": {
     "center": "c",
@@ -35487,7 +36080,8 @@ const PUZZLES = {
       "tracer",
       "tract",
       "truce"
-    ]
+    ],
+    "maxScore": 244
   },
   "tginrsu": {
     "center": "t",
@@ -35540,7 +36134,8 @@ const PUZZLES = {
       "unit",
       "uniting",
       "units"
-    ]
+    ],
+    "maxScore": 250
   },
   "defmors": {
     "center": "d",
@@ -35599,7 +36194,8 @@ const PUZZLES = {
       "seeds",
       "seemed",
       "sodom"
-    ]
+    ],
+    "maxScore": 231
   },
   "ldefors": {
     "center": "l",
@@ -35669,7 +36265,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 264
   },
   "abelrvy": {
     "center": "a",
@@ -35727,7 +36324,8 @@ const PUZZLES = {
       "verbally",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 227
   },
   "salnort": {
     "center": "s",
@@ -35791,7 +36389,8 @@ const PUZZLES = {
       "translator",
       "translators",
       "trolls"
-    ]
+    ],
+    "maxScore": 263
   },
   "regilnv": {
     "center": "r",
@@ -35840,7 +36439,8 @@ const PUZZLES = {
       "verge",
       "virgin",
       "virile"
-    ]
+    ],
+    "maxScore": 247
   },
   "iegnrvw": {
     "center": "i",
@@ -35894,7 +36494,8 @@ const PUZZLES = {
       "wire",
       "wiring",
       "wring"
-    ]
+    ],
+    "maxScore": 245
   },
   "gaeikns": {
     "center": "g",
@@ -35952,7 +36553,8 @@ const PUZZLES = {
       "skiing",
       "snag",
       "sneaking"
-    ]
+    ],
+    "maxScore": 256
   },
   "vdeilos": {
     "center": "v",
@@ -36005,7 +36607,8 @@ const PUZZLES = {
       "videos",
       "viii",
       "voodoo"
-    ]
+    ],
+    "maxScore": 259
   },
   "ralmost": {
     "center": "r",
@@ -36070,7 +36673,8 @@ const PUZZLES = {
       "troll",
       "trolls",
       "trot"
-    ]
+    ],
+    "maxScore": 257
   },
   "nacdeht": {
     "center": "n",
@@ -36125,7 +36729,8 @@ const PUZZLES = {
       "tent",
       "tenth",
       "then"
-    ]
+    ],
+    "maxScore": 240
   },
   "ienorsu": {
     "center": "i",
@@ -36177,7 +36782,8 @@ const PUZZLES = {
       "union",
       "unions",
       "unison"
-    ]
+    ],
+    "maxScore": 260
   },
   "pabeirs": {
     "center": "p",
@@ -36235,7 +36841,8 @@ const PUZZLES = {
       "spear",
       "spears",
       "spree"
-    ]
+    ],
+    "maxScore": 249
   },
   "taeoprv": {
     "center": "t",
@@ -36296,7 +36903,8 @@ const PUZZLES = {
       "veto",
       "vote",
       "voter"
-    ]
+    ],
+    "maxScore": 244
   },
   "eaglruy": {
     "center": "e",
@@ -36352,7 +36960,8 @@ const PUZZLES = {
       "urge",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 221
   },
   "cadelpr": {
     "center": "c",
@@ -36410,7 +37019,8 @@ const PUZZLES = {
       "recalled",
       "replace",
       "replaced"
-    ]
+    ],
+    "maxScore": 262
   },
   "abdeglm": {
     "center": "a",
@@ -36487,7 +37097,8 @@ const PUZZLES = {
       "mead",
       "meade",
       "meal"
-    ]
+    ],
+    "maxScore": 259
   },
   "abeilnr": {
     "center": "a",
@@ -36561,7 +37172,8 @@ const PUZZLES = {
       "real",
       "rear",
       "reina"
-    ]
+    ],
+    "maxScore": 264
   },
   "eablosv": {
     "center": "e",
@@ -36629,7 +37241,8 @@ const PUZZLES = {
       "veal",
       "vessel",
       "vessels"
-    ]
+    ],
+    "maxScore": 274
   },
   "scehitw": {
     "center": "s",
@@ -36681,7 +37294,8 @@ const PUZZLES = {
       "witches",
       "wits",
       "witsec"
-    ]
+    ],
+    "maxScore": 236
   },
   "rahinst": {
     "center": "r",
@@ -36739,7 +37353,8 @@ const PUZZLES = {
       "traits",
       "transit",
       "trash"
-    ]
+    ],
+    "maxScore": 247
   },
   "pdemort": {
     "center": "p",
@@ -36796,7 +37411,8 @@ const PUZZLES = {
       "torpedo",
       "troop",
       "trooper"
-    ]
+    ],
+    "maxScore": 241
   },
   "aceilrv": {
     "center": "a",
@@ -36862,7 +37478,8 @@ const PUZZLES = {
       "vial",
       "villa",
       "viva"
-    ]
+    ],
+    "maxScore": 262
   },
   "gacinrs": {
     "center": "g",
@@ -36918,7 +37535,8 @@ const PUZZLES = {
       "singing",
       "sings",
       "snag"
-    ]
+    ],
+    "maxScore": 261
   },
   "ielprsu": {
     "center": "i",
@@ -36971,7 +37589,8 @@ const PUZZLES = {
       "supplies",
       "surprise",
       "surprises"
-    ]
+    ],
+    "maxScore": 243
   },
   "tcdeprs": {
     "center": "t",
@@ -37021,7 +37640,8 @@ const PUZZLES = {
       "tests",
       "tree",
       "trees"
-    ]
+    ],
+    "maxScore": 259
   },
   "madertu": {
     "center": "m",
@@ -37083,7 +37703,8 @@ const PUZZLES = {
       "term",
       "tram",
       "trauma"
-    ]
+    ],
+    "maxScore": 255
   },
   "ierstuv": {
     "center": "i",
@@ -37139,7 +37760,8 @@ const PUZZLES = {
       "viruses",
       "visit",
       "visits"
-    ]
+    ],
+    "maxScore": 260
   },
   "eginpsu": {
     "center": "e",
@@ -37190,7 +37812,8 @@ const PUZZLES = {
       "spines",
       "suspense",
       "unseen"
-    ]
+    ],
+    "maxScore": 250
   },
   "acemnor": {
     "center": "a",
@@ -37262,7 +37885,8 @@ const PUZZLES = {
       "roan",
       "roar",
       "romance"
-    ]
+    ],
+    "maxScore": 257
   },
   "rimopst": {
     "center": "r",
@@ -37322,7 +37946,8 @@ const PUZZLES = {
       "troop",
       "troops",
       "trot"
-    ]
+    ],
+    "maxScore": 242
   },
   "aceorsy": {
     "center": "a",
@@ -37381,7 +38006,8 @@ const PUZZLES = {
       "soar",
       "year",
       "years"
-    ]
+    ],
+    "maxScore": 236
   },
   "dbeorsv": {
     "center": "d",
@@ -37437,7 +38063,8 @@ const PUZZLES = {
       "severed",
       "versed",
       "voodoo"
-    ]
+    ],
+    "maxScore": 269
   },
   "haeilrt": {
     "center": "h",
@@ -37497,7 +38124,8 @@ const PUZZLES = {
       "three",
       "thrill",
       "thriller"
-    ]
+    ],
+    "maxScore": 235
   },
   "raefimn": {
     "center": "r",
@@ -37563,7 +38191,8 @@ const PUZZLES = {
       "remain",
       "riffraff",
       "rimmer"
-    ]
+    ],
+    "maxScore": 255
   },
   "echipst": {
     "center": "e",
@@ -37621,7 +38250,8 @@ const PUZZLES = {
       "tests",
       "thesis",
       "titties"
-    ]
+    ],
+    "maxScore": 258
   },
   "taegiln": {
     "center": "t",
@@ -37678,7 +38308,8 @@ const PUZZLES = {
       "tingling",
       "tintin",
       "title"
-    ]
+    ],
+    "maxScore": 251
   },
   "iegnorv": {
     "center": "i",
@@ -37731,7 +38362,8 @@ const PUZZLES = {
       "vine",
       "vinnie",
       "virgin"
-    ]
+    ],
+    "maxScore": 256
   },
   "icenosu": {
     "center": "i",
@@ -37772,7 +38404,8 @@ const PUZZLES = {
       "union",
       "unions",
       "unison"
-    ]
+    ],
+    "maxScore": 237
   },
   "ucdehrs": {
     "center": "u",
@@ -37831,7 +38464,8 @@ const PUZZLES = {
       "user",
       "users",
       "usher"
-    ]
+    ],
+    "maxScore": 259
   },
   "segilot": {
     "center": "s",
@@ -37896,7 +38530,8 @@ const PUZZLES = {
       "tools",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 263
   },
   "deilrvy": {
     "center": "d",
@@ -37951,7 +38586,8 @@ const PUZZLES = {
       "yelled",
       "yield",
       "yielded"
-    ]
+    ],
+    "maxScore": 246
   },
   "haelrty": {
     "center": "h",
@@ -38009,7 +38645,8 @@ const PUZZLES = {
       "threat",
       "three",
       "yeah"
-    ]
+    ],
+    "maxScore": 239
   },
   "icdegln": {
     "center": "i",
@@ -38061,7 +38698,8 @@ const PUZZLES = {
       "nice",
       "niece",
       "nine"
-    ]
+    ],
+    "maxScore": 252
   },
   "ediostu": {
     "center": "e",
@@ -38117,7 +38755,8 @@ const PUZZLES = {
       "titties",
       "tossed",
       "used"
-    ]
+    ],
+    "maxScore": 235
   },
   "scdeipt": {
     "center": "s",
@@ -38169,7 +38808,8 @@ const PUZZLES = {
       "tests",
       "tides",
       "titties"
-    ]
+    ],
+    "maxScore": 239
   },
   "laefrsu": {
     "center": "l",
@@ -38236,7 +38876,8 @@ const PUZZLES = {
       "sells",
       "sulfur",
       "surreal"
-    ]
+    ],
+    "maxScore": 256
   },
   "laenort": {
     "center": "l",
@@ -38301,7 +38942,8 @@ const PUZZLES = {
       "tool",
       "total",
       "troll"
-    ]
+    ],
+    "maxScore": 259
   },
   "ocinprs": {
     "center": "o",
@@ -38356,7 +38998,8 @@ const PUZZLES = {
       "sponsors",
       "spoon",
       "spoons"
-    ]
+    ],
+    "maxScore": 236
   },
   "efghirt": {
     "center": "e",
@@ -38405,7 +39048,8 @@ const PUZZLES = {
       "tire",
       "tree",
       "trigger"
-    ]
+    ],
+    "maxScore": 228
   },
   "meilpst": {
     "center": "m",
@@ -38469,7 +39113,8 @@ const PUZZLES = {
       "tempt",
       "time",
       "times"
-    ]
+    ],
+    "maxScore": 240
   },
   "oeprsux": {
     "center": "o",
@@ -38526,7 +39171,8 @@ const PUZZLES = {
       "spouse",
       "spouses",
       "suppose"
-    ]
+    ],
+    "maxScore": 250
   },
   "iaeglrs": {
     "center": "i",
@@ -38584,7 +39230,8 @@ const PUZZLES = {
       "siegel",
       "sierra",
       "sire"
-    ]
+    ],
+    "maxScore": 251
   },
   "sdefnot": {
     "center": "s",
@@ -38646,7 +39293,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "tossed"
-    ]
+    ],
+    "maxScore": 265
   },
   "ncdemot": {
     "center": "n",
@@ -38709,7 +39357,8 @@ const PUZZLES = {
       "tendon",
       "tent",
       "tone"
-    ]
+    ],
+    "maxScore": 259
   },
   "caelpst": {
     "center": "c",
@@ -38766,7 +39415,8 @@ const PUZZLES = {
       "spectacle",
       "spectacles",
       "tact"
-    ]
+    ],
+    "maxScore": 259
   },
   "caehlos": {
     "center": "c",
@@ -38829,7 +39479,8 @@ const PUZZLES = {
       "shoelace",
       "shoelaces",
       "solace"
-    ]
+    ],
+    "maxScore": 268
   },
   "oilnrst": {
     "center": "o",
@@ -38898,7 +39549,8 @@ const PUZZLES = {
       "troll",
       "trolls",
       "trot"
-    ]
+    ],
+    "maxScore": 251
   },
   "labeirv": {
     "center": "l",
@@ -38958,7 +39610,8 @@ const PUZZLES = {
       "vial",
       "villa",
       "virile"
-    ]
+    ],
+    "maxScore": 230
   },
   "nagimrw": {
     "center": "n",
@@ -39014,7 +39667,8 @@ const PUZZLES = {
       "winning",
       "wiring",
       "wring"
-    ]
+    ],
+    "maxScore": 252
   },
   "eacdfin": {
     "center": "e",
@@ -39076,7 +39730,8 @@ const PUZZLES = {
       "nice",
       "niece",
       "nine"
-    ]
+    ],
+    "maxScore": 265
   },
   "laegnry": {
     "center": "l",
@@ -39129,7 +39784,8 @@ const PUZZLES = {
       "reel",
       "relay",
       "yearly"
-    ]
+    ],
+    "maxScore": 234
   },
   "echiops": {
     "center": "e",
@@ -39181,7 +39837,8 @@ const PUZZLES = {
       "speeches",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 231
   },
   "eaimnpr": {
     "center": "e",
@@ -39249,7 +39906,8 @@ const PUZZLES = {
       "rimmer",
       "ripe",
       "ripper"
-    ]
+    ],
+    "maxScore": 243
   },
   "acdinot": {
     "center": "a",
@@ -39300,7 +39958,8 @@ const PUZZLES = {
       "taint",
       "tattoo",
       "toad"
-    ]
+    ],
+    "maxScore": 244
   },
   "uefhrst": {
     "center": "u",
@@ -39360,7 +40019,8 @@ const PUZZLES = {
       "usher",
       "uterus",
       "utter"
-    ]
+    ],
+    "maxScore": 250
   },
   "rdehntu": {
     "center": "r",
@@ -39414,7 +40074,8 @@ const PUZZLES = {
       "untrue",
       "utter",
       "uttered"
-    ]
+    ],
+    "maxScore": 233
   },
   "radelnv": {
     "center": "r",
@@ -39472,7 +40133,8 @@ const PUZZLES = {
       "valera",
       "veer",
       "veranda"
-    ]
+    ],
+    "maxScore": 234
   },
   "eaghost": {
     "center": "e",
@@ -39524,7 +40186,8 @@ const PUZZLES = {
       "test",
       "tests",
       "theta"
-    ]
+    ],
+    "maxScore": 218
   },
   "ibefgnr": {
     "center": "i",
@@ -39572,7 +40235,8 @@ const PUZZLES = {
       "ring",
       "ringer",
       "ringing"
-    ]
+    ],
+    "maxScore": 234
   },
   "mceirst": {
     "center": "m",
@@ -39632,7 +40296,8 @@ const PUZZLES = {
       "times",
       "trim",
       "trimester"
-    ]
+    ],
+    "maxScore": 251
   },
   "dcegint": {
     "center": "d",
@@ -39682,7 +40347,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "tinted"
-    ]
+    ],
+    "maxScore": 236
   },
   "rabefot": {
     "center": "r",
@@ -39756,7 +40422,8 @@ const PUZZLES = {
       "treat",
       "tree",
       "trot"
-    ]
+    ],
+    "maxScore": 259
   },
   "raeimnp": {
     "center": "r",
@@ -39825,7 +40492,8 @@ const PUZZLES = {
       "rimmer",
       "ripe",
       "ripper"
-    ]
+    ],
+    "maxScore": 255
   },
   "dcehrsu": {
     "center": "d",
@@ -39882,7 +40550,8 @@ const PUZZLES = {
       "succeeds",
       "suede",
       "used"
-    ]
+    ],
+    "maxScore": 254
   },
   "pcelosu": {
     "center": "p",
@@ -39948,7 +40617,8 @@ const PUZZLES = {
       "spouses",
       "supple",
       "suppose"
-    ]
+    ],
+    "maxScore": 256
   },
   "taelnrx": {
     "center": "t",
@@ -40003,7 +40673,8 @@ const PUZZLES = {
       "text",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 223
   },
   "acegnor": {
     "center": "a",
@@ -40071,7 +40742,8 @@ const PUZZLES = {
       "reggae",
       "roan",
       "roar"
-    ]
+    ],
+    "maxScore": 260
   },
   "habcers": {
     "center": "h",
@@ -40131,7 +40803,8 @@ const PUZZLES = {
       "shares",
       "shears",
       "sheer"
-    ]
+    ],
+    "maxScore": 265
   },
   "adeimnx": {
     "center": "a",
@@ -40195,7 +40868,8 @@ const PUZZLES = {
       "nada",
       "name",
       "named"
-    ]
+    ],
+    "maxScore": 246
   },
   "daefgin": {
     "center": "d",
@@ -40249,7 +40923,8 @@ const PUZZLES = {
       "needed",
       "needing",
       "needn"
-    ]
+    ],
+    "maxScore": 233
   },
   "icemnps": {
     "center": "i",
@@ -40303,7 +40978,8 @@ const PUZZLES = {
       "spine",
       "spines",
       "spins"
-    ]
+    ],
+    "maxScore": 244
   },
   "caelnry": {
     "center": "c",
@@ -40357,7 +41033,8 @@ const PUZZLES = {
       "racer",
       "recall",
       "recycle"
-    ]
+    ],
+    "maxScore": 239
   },
   "teinsvy": {
     "center": "t",
@@ -40409,7 +41086,8 @@ const PUZZLES = {
       "visit",
       "visits",
       "yeti"
-    ]
+    ],
+    "maxScore": 251
   },
   "naeglmt": {
     "center": "n",
@@ -40464,7 +41142,8 @@ const PUZZLES = {
       "teenage",
       "tenant",
       "tent"
-    ]
+    ],
+    "maxScore": 238
   },
   "obeglns": {
     "center": "o",
@@ -40532,7 +41211,8 @@ const PUZZLES = {
       "song",
       "songs",
       "soon"
-    ]
+    ],
+    "maxScore": 236
   },
   "aehipst": {
     "center": "a",
@@ -40597,7 +41277,8 @@ const PUZZLES = {
       "that",
       "thats",
       "theta"
-    ]
+    ],
+    "maxScore": 266
   },
   "echiort": {
     "center": "e",
@@ -40652,7 +41333,8 @@ const PUZZLES = {
       "tire",
       "tore",
       "tree"
-    ]
+    ],
+    "maxScore": 235
   },
   "eahrtvw": {
     "center": "e",
@@ -40712,7 +41394,8 @@ const PUZZLES = {
       "where",
       "wherever",
       "wreath"
-    ]
+    ],
+    "maxScore": 231
   },
   "ebdgiln": {
     "center": "e",
@@ -40774,7 +41457,8 @@ const PUZZLES = {
       "needle",
       "needn",
       "nine"
-    ]
+    ],
+    "maxScore": 267
   },
   "rbelmst": {
     "center": "r",
@@ -40822,7 +41506,8 @@ const PUZZLES = {
       "trees",
       "tremble",
       "trembles"
-    ]
+    ],
+    "maxScore": 242
   },
   "sacfint": {
     "center": "s",
@@ -40866,7 +41551,8 @@ const PUZZLES = {
       "stiff",
       "stiffs",
       "stint"
-    ]
+    ],
+    "maxScore": 233
   },
   "hfginst": {
     "center": "h",
@@ -40914,7 +41600,8 @@ const PUZZLES = {
       "things",
       "tight",
       "tights"
-    ]
+    ],
+    "maxScore": 225
   },
   "mabenst": {
     "center": "m",
@@ -40975,7 +41662,8 @@ const PUZZLES = {
       "teammates",
       "teams",
       "testament"
-    ]
+    ],
+    "maxScore": 255
   },
   "edghist": {
     "center": "e",
@@ -41031,7 +41719,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "titties"
-    ]
+    ],
+    "maxScore": 235
   },
   "semnotv": {
     "center": "s",
@@ -41090,7 +41779,8 @@ const PUZZLES = {
       "vest",
       "vests",
       "votes"
-    ]
+    ],
+    "maxScore": 230
   },
   "ignrstv": {
     "center": "i",
@@ -41139,7 +41829,8 @@ const PUZZLES = {
       "visit",
       "visiting",
       "visits"
-    ]
+    ],
+    "maxScore": 241
   },
   "oadelpr": {
     "center": "o",
@@ -41206,7 +41897,8 @@ const PUZZLES = {
       "rope",
       "roped",
       "roper"
-    ]
+    ],
+    "maxScore": 235
   },
   "tilnosu": {
     "center": "t",
@@ -41266,7 +41958,8 @@ const PUZZLES = {
       "tutu",
       "unit",
       "units"
-    ]
+    ],
+    "maxScore": 241
   },
   "nadehrs": {
     "center": "n",
@@ -41322,7 +42015,8 @@ const PUZZLES = {
       "serenade",
       "serene",
       "snare"
-    ]
+    ],
+    "maxScore": 242
   },
   "aeoprsv": {
     "center": "a",
@@ -41382,7 +42076,8 @@ const PUZZLES = {
       "vapor",
       "vase",
       "vases"
-    ]
+    ],
+    "maxScore": 246
   },
   "acdemor": {
     "center": "a",
@@ -41449,7 +42144,8 @@ const PUZZLES = {
       "reared",
       "road",
       "roar"
-    ]
+    ],
+    "maxScore": 234
   },
   "gaeorst": {
     "center": "g",
@@ -41508,7 +42204,8 @@ const PUZZLES = {
       "target",
       "targets",
       "toga"
-    ]
+    ],
+    "maxScore": 255
   },
   "ndemort": {
     "center": "n",
@@ -41574,7 +42271,8 @@ const PUZZLES = {
       "tormented",
       "torn",
       "trend"
-    ]
+    ],
+    "maxScore": 259
   },
   "eimprtv": {
     "center": "e",
@@ -41637,7 +42335,8 @@ const PUZZLES = {
       "tripe",
       "veer",
       "viper"
-    ]
+    ],
+    "maxScore": 242
   },
   "tcehrsw": {
     "center": "t",
@@ -41687,7 +42386,8 @@ const PUZZLES = {
       "west",
       "wretch",
       "wretches"
-    ]
+    ],
+    "maxScore": 236
   },
   "ocdehls": {
     "center": "o",
@@ -41754,7 +42454,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 238
   },
   "ndehrsu": {
     "center": "n",
@@ -41805,7 +42506,8 @@ const PUZZLES = {
       "undue",
       "unseen",
       "unused"
-    ]
+    ],
+    "maxScore": 246
   },
   "veinors": {
     "center": "v",
@@ -41856,7 +42558,8 @@ const PUZZLES = {
       "vision",
       "visions",
       "visor"
-    ]
+    ],
+    "maxScore": 246
   },
   "aeilnsy": {
     "center": "a",
@@ -41912,7 +42615,8 @@ const PUZZLES = {
       "slain",
       "snail",
       "snails"
-    ]
+    ],
+    "maxScore": 242
   },
   "eackmpr": {
     "center": "e",
@@ -41979,7 +42683,8 @@ const PUZZLES = {
       "reek",
       "remake",
       "remark"
-    ]
+    ],
+    "maxScore": 250
   },
   "ehimost": {
     "center": "e",
@@ -42042,7 +42747,8 @@ const PUZZLES = {
       "titties",
       "tome",
       "totem"
-    ]
+    ],
+    "maxScore": 238
   },
   "icelnot": {
     "center": "i",
@@ -42094,7 +42800,8 @@ const PUZZLES = {
       "toilet",
       "tonic",
       "tonino"
-    ]
+    ],
+    "maxScore": 237
   },
   "taeflry": {
     "center": "t",
@@ -42154,7 +42861,8 @@ const PUZZLES = {
       "trey",
       "tyre",
       "tyrell"
-    ]
+    ],
+    "maxScore": 230
   },
   "sdegimt": {
     "center": "s",
@@ -42210,7 +42918,8 @@ const PUZZLES = {
       "tides",
       "times",
       "titties"
-    ]
+    ],
+    "maxScore": 236
   },
   "idgnorw": {
     "center": "i",
@@ -42258,7 +42967,8 @@ const PUZZLES = {
       "wiring",
       "wring",
       "wrongdoing"
-    ]
+    ],
+    "maxScore": 247
   },
   "ldefirt": {
     "center": "l",
@@ -42321,7 +43031,8 @@ const PUZZLES = {
       "title",
       "titled",
       "trifle"
-    ]
+    ],
+    "maxScore": 254
   },
   "echistw": {
     "center": "e",
@@ -42372,7 +43083,8 @@ const PUZZLES = {
       "wishes",
       "witches",
       "witsec"
-    ]
+    ],
+    "maxScore": 233
   },
   "nailsty": {
     "center": "n",
@@ -42419,7 +43131,8 @@ const PUZZLES = {
       "taint",
       "tinny",
       "tintin"
-    ]
+    ],
+    "maxScore": 251
   },
   "ecdlrtu": {
     "center": "e",
@@ -42483,7 +43196,8 @@ const PUZZLES = {
       "ulcer",
       "utter",
       "uttered"
-    ]
+    ],
+    "maxScore": 261
   },
   "ndertuv": {
     "center": "n",
@@ -42543,7 +43257,8 @@ const PUZZLES = {
       "venture",
       "ventured",
       "venue"
-    ]
+    ],
+    "maxScore": 264
   },
   "ideopst": {
     "center": "i",
@@ -42591,7 +43306,8 @@ const PUZZLES = {
       "tiptoe",
       "titties",
       "topside"
-    ]
+    ],
+    "maxScore": 247
   },
   "dceloru": {
     "center": "d",
@@ -42655,7 +43371,8 @@ const PUZZLES = {
       "rudder",
       "rude",
       "ruled"
-    ]
+    ],
+    "maxScore": 247
   },
   "lacehks": {
     "center": "l",
@@ -42723,7 +43440,8 @@ const PUZZLES = {
       "slacks",
       "slash",
       "sleek"
-    ]
+    ],
+    "maxScore": 257
   },
   "gaelnos": {
     "center": "g",
@@ -42787,7 +43505,8 @@ const PUZZLES = {
       "solange",
       "song",
       "songs"
-    ]
+    ],
+    "maxScore": 241
   },
   "ndgiorw": {
     "center": "n",
@@ -42842,7 +43561,8 @@ const PUZZLES = {
       "wring",
       "wrong",
       "wrongdoing"
-    ]
+    ],
+    "maxScore": 262
   },
   "cadehor": {
     "center": "c",
@@ -42901,7 +43621,8 @@ const PUZZLES = {
       "recorded",
       "recorder",
       "roach"
-    ]
+    ],
+    "maxScore": 251
   },
   "saceirz": {
     "center": "s",
@@ -42954,7 +43675,8 @@ const PUZZLES = {
       "sire",
       "size",
       "sizes"
-    ]
+    ],
+    "maxScore": 231
   },
   "caefrsu": {
     "center": "c",
@@ -43011,7 +43733,8 @@ const PUZZLES = {
       "successes",
       "surface",
       "surfaces"
-    ]
+    ],
+    "maxScore": 266
   },
   "icgknst": {
     "center": "i",
@@ -43068,7 +43791,8 @@ const PUZZLES = {
       "ticking",
       "ticks",
       "tintin"
-    ]
+    ],
+    "maxScore": 263
   },
   "nagiswy": {
     "center": "n",
@@ -43124,7 +43848,8 @@ const PUZZLES = {
       "yawn",
       "yawning",
       "yawns"
-    ]
+    ],
+    "maxScore": 256
   },
   "adginor": {
     "center": "a",
@@ -43186,7 +43911,8 @@ const PUZZLES = {
       "roan",
       "roar",
       "roaring"
-    ]
+    ],
+    "maxScore": 247
   },
   "cadertx": {
     "center": "c",
@@ -43235,7 +43961,8 @@ const PUZZLES = {
       "traced",
       "tracer",
       "tract"
-    ]
+    ],
+    "maxScore": 245
   },
   "oemnstu": {
     "center": "o",
@@ -43300,7 +44027,8 @@ const PUZZLES = {
       "totem",
       "tout",
       "utmost"
-    ]
+    ],
+    "maxScore": 249
   },
   "aelnopt": {
     "center": "a",
@@ -43366,7 +44094,8 @@ const PUZZLES = {
       "teapot",
       "tenant",
       "total"
-    ]
+    ],
+    "maxScore": 246
   },
   "iefnstu": {
     "center": "i",
@@ -43418,7 +44147,8 @@ const PUZZLES = {
       "unites",
       "units",
       "untie"
-    ]
+    ],
+    "maxScore": 258
   },
   "einqstu": {
     "center": "e",
@@ -43475,7 +44205,8 @@ const PUZZLES = {
       "unites",
       "unseen",
       "untie"
-    ]
+    ],
+    "maxScore": 269
   },
   "ecfnprs": {
     "center": "e",
@@ -43526,7 +44257,8 @@ const PUZZLES = {
       "serene",
       "specs",
       "spree"
-    ]
+    ],
+    "maxScore": 248
   },
   "ecdhlsu": {
     "center": "e",
@@ -43582,7 +44314,8 @@ const PUZZLES = {
       "successes",
       "suede",
       "used"
-    ]
+    ],
+    "maxScore": 262
   },
   "naciotu": {
     "center": "n",
@@ -43634,7 +44367,8 @@ const PUZZLES = {
       "uncut",
       "union",
       "unit"
-    ]
+    ],
+    "maxScore": 261
   },
   "labeisz": {
     "center": "l",
@@ -43695,7 +44429,8 @@ const PUZZLES = {
       "sizzle",
       "slab",
       "zeal"
-    ]
+    ],
+    "maxScore": 239
   },
   "deimnot": {
     "center": "d",
@@ -43758,7 +44493,8 @@ const PUZZLES = {
       "tied",
       "timed",
       "tinted"
-    ]
+    ],
+    "maxScore": 256
   },
   "ebdgirt": {
     "center": "e",
@@ -43825,7 +44561,8 @@ const PUZZLES = {
       "tried",
       "trigger",
       "triggered"
-    ]
+    ],
+    "maxScore": 268
   },
   "ehimnos": {
     "center": "e",
@@ -43885,7 +44622,8 @@ const PUZZLES = {
       "shoe",
       "shoes",
       "some"
-    ]
+    ],
+    "maxScore": 240
   },
   "aeinstx": {
     "center": "a",
@@ -43940,7 +44678,8 @@ const PUZZLES = {
       "tease",
       "tenant",
       "tenants"
-    ]
+    ],
+    "maxScore": 264
   },
   "geinprt": {
     "center": "g",
@@ -43987,7 +44726,8 @@ const PUZZLES = {
       "tiring",
       "trigger",
       "triggering"
-    ]
+    ],
+    "maxScore": 254
   },
   "icenstz": {
     "center": "i",
@@ -44035,7 +44775,8 @@ const PUZZLES = {
       "tintin",
       "titties",
       "zinc"
-    ]
+    ],
+    "maxScore": 258
   },
   "cemnors": {
     "center": "c",
@@ -44087,7 +44828,8 @@ const PUZZLES = {
       "soccer",
       "sorcerer",
       "sorceress"
-    ]
+    ],
+    "maxScore": 256
   },
   "tbeikrs": {
     "center": "t",
@@ -44148,7 +44890,8 @@ const PUZZLES = {
       "trek",
       "tribe",
       "tribes"
-    ]
+    ],
+    "maxScore": 259
   },
   "eabilnr": {
     "center": "e",
@@ -44217,7 +44960,8 @@ const PUZZLES = {
       "reel",
       "rein",
       "reina"
-    ]
+    ],
+    "maxScore": 268
   },
   "ecdgino": {
     "center": "e",
@@ -44272,7 +45016,8 @@ const PUZZLES = {
       "none",
       "noone",
       "once"
-    ]
+    ],
+    "maxScore": 238
   },
   "laehmrt": {
     "center": "l",
@@ -44335,7 +45080,8 @@ const PUZZLES = {
       "tell",
       "teller",
       "thermal"
-    ]
+    ],
+    "maxScore": 235
   },
   "hceopst": {
     "center": "h",
@@ -44392,7 +45138,8 @@ const PUZZLES = {
       "teeth",
       "tooth",
       "tosh"
-    ]
+    ],
+    "maxScore": 233
   },
   "nacdiot": {
     "center": "n",
@@ -44440,7 +45187,8 @@ const PUZZLES = {
       "tintin",
       "tonic",
       "tonino"
-    ]
+    ],
+    "maxScore": 254
   },
   "saelrwy": {
     "center": "s",
@@ -44502,7 +45250,8 @@ const PUZZLES = {
       "welles",
       "wells",
       "years"
-    ]
+    ],
+    "maxScore": 266
   },
   "ainostu": {
     "center": "a",
@@ -44546,7 +45295,8 @@ const PUZZLES = {
       "tattoos",
       "toast",
       "tuna"
-    ]
+    ],
+    "maxScore": 237
   },
   "hadersw": {
     "center": "h",
@@ -44605,7 +45355,8 @@ const PUZZLES = {
       "washes",
       "where",
       "whereas"
-    ]
+    ],
+    "maxScore": 258
   },
   "aegirsv": {
     "center": "a",
@@ -44666,7 +45417,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 240
   },
   "saceitv": {
     "center": "s",
@@ -44725,7 +45477,8 @@ const PUZZLES = {
       "visas",
       "visit",
       "visits"
-    ]
+    ],
+    "maxScore": 272
   },
   "dacekrt": {
     "center": "d",
@@ -44784,7 +45537,8 @@ const PUZZLES = {
       "trader",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 266
   },
   "ocdemps": {
     "center": "o",
@@ -44847,7 +45601,8 @@ const PUZZLES = {
       "scope",
       "sodom",
       "some"
-    ]
+    ],
+    "maxScore": 240
   },
   "iacdgnr": {
     "center": "i",
@@ -44899,7 +45654,8 @@ const PUZZLES = {
       "riding",
       "ring",
       "ringing"
-    ]
+    ],
+    "maxScore": 240
   },
   "eacdhmt": {
     "center": "e",
@@ -44966,7 +45722,8 @@ const PUZZLES = {
       "teeth",
       "theme",
       "theta"
-    ]
+    ],
+    "maxScore": 267
   },
   "edhmost": {
     "center": "e",
@@ -45035,7 +45792,8 @@ const PUZZLES = {
       "tome",
       "tossed",
       "totem"
-    ]
+    ],
+    "maxScore": 269
   },
   "lerstuv": {
     "center": "l",
@@ -45086,7 +45844,8 @@ const PUZZLES = {
       "vessels",
       "vulture",
       "vultures"
-    ]
+    ],
+    "maxScore": 234
   },
   "dceimno": {
     "center": "d",
@@ -45144,7 +45903,8 @@ const PUZZLES = {
       "needn",
       "nodded",
       "node"
-    ]
+    ],
+    "maxScore": 258
   },
   "cbeorsu": {
     "center": "c",
@@ -45192,7 +45952,8 @@ const PUZZLES = {
       "successes",
       "successor",
       "succubus"
-    ]
+    ],
+    "maxScore": 246
   },
   "acilnsv": {
     "center": "a",
@@ -45246,7 +46007,8 @@ const PUZZLES = {
       "visa",
       "visas",
       "viva"
-    ]
+    ],
+    "maxScore": 246
   },
   "edfintu": {
     "center": "e",
@@ -45306,7 +46068,8 @@ const PUZZLES = {
       "united",
       "untie",
       "untied"
-    ]
+    ],
+    "maxScore": 236
   },
   "sghnotu": {
     "center": "s",
@@ -45360,7 +46123,8 @@ const PUZZLES = {
       "tosh",
       "toss",
       "tush"
-    ]
+    ],
+    "maxScore": 234
   },
   "ocenstu": {
     "center": "o",
@@ -45423,7 +46187,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "tout"
-    ]
+    ],
+    "maxScore": 257
   },
   "rcdeitu": {
     "center": "r",
@@ -45483,7 +46248,8 @@ const PUZZLES = {
       "turret",
       "utter",
       "uttered"
-    ]
+    ],
+    "maxScore": 260
   },
   "neiqstu": {
     "center": "n",
@@ -45539,7 +46305,8 @@ const PUZZLES = {
       "units",
       "unseen",
       "untie"
-    ]
+    ],
+    "maxScore": 256
   },
   "tabilos": {
     "center": "t",
@@ -45605,7 +46372,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "total"
-    ]
+    ],
+    "maxScore": 234
   },
   "sbeilmu": {
     "center": "s",
@@ -45656,7 +46424,8 @@ const PUZZLES = {
       "smile",
       "smiles",
       "sublime"
-    ]
+    ],
+    "maxScore": 229
   },
   "nacipst": {
     "center": "n",
@@ -45711,7 +46480,8 @@ const PUZZLES = {
       "stint",
       "taint",
       "tintin"
-    ]
+    ],
+    "maxScore": 257
   },
   "aeflrty": {
     "center": "a",
@@ -45786,7 +46556,8 @@ const PUZZLES = {
       "treaty",
       "year",
       "yearly"
-    ]
+    ],
+    "maxScore": 272
   },
   "hegostu": {
     "center": "h",
@@ -45838,7 +46609,8 @@ const PUZZLES = {
       "tosh",
       "tough",
       "tush"
-    ]
+    ],
+    "maxScore": 215
   },
   "taeghin": {
     "center": "t",
@@ -45893,7 +46665,8 @@ const PUZZLES = {
       "tighten",
       "tightening",
       "tintin"
-    ]
+    ],
+    "maxScore": 237
   },
   "caeortv": {
     "center": "c",
@@ -45949,7 +46722,8 @@ const PUZZLES = {
       "tract",
       "tractor",
       "vector"
-    ]
+    ],
+    "maxScore": 246
   },
   "eadilrz": {
     "center": "e",
@@ -46015,7 +46789,8 @@ const PUZZLES = {
       "rider",
       "riled",
       "zeal"
-    ]
+    ],
+    "maxScore": 242
   },
   "tilnors": {
     "center": "t",
@@ -46078,7 +46853,8 @@ const PUZZLES = {
       "troll",
       "trolls",
       "trot"
-    ]
+    ],
+    "maxScore": 249
   },
   "iacgkln": {
     "center": "i",
@@ -46130,7 +46906,8 @@ const PUZZLES = {
       "nick",
       "nicki",
       "nicking"
-    ]
+    ],
+    "maxScore": 248
   },
   "deilmos": {
     "center": "d",
@@ -46197,7 +46974,8 @@ const PUZZLES = {
       "sodom",
       "soiled",
       "solid"
-    ]
+    ],
+    "maxScore": 245
   },
   "idegstu": {
     "center": "i",
@@ -46249,7 +47027,8 @@ const PUZZLES = {
       "tissue",
       "tissues",
       "titties"
-    ]
+    ],
+    "maxScore": 249
   },
   "tcdehis": {
     "center": "t",
@@ -46305,7 +47084,8 @@ const PUZZLES = {
       "tidied",
       "tied",
       "titties"
-    ]
+    ],
+    "maxScore": 247
   },
   "ienrtvw": {
     "center": "i",
@@ -46359,7 +47139,8 @@ const PUZZLES = {
       "write",
       "writer",
       "written"
-    ]
+    ],
+    "maxScore": 248
   },
   "teinorv": {
     "center": "t",
@@ -46416,7 +47197,8 @@ const PUZZLES = {
       "veto",
       "vote",
       "voter"
-    ]
+    ],
+    "maxScore": 244
   },
   "sdghint": {
     "center": "s",
@@ -46468,7 +47250,8 @@ const PUZZLES = {
       "things",
       "tidings",
       "tights"
-    ]
+    ],
+    "maxScore": 257
   },
   "sinortu": {
     "center": "s",
@@ -46526,7 +47309,8 @@ const PUZZLES = {
       "unions",
       "unison",
       "units"
-    ]
+    ],
+    "maxScore": 255
   },
   "oegilnr": {
     "center": "o",
@@ -46590,7 +47374,8 @@ const PUZZLES = {
       "rollin",
       "rolling",
       "rollo"
-    ]
+    ],
+    "maxScore": 252
   },
   "dcegino": {
     "center": "d",
@@ -46642,7 +47427,8 @@ const PUZZLES = {
       "nodded",
       "nodding",
       "node"
-    ]
+    ],
+    "maxScore": 244
   },
   "eacdilm": {
     "center": "e",
@@ -46710,7 +47496,8 @@ const PUZZLES = {
       "mile",
       "millie",
       "mime"
-    ]
+    ],
+    "maxScore": 264
   },
   "acinpst": {
     "center": "a",
@@ -46771,7 +47558,8 @@ const PUZZLES = {
       "tactic",
       "taint",
       "taps"
-    ]
+    ],
+    "maxScore": 258
   },
   "achmost": {
     "center": "a",
@@ -46838,7 +47626,8 @@ const PUZZLES = {
       "toast",
       "tomato",
       "tomcat"
-    ]
+    ],
+    "maxScore": 259
   },
   "gcdeinr": {
     "center": "g",
@@ -46883,7 +47672,8 @@ const PUZZLES = {
       "ring",
       "ringer",
       "ringing"
-    ]
+    ],
+    "maxScore": 236
   },
   "eafnort": {
     "center": "e",
@@ -46949,7 +47739,8 @@ const PUZZLES = {
       "tore",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 233
   },
   "oehlpsy": {
     "center": "o",
@@ -47019,7 +47810,8 @@ const PUZZLES = {
       "soles",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 264
   },
   "iceknrs": {
     "center": "i",
@@ -47079,7 +47871,8 @@ const PUZZLES = {
       "skin",
       "skinner",
       "skins"
-    ]
+    ],
+    "maxScore": 237
   },
   "eacimnt": {
     "center": "e",
@@ -47144,7 +47937,8 @@ const PUZZLES = {
       "tenant",
       "tent",
       "time"
-    ]
+    ],
+    "maxScore": 252
   },
   "eacistv": {
     "center": "e",
@@ -47195,7 +47989,8 @@ const PUZZLES = {
       "vests",
       "vice",
       "vices"
-    ]
+    ],
+    "maxScore": 222
   },
   "oceginr": {
     "center": "o",
@@ -47254,7 +48049,8 @@ const PUZZLES = {
       "region",
       "rigor",
       "ringo"
-    ]
+    ],
+    "maxScore": 251
   },
   "gaemnst": {
     "center": "g",
@@ -47306,7 +48102,8 @@ const PUZZLES = {
       "stages",
       "tang",
       "teenage"
-    ]
+    ],
+    "maxScore": 239
   },
   "aceistu": {
     "center": "a",
@@ -47360,7 +48157,8 @@ const PUZZLES = {
       "taste",
       "tastes",
       "tease"
-    ]
+    ],
+    "maxScore": 269
   },
   "gadertu": {
     "center": "g",
@@ -47418,7 +48216,8 @@ const PUZZLES = {
       "targeted",
       "urge",
       "urged"
-    ]
+    ],
+    "maxScore": 271
   },
   "railmst": {
     "center": "r",
@@ -47481,7 +48280,8 @@ const PUZZLES = {
       "trial",
       "trials",
       "trim"
-    ]
+    ],
+    "maxScore": 247
   },
   "aefgirs": {
     "center": "a",
@@ -47545,7 +48345,8 @@ const PUZZLES = {
       "sari",
       "sears",
       "sierra"
-    ]
+    ],
+    "maxScore": 246
   },
   "paelmrt": {
     "center": "p",
@@ -47612,7 +48413,8 @@ const PUZZLES = {
       "trample",
       "trap",
       "trapper"
-    ]
+    ],
+    "maxScore": 254
   },
   "abcilst": {
     "center": "a",
@@ -47676,7 +48478,8 @@ const PUZZLES = {
       "tail",
       "tails",
       "tall"
-    ]
+    ],
+    "maxScore": 257
   },
   "daeilrz": {
     "center": "d",
@@ -47743,7 +48546,8 @@ const PUZZLES = {
       "ride",
       "rider",
       "riled"
-    ]
+    ],
+    "maxScore": 245
   },
   "tcdeilr": {
     "center": "t",
@@ -47800,7 +48604,8 @@ const PUZZLES = {
       "titled",
       "tree",
       "tried"
-    ]
+    ],
+    "maxScore": 253
   },
   "scehnru": {
     "center": "s",
@@ -47855,7 +48660,8 @@ const PUZZLES = {
       "user",
       "users",
       "usher"
-    ]
+    ],
+    "maxScore": 263
   },
   "oacinpt": {
     "center": "o",
@@ -47911,7 +48717,8 @@ const PUZZLES = {
       "tonino",
       "toot",
       "topic"
-    ]
+    ],
+    "maxScore": 244
   },
   "pbeilos": {
     "center": "p",
@@ -47971,7 +48778,8 @@ const PUZZLES = {
       "spills",
       "spoil",
       "spoils"
-    ]
+    ],
+    "maxScore": 243
   },
   "ceilnst": {
     "center": "c",
@@ -48019,7 +48827,8 @@ const PUZZLES = {
       "silences",
       "slice",
       "slices"
-    ]
+    ],
+    "maxScore": 270
   },
   "eabirtv": {
     "center": "e",
@@ -48083,7 +48892,8 @@ const PUZZLES = {
       "vertebrae",
       "vibe",
       "vibrate"
-    ]
+    ],
+    "maxScore": 260
   },
   "maeilrt": {
     "center": "m",
@@ -48160,7 +48970,8 @@ const PUZZLES = {
       "timer",
       "tram",
       "trim"
-    ]
+    ],
+    "maxScore": 261
   },
   "adelnrv": {
     "center": "a",
@@ -48232,7 +49043,8 @@ const PUZZLES = {
       "vane",
       "veal",
       "veranda"
-    ]
+    ],
+    "maxScore": 264
   },
   "iacdems": {
     "center": "i",
@@ -48287,7 +49099,8 @@ const PUZZLES = {
       "sided",
       "sides",
       "sima"
-    ]
+    ],
+    "maxScore": 245
   },
   "ceikors": {
     "center": "c",
@@ -48342,7 +49155,8 @@ const PUZZLES = {
       "socks",
       "sorcerer",
       "sorceress"
-    ]
+    ],
+    "maxScore": 243
   },
   "teginps": {
     "center": "t",
@@ -48398,7 +49212,8 @@ const PUZZLES = {
       "tests",
       "tintin",
       "titties"
-    ]
+    ],
+    "maxScore": 255
   },
   "hadefrt": {
     "center": "h",
@@ -48455,7 +49270,8 @@ const PUZZLES = {
       "thread",
       "threat",
       "three"
-    ]
+    ],
+    "maxScore": 270
   },
   "eadnorv": {
     "center": "e",
@@ -48527,7 +49343,8 @@ const PUZZLES = {
       "vane",
       "veer",
       "veranda"
-    ]
+    ],
+    "maxScore": 269
   },
   "taciopr": {
     "center": "t",
@@ -48589,7 +49406,8 @@ const PUZZLES = {
       "tripp",
       "troop",
       "trot"
-    ]
+    ],
+    "maxScore": 252
   },
   "naegprt": {
     "center": "n",
@@ -48649,7 +49467,8 @@ const PUZZLES = {
       "tenant",
       "tenner",
       "tent"
-    ]
+    ],
+    "maxScore": 264
   },
   "eadfgin": {
     "center": "e",
@@ -48704,7 +49523,8 @@ const PUZZLES = {
       "needing",
       "needn",
       "nine"
-    ]
+    ],
+    "maxScore": 232
   },
   "naimotu": {
     "center": "n",
@@ -48756,7 +49576,8 @@ const PUZZLES = {
       "tuna",
       "union",
       "unit"
-    ]
+    ],
+    "maxScore": 258
   },
   "naceilp": {
     "center": "n",
@@ -48813,7 +49634,8 @@ const PUZZLES = {
       "plain",
       "plan",
       "plane"
-    ]
+    ],
+    "maxScore": 258
   },
   "oghnstu": {
     "center": "o",
@@ -48866,7 +49688,8 @@ const PUZZLES = {
       "toss",
       "tough",
       "tout"
-    ]
+    ],
+    "maxScore": 231
   },
   "ialnstu": {
     "center": "i",
@@ -48922,7 +49745,8 @@ const PUZZLES = {
       "tintin",
       "unit",
       "units"
-    ]
+    ],
+    "maxScore": 258
   },
   "cahlors": {
     "center": "c",
@@ -48976,7 +49800,8 @@ const PUZZLES = {
       "scorch",
       "scroll",
       "scrolls"
-    ]
+    ],
+    "maxScore": 235
   },
   "legiost": {
     "center": "l",
@@ -49045,7 +49870,8 @@ const PUZZLES = {
       "toilets",
       "tool",
       "tools"
-    ]
+    ],
+    "maxScore": 266
   },
   "laceipr": {
     "center": "l",
@@ -49104,7 +49930,8 @@ const PUZZLES = {
       "replace",
       "replica",
       "ripple"
-    ]
+    ],
+    "maxScore": 231
   },
   "oacgint": {
     "center": "o",
@@ -49156,7 +49983,8 @@ const PUZZLES = {
       "tonic",
       "tonino",
       "toot"
-    ]
+    ],
+    "maxScore": 251
   },
   "igknrst": {
     "center": "i",
@@ -49217,7 +50045,8 @@ const PUZZLES = {
       "strings",
       "tintin",
       "tiring"
-    ]
+    ],
+    "maxScore": 266
   },
   "obcdekr": {
     "center": "o",
@@ -49277,7 +50106,8 @@ const PUZZLES = {
       "rocker",
       "rodeo",
       "rook"
-    ]
+    ],
+    "maxScore": 239
   },
   "lehopsy": {
     "center": "l",
@@ -49345,7 +50175,8 @@ const PUZZLES = {
       "solos",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 272
   },
   "dacehnt": {
     "center": "d",
@@ -49403,7 +50234,8 @@ const PUZZLES = {
       "tanned",
       "tend",
       "tended"
-    ]
+    ],
+    "maxScore": 273
   },
   "tacehmn": {
     "center": "t",
@@ -49459,7 +50291,8 @@ const PUZZLES = {
       "theme",
       "then",
       "theta"
-    ]
+    ],
+    "maxScore": 232
   },
   "rcegins": {
     "center": "r",
@@ -49512,7 +50345,8 @@ const PUZZLES = {
       "sire",
       "siren",
       "sirens"
-    ]
+    ],
+    "maxScore": 268
   },
   "iaegntv": {
     "center": "i",
@@ -49562,7 +50396,8 @@ const PUZZLES = {
       "vinnie",
       "vintage",
       "viva"
-    ]
+    ],
+    "maxScore": 250
   },
   "deimnru": {
     "center": "d",
@@ -49622,7 +50457,8 @@ const PUZZLES = {
       "undermine",
       "undermined",
       "undue"
-    ]
+    ],
+    "maxScore": 270
   },
   "tabflos": {
     "center": "t",
@@ -49692,7 +50528,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "total"
-    ]
+    ],
+    "maxScore": 263
   },
   "adginrw": {
     "center": "a",
@@ -49754,7 +50591,8 @@ const PUZZLES = {
       "warn",
       "warning",
       "warring"
-    ]
+    ],
+    "maxScore": 241
   },
   "pefirst": {
     "center": "p",
@@ -49810,7 +50648,8 @@ const PUZZLES = {
       "tripe",
       "tripp",
       "trips"
-    ]
+    ],
+    "maxScore": 254
   },
   "egilost": {
     "center": "e",
@@ -49861,7 +50700,8 @@ const PUZZLES = {
       "titties",
       "toilet",
       "toilets"
-    ]
+    ],
+    "maxScore": 230
   },
   "ceinpst": {
     "center": "c",
@@ -49904,7 +50744,8 @@ const PUZZLES = {
       "specs",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 229
   },
   "sceimnp": {
     "center": "s",
@@ -49955,7 +50796,8 @@ const PUZZLES = {
       "spine",
       "spines",
       "spins"
-    ]
+    ],
+    "maxScore": 253
   },
   "gehilns": {
     "center": "g",
@@ -50007,7 +50849,8 @@ const PUZZLES = {
       "sings",
       "sling",
       "slinging"
-    ]
+    ],
+    "maxScore": 245
   },
   "eaflrtw": {
     "center": "e",
@@ -50082,7 +50925,8 @@ const PUZZLES = {
       "welfare",
       "well",
       "weller"
-    ]
+    ],
+    "maxScore": 274
   },
   "edloruv": {
     "center": "e",
@@ -50144,7 +50988,8 @@ const PUZZLES = {
       "ruled",
       "ruler",
       "veer"
-    ]
+    ],
+    "maxScore": 242
   },
   "raelopv": {
     "center": "r",
@@ -50211,7 +51056,8 @@ const PUZZLES = {
       "valera",
       "vapor",
       "veer"
-    ]
+    ],
+    "maxScore": 266
   },
   "eacilnp": {
     "center": "e",
@@ -50276,7 +51122,8 @@ const PUZZLES = {
       "place",
       "plane",
       "plea"
-    ]
+    ],
+    "maxScore": 268
   },
   "dbeilno": {
     "center": "d",
@@ -50338,7 +51185,8 @@ const PUZZLES = {
       "noodle",
       "olden",
       "oldie"
-    ]
+    ],
+    "maxScore": 240
   },
   "tadegru": {
     "center": "t",
@@ -50389,7 +51237,8 @@ const PUZZLES = {
       "tutu",
       "utter",
       "uttered"
-    ]
+    ],
+    "maxScore": 231
   },
   "tacilps": {
     "center": "t",
@@ -50443,7 +51292,8 @@ const PUZZLES = {
       "taps",
       "till",
       "tilt"
-    ]
+    ],
+    "maxScore": 257
   },
   "waelrst": {
     "center": "w",
@@ -50497,7 +51347,8 @@ const PUZZLES = {
       "wrestle",
       "wrestler",
       "wrestlers"
-    ]
+    ],
+    "maxScore": 247
   },
   "tcemnos": {
     "center": "t",
@@ -50563,7 +51414,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "totem"
-    ]
+    ],
+    "maxScore": 273
   },
   "iemoprs": {
     "center": "i",
@@ -50620,7 +51472,8 @@ const PUZZLES = {
       "series",
       "sire",
       "soiree"
-    ]
+    ],
+    "maxScore": 255
   },
   "dceinpt": {
     "center": "d",
@@ -50668,7 +51521,8 @@ const PUZZLES = {
       "tied",
       "tinted",
       "tipped"
-    ]
+    ],
+    "maxScore": 232
   },
   "nelostv": {
     "center": "n",
@@ -50728,7 +51582,8 @@ const PUZZLES = {
       "tons",
       "vent",
       "vents"
-    ]
+    ],
+    "maxScore": 225
   },
   "lbegins": {
     "center": "l",
@@ -50784,7 +51639,8 @@ const PUZZLES = {
       "singles",
       "sling",
       "slinging"
-    ]
+    ],
+    "maxScore": 260
   },
   "iehlstw": {
     "center": "i",
@@ -50845,7 +51701,8 @@ const PUZZLES = {
       "wishes",
       "with",
       "wits"
-    ]
+    ],
+    "maxScore": 240
   },
   "ndgiosu": {
     "center": "n",
@@ -50899,7 +51756,8 @@ const PUZZLES = {
       "unions",
       "unison",
       "using"
-    ]
+    ],
+    "maxScore": 243
   },
   "eginrvw": {
     "center": "e",
@@ -50958,7 +51816,8 @@ const PUZZLES = {
       "winnie",
       "wire",
       "wren"
-    ]
+    ],
+    "maxScore": 260
   },
   "mabcers": {
     "center": "m",
@@ -51016,7 +51875,8 @@ const PUZZLES = {
       "seems",
       "sesame",
       "smear"
-    ]
+    ],
+    "maxScore": 254
   },
   "simnopt": {
     "center": "s",
@@ -51075,7 +51935,8 @@ const PUZZLES = {
       "toots",
       "tops",
       "toss"
-    ]
+    ],
+    "maxScore": 265
   },
   "pdeilsu": {
     "center": "p",
@@ -51130,7 +51991,8 @@ const PUZZLES = {
       "supplied",
       "supplies",
       "upside"
-    ]
+    ],
+    "maxScore": 236
   },
   "iaeflst": {
     "center": "i",
@@ -51193,7 +52055,8 @@ const PUZZLES = {
       "title",
       "titles",
       "titties"
-    ]
+    ],
+    "maxScore": 259
   },
   "nadelmo": {
     "center": "n",
@@ -51264,7 +52127,8 @@ const PUZZLES = {
       "noone",
       "olden",
       "omen"
-    ]
+    ],
+    "maxScore": 264
   },
   "yaelprs": {
     "center": "y",
@@ -51314,7 +52178,8 @@ const PUZZLES = {
       "year",
       "yearly",
       "years"
-    ]
+    ],
+    "maxScore": 228
   },
   "oceimnt": {
     "center": "o",
@@ -51376,7 +52241,8 @@ const PUZZLES = {
       "tonino",
       "toot",
       "totem"
-    ]
+    ],
+    "maxScore": 268
   },
   "oabdelr": {
     "center": "o",
@@ -51438,7 +52304,8 @@ const PUZZLES = {
       "rolled",
       "roller",
       "rollo"
-    ]
+    ],
+    "maxScore": 236
   },
   "tceloru": {
     "center": "t",
@@ -51498,7 +52365,8 @@ const PUZZLES = {
       "turtle",
       "tutu",
       "utter"
-    ]
+    ],
+    "maxScore": 243
   },
   "eadnruw": {
     "center": "e",
@@ -51567,7 +52435,8 @@ const PUZZLES = {
       "wedded",
       "weed",
       "wren"
-    ]
+    ],
+    "maxScore": 271
   },
   "tacdeil": {
     "center": "t",
@@ -51626,7 +52495,8 @@ const PUZZLES = {
       "tilted",
       "title",
       "titled"
-    ]
+    ],
+    "maxScore": 261
   },
   "laemnrt": {
     "center": "l",
@@ -51688,7 +52558,8 @@ const PUZZLES = {
       "teal",
       "tell",
       "teller"
-    ]
+    ],
+    "maxScore": 266
   },
   "acefrtu": {
     "center": "a",
@@ -51748,7 +52619,8 @@ const PUZZLES = {
       "tracer",
       "tract",
       "treat"
-    ]
+    ],
+    "maxScore": 229
   },
   "caelpsu": {
     "center": "c",
@@ -51804,7 +52676,8 @@ const PUZZLES = {
       "specs",
       "success",
       "successes"
-    ]
+    ],
+    "maxScore": 267
   },
   "gilnosw": {
     "center": "g",
@@ -51861,7 +52734,8 @@ const PUZZLES = {
       "wings",
       "winning",
       "winnings"
-    ]
+    ],
+    "maxScore": 256
   },
   "sginrtw": {
     "center": "s",
@@ -51910,7 +52784,8 @@ const PUZZLES = {
       "wrist",
       "wrists",
       "writings"
-    ]
+    ],
+    "maxScore": 241
   },
   "naelmrt": {
     "center": "n",
@@ -51962,7 +52837,8 @@ const PUZZLES = {
       "tenner",
       "tent",
       "treatment"
-    ]
+    ],
+    "maxScore": 240
   },
   "labeimt": {
     "center": "l",
@@ -52031,7 +52907,8 @@ const PUZZLES = {
       "tilt",
       "timetable",
       "title"
-    ]
+    ],
+    "maxScore": 223
   },
   "taehnpr": {
     "center": "t",
@@ -52098,7 +52975,8 @@ const PUZZLES = {
       "trapper",
       "treat",
       "tree"
-    ]
+    ],
+    "maxScore": 273
   },
   "ndeoruw": {
     "center": "n",
@@ -52154,7 +53032,8 @@ const PUZZLES = {
       "wound",
       "wounded",
       "wren"
-    ]
+    ],
+    "maxScore": 240
   },
   "ldeimos": {
     "center": "l",
@@ -52229,7 +53108,8 @@ const PUZZLES = {
       "solid",
       "solo",
       "solos"
-    ]
+    ],
+    "maxScore": 264
   },
   "eacilmr": {
     "center": "e",
@@ -52297,7 +53177,8 @@ const PUZZLES = {
       "relic",
       "rice",
       "rimmer"
-    ]
+    ],
+    "maxScore": 275
   },
   "ndeiotv": {
     "center": "n",
@@ -52354,7 +53235,8 @@ const PUZZLES = {
       "vent",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 228
   },
   "meginst": {
     "center": "m",
@@ -52411,7 +53293,8 @@ const PUZZLES = {
       "time",
       "times",
       "timing"
-    ]
+    ],
+    "maxScore": 254
   },
   "naeglsu": {
     "center": "n",
@@ -52468,7 +53351,8 @@ const PUZZLES = {
       "snuggle",
       "sunglasses",
       "unseen"
-    ]
+    ],
+    "maxScore": 254
   },
   "madeinx": {
     "center": "m",
@@ -52534,7 +53418,8 @@ const PUZZLES = {
       "mixed",
       "name",
       "named"
-    ]
+    ],
+    "maxScore": 257
   },
   "oadmrst": {
     "center": "o",
@@ -52603,7 +53488,8 @@ const PUZZLES = {
       "torso",
       "toss",
       "trot"
-    ]
+    ],
+    "maxScore": 238
   },
   "icdegnv": {
     "center": "i",
@@ -52651,7 +53537,8 @@ const PUZZLES = {
       "viii",
       "vine",
       "vinnie"
-    ]
+    ],
+    "maxScore": 225
   },
   "saeghot": {
     "center": "s",
@@ -52720,7 +53607,8 @@ const PUZZLES = {
       "toots",
       "tosh",
       "toss"
-    ]
+    ],
+    "maxScore": 279
   },
   "rdehint": {
     "center": "r",
@@ -52784,7 +53672,8 @@ const PUZZLES = {
       "trend",
       "trident",
       "tried"
-    ]
+    ],
+    "maxScore": 278
   },
   "reimotv": {
     "center": "r",
@@ -52849,7 +53738,8 @@ const PUZZLES = {
       "veer",
       "voter",
       "vroom"
-    ]
+    ],
+    "maxScore": 261
   },
   "acdehor": {
     "center": "a",
@@ -52913,7 +53803,8 @@ const PUZZLES = {
       "roach",
       "road",
       "roar"
-    ]
+    ],
+    "maxScore": 233
   },
   "sacnotu": {
     "center": "s",
@@ -52966,7 +53857,8 @@ const PUZZLES = {
       "tons",
       "toots",
       "toss"
-    ]
+    ],
+    "maxScore": 248
   },
   "abeklmr": {
     "center": "a",
@@ -53038,7 +53930,8 @@ const PUZZLES = {
       "remake",
       "remark",
       "remarkable"
-    ]
+    ],
+    "maxScore": 226
   },
   "agimnrw": {
     "center": "a",
@@ -53099,7 +53992,8 @@ const PUZZLES = {
       "warning",
       "warring",
       "wingman"
-    ]
+    ],
+    "maxScore": 253
   },
   "deinosv": {
     "center": "d",
@@ -53158,7 +54052,8 @@ const PUZZLES = {
       "video",
       "videos",
       "voodoo"
-    ]
+    ],
+    "maxScore": 263
   },
   "saefmor": {
     "center": "s",
@@ -53222,7 +54117,8 @@ const PUZZLES = {
       "some",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 253
   },
   "eabcdru": {
     "center": "e",
@@ -53287,7 +54183,8 @@ const PUZZLES = {
       "rube",
       "rudder",
       "rude"
-    ]
+    ],
+    "maxScore": 235
   },
   "cabelrt": {
     "center": "c",
@@ -53335,7 +54232,8 @@ const PUZZLES = {
       "trace",
       "tracer",
       "tract"
-    ]
+    ],
+    "maxScore": 226
   },
   "acejkst": {
     "center": "a",
@@ -53391,7 +54289,8 @@ const PUZZLES = {
       "taste",
       "tastes",
       "tease"
-    ]
+    ],
+    "maxScore": 220
   },
   "abegost": {
     "center": "a",
@@ -53450,7 +54349,8 @@ const PUZZLES = {
       "tease",
       "toast",
       "toga"
-    ]
+    ],
+    "maxScore": 215
   },
   "sachmot": {
     "center": "s",
@@ -53511,7 +54411,8 @@ const PUZZLES = {
       "toots",
       "tosh",
       "toss"
-    ]
+    ],
+    "maxScore": 244
   },
   "dehorsw": {
     "center": "d",
@@ -53570,7 +54471,8 @@ const PUZZLES = {
       "woods",
       "word",
       "words"
-    ]
+    ],
+    "maxScore": 241
   },
   "acnostu": {
     "center": "a",
@@ -53622,7 +54524,8 @@ const PUZZLES = {
       "tattoos",
       "toast",
       "tuna"
-    ]
+    ],
+    "maxScore": 243
   },
   "cadehnt": {
     "center": "c",
@@ -53676,7 +54579,8 @@ const PUZZLES = {
       "tact",
       "teach",
       "tech"
-    ]
+    ],
+    "maxScore": 261
   },
   "oinrstu": {
     "center": "o",
@@ -53734,7 +54638,8 @@ const PUZZLES = {
       "union",
       "unions",
       "unison"
-    ]
+    ],
+    "maxScore": 248
   },
   "tademru": {
     "center": "t",
@@ -53799,7 +54704,8 @@ const PUZZLES = {
       "tutu",
       "utter",
       "uttered"
-    ]
+    ],
+    "maxScore": 261
   },
   "ecdnprt": {
     "center": "e",
@@ -53859,7 +54765,8 @@ const PUZZLES = {
       "tent",
       "tree",
       "trend"
-    ]
+    ],
+    "maxScore": 271
   },
   "naefrst": {
     "center": "n",
@@ -53912,7 +54819,8 @@ const PUZZLES = {
       "tents",
       "transfer",
       "transfers"
-    ]
+    ],
+    "maxScore": 240
   },
   "raemnsu": {
     "center": "r",
@@ -53973,7 +54881,8 @@ const PUZZLES = {
       "surname",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 255
   },
   "neklost": {
     "center": "n",
@@ -54032,7 +54941,8 @@ const PUZZLES = {
       "tones",
       "tonnes",
       "tons"
-    ]
+    ],
+    "maxScore": 225
   },
   "radeqsu": {
     "center": "r",
@@ -54086,7 +54996,8 @@ const PUZZLES = {
       "sure",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 235
   },
   "demnort": {
     "center": "d",
@@ -54147,7 +55058,8 @@ const PUZZLES = {
       "tendon",
       "tormented",
       "trend"
-    ]
+    ],
+    "maxScore": 242
   },
   "aegmnot": {
     "center": "a",
@@ -54209,7 +55121,8 @@ const PUZZLES = {
       "tenant",
       "toga",
       "tomato"
-    ]
+    ],
+    "maxScore": 237
   },
   "rabgins": {
     "center": "r",
@@ -54268,7 +55181,8 @@ const PUZZLES = {
       "rising",
       "sari",
       "sarin"
-    ]
+    ],
+    "maxScore": 258
   },
   "iaeghnt": {
     "center": "i",
@@ -54320,7 +55234,8 @@ const PUZZLES = {
       "tighten",
       "tightening",
       "tintin"
-    ]
+    ],
+    "maxScore": 246
   },
   "rehimos": {
     "center": "r",
@@ -54382,7 +55297,8 @@ const PUZZLES = {
       "soiree",
       "sore",
       "sores"
-    ]
+    ],
+    "maxScore": 266
   },
   "ocdeilr": {
     "center": "o",
@@ -54446,7 +55362,8 @@ const PUZZLES = {
       "roller",
       "rollie",
       "rollo"
-    ]
+    ],
+    "maxScore": 254
   },
   "oadimnt": {
     "center": "o",
@@ -54495,7 +55412,8 @@ const PUZZLES = {
       "tomato",
       "tonino",
       "toot"
-    ]
+    ],
+    "maxScore": 251
   },
   "racilst": {
     "center": "r",
@@ -54555,7 +55473,8 @@ const PUZZLES = {
       "traits",
       "trial",
       "trials"
-    ]
+    ],
+    "maxScore": 256
   },
   "sabegrv": {
     "center": "s",
@@ -54612,7 +55531,8 @@ const PUZZLES = {
       "vases",
       "verse",
       "verses"
-    ]
+    ],
+    "maxScore": 260
   },
   "ecdhlos": {
     "center": "e",
@@ -54682,7 +55602,8 @@ const PUZZLES = {
       "sled",
       "sole",
       "soles"
-    ]
+    ],
+    "maxScore": 269
   },
   "eahinps": {
     "center": "e",
@@ -54735,7 +55656,8 @@ const PUZZLES = {
       "snipe",
       "spine",
       "spines"
-    ]
+    ],
+    "maxScore": 244
   },
   "eaginry": {
     "center": "e",
@@ -54794,7 +55716,8 @@ const PUZZLES = {
       "year",
       "yearn",
       "yearning"
-    ]
+    ],
+    "maxScore": 269
   },
   "eabirtu": {
     "center": "e",
@@ -54854,7 +55777,8 @@ const PUZZLES = {
       "tube",
       "turret",
       "utter"
-    ]
+    ],
+    "maxScore": 230
   },
   "legimns": {
     "center": "l",
@@ -54907,7 +55831,8 @@ const PUZZLES = {
       "smile",
       "smiles",
       "smiling"
-    ]
+    ],
+    "maxScore": 230
   },
   "iadegnv": {
     "center": "i",
@@ -54964,7 +55889,8 @@ const PUZZLES = {
       "vine",
       "vinnie",
       "viva"
-    ]
+    ],
+    "maxScore": 242
   },
   "odelmst": {
     "center": "o",
@@ -55041,7 +55967,8 @@ const PUZZLES = {
       "toss",
       "tossed",
       "totem"
-    ]
+    ],
+    "maxScore": 261
   },
   "dceistv": {
     "center": "d",
@@ -55091,7 +56018,8 @@ const PUZZLES = {
       "tied",
       "vested",
       "visited"
-    ]
+    ],
+    "maxScore": 233
   },
   "oadelnr": {
     "center": "o",
@@ -55159,7 +56087,8 @@ const PUZZLES = {
       "rolled",
       "roller",
       "rollo"
-    ]
+    ],
+    "maxScore": 260
   },
   "paeilnr": {
     "center": "p",
@@ -55224,7 +56153,8 @@ const PUZZLES = {
       "ripe",
       "ripper",
       "ripple"
-    ]
+    ],
+    "maxScore": 239
   },
   "laemosu": {
     "center": "l",
@@ -55292,7 +56222,8 @@ const PUZZLES = {
       "soul",
       "soulless",
       "souls"
-    ]
+    ],
+    "maxScore": 240
   },
   "padeimr": {
     "center": "p",
@@ -55357,7 +56288,8 @@ const PUZZLES = {
       "ripe",
       "ripped",
       "ripper"
-    ]
+    ],
+    "maxScore": 262
   },
   "padelnt": {
     "center": "p",
@@ -55415,7 +56347,8 @@ const PUZZLES = {
       "tape",
       "taped",
       "tapped"
-    ]
+    ],
+    "maxScore": 252
   },
   "gbeimnr": {
     "center": "g",
@@ -55461,7 +56394,8 @@ const PUZZLES = {
       "ring",
       "ringer",
       "ringing"
-    ]
+    ],
+    "maxScore": 241
   },
   "abdinst": {
     "center": "a",
@@ -55515,7 +56449,8 @@ const PUZZLES = {
       "stands",
       "stasis",
       "taint"
-    ]
+    ],
+    "maxScore": 233
   },
   "reintvw": {
     "center": "r",
@@ -55566,7 +56501,8 @@ const PUZZLES = {
       "write",
       "writer",
       "written"
-    ]
+    ],
+    "maxScore": 242
   },
   "tehnosu": {
     "center": "t",
@@ -55638,7 +56574,8 @@ const PUZZLES = {
       "tunes",
       "tush",
       "tutu"
-    ]
+    ],
+    "maxScore": 268
   },
   "lacdegn": {
     "center": "l",
@@ -55697,7 +56634,8 @@ const PUZZLES = {
       "legend",
       "lend",
       "needle"
-    ]
+    ],
+    "maxScore": 229
   },
   "schiort": {
     "center": "s",
@@ -55753,7 +56691,8 @@ const PUZZLES = {
       "toshi",
       "toshio",
       "toss"
-    ]
+    ],
+    "maxScore": 239
   },
   "deforst": {
     "center": "d",
@@ -55812,7 +56751,8 @@ const PUZZLES = {
       "stressed",
       "tested",
       "tossed"
-    ]
+    ],
+    "maxScore": 274
   },
   "ucelprs": {
     "center": "u",
@@ -55872,7 +56812,8 @@ const PUZZLES = {
       "upper",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 255
   },
   "badeglr": {
     "center": "b",
@@ -55934,7 +56875,8 @@ const PUZZLES = {
       "label",
       "labeled",
       "rabble"
-    ]
+    ],
+    "maxScore": 254
   },
   "sefilty": {
     "center": "s",
@@ -55989,7 +56931,8 @@ const PUZZLES = {
       "tiles",
       "titles",
       "titties"
-    ]
+    ],
+    "maxScore": 233
   },
   "bademrs": {
     "center": "b",
@@ -56043,7 +56986,8 @@ const PUZZLES = {
       "remembers",
       "saber",
       "samba"
-    ]
+    ],
+    "maxScore": 237
   },
   "eagilnp": {
     "center": "e",
@@ -56102,7 +57046,8 @@ const PUZZLES = {
       "pipeline",
       "plane",
       "plea"
-    ]
+    ],
+    "maxScore": 236
   },
   "daceknr": {
     "center": "d",
@@ -56164,7 +57109,8 @@ const PUZZLES = {
       "reed",
       "render",
       "rendered"
-    ]
+    ],
+    "maxScore": 263
   },
   "nabegit": {
     "center": "n",
@@ -56225,7 +57171,8 @@ const PUZZLES = {
       "tenant",
       "tent",
       "tintin"
-    ]
+    ],
+    "maxScore": 267
   },
   "gaimnsu": {
     "center": "g",
@@ -56277,7 +57224,8 @@ const PUZZLES = {
       "snag",
       "snug",
       "using"
-    ]
+    ],
+    "maxScore": 246
   },
   "icdegnt": {
     "center": "i",
@@ -56328,7 +57276,8 @@ const PUZZLES = {
       "tied",
       "tinted",
       "tintin"
-    ]
+    ],
+    "maxScore": 254
   },
   "sghiknt": {
     "center": "s",
@@ -56384,7 +57333,8 @@ const PUZZLES = {
       "things",
       "thinks",
       "tights"
-    ]
+    ],
+    "maxScore": 271
   },
   "sacfirt": {
     "center": "s",
@@ -56441,7 +57391,8 @@ const PUZZLES = {
       "straits",
       "tarts",
       "traits"
-    ]
+    ],
+    "maxScore": 265
   },
   "scemotu": {
     "center": "s",
@@ -56495,7 +57446,8 @@ const PUZZLES = {
       "toots",
       "toss",
       "utmost"
-    ]
+    ],
+    "maxScore": 234
   },
   "idgnopr": {
     "center": "i",
@@ -56545,7 +57497,8 @@ const PUZZLES = {
       "ringing",
       "ringo",
       "ripping"
-    ]
+    ],
+    "maxScore": 252
   },
   "ighnosw": {
     "center": "i",
@@ -56593,7 +57546,8 @@ const PUZZLES = {
       "winnings",
       "wish",
       "wishing"
-    ]
+    ],
+    "maxScore": 231
   },
   "ealmpsx": {
     "center": "e",
@@ -56661,7 +57615,8 @@ const PUZZLES = {
       "smells",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 274
   },
   "sabegnr": {
     "center": "s",
@@ -56717,7 +57672,8 @@ const PUZZLES = {
       "serge",
       "snag",
       "snare"
-    ]
+    ],
+    "maxScore": 240
   },
   "dbegiln": {
     "center": "d",
@@ -56770,7 +57726,8 @@ const PUZZLES = {
       "needing",
       "needle",
       "needn"
-    ]
+    ],
+    "maxScore": 238
   },
   "ignopsu": {
     "center": "i",
@@ -56817,7 +57774,8 @@ const PUZZLES = {
       "unions",
       "unison",
       "using"
-    ]
+    ],
+    "maxScore": 251
   },
   "ecginpr": {
     "center": "e",
@@ -56869,7 +57827,8 @@ const PUZZLES = {
       "ringer",
       "ripe",
       "ripper"
-    ]
+    ],
+    "maxScore": 224
   },
   "rbcdesu": {
     "center": "r",
@@ -56925,7 +57884,8 @@ const PUZZLES = {
       "sure",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 244
   },
   "radelov": {
     "center": "r",
@@ -56992,7 +57952,8 @@ const PUZZLES = {
       "rover",
       "valera",
       "veer"
-    ]
+    ],
+    "maxScore": 272
   },
   "ieflnos": {
     "center": "i",
@@ -57050,7 +58011,8 @@ const PUZZLES = {
       "sessions",
       "silo",
       "soil"
-    ]
+    ],
+    "maxScore": 246
   },
   "haeopst": {
     "center": "h",
@@ -57113,7 +58075,8 @@ const PUZZLES = {
       "tooth",
       "toothpaste",
       "tosh"
-    ]
+    ],
+    "maxScore": 232
   },
   "baelmrt": {
     "center": "b",
@@ -57171,7 +58134,8 @@ const PUZZLES = {
       "table",
       "tablet",
       "tremble"
-    ]
+    ],
+    "maxScore": 233
   },
   "maegiln": {
     "center": "m",
@@ -57235,7 +58199,8 @@ const PUZZLES = {
       "minnie",
       "name",
       "naming"
-    ]
+    ],
+    "maxScore": 256
   },
   "ehlnstu": {
     "center": "e",
@@ -57290,7 +58255,8 @@ const PUZZLES = {
       "tunnel",
       "tunnels",
       "unseen"
-    ]
+    ],
+    "maxScore": 218
   },
   "sadenpw": {
     "center": "s",
@@ -57352,7 +58318,8 @@ const PUZZLES = {
       "wasp",
       "wasps",
       "weeds"
-    ]
+    ],
+    "maxScore": 255
   },
   "edfmnru": {
     "center": "e",
@@ -57412,7 +58379,8 @@ const PUZZLES = {
       "runner",
       "under",
       "undue"
-    ]
+    ],
+    "maxScore": 241
   },
   "iaceprs": {
     "center": "i",
@@ -57474,7 +58442,8 @@ const PUZZLES = {
       "species",
       "spice",
       "spices"
-    ]
+    ],
+    "maxScore": 278
   },
   "uaelprs": {
     "center": "u",
@@ -57531,7 +58500,8 @@ const PUZZLES = {
       "upper",
       "user",
       "users"
-    ]
+    ],
+    "maxScore": 254
   },
   "hacestw": {
     "center": "h",
@@ -57588,7 +58558,8 @@ const PUZZLES = {
       "watch",
       "watches",
       "wheat"
-    ]
+    ],
+    "maxScore": 232
   },
   "ngikrst": {
     "center": "n",
@@ -57636,7 +58607,8 @@ const PUZZLES = {
       "strings",
       "tintin",
       "tiring"
-    ]
+    ],
+    "maxScore": 232
   },
   "rbdenou": {
     "center": "r",
@@ -57698,7 +58670,8 @@ const PUZZLES = {
       "rune",
       "runner",
       "under"
-    ]
+    ],
+    "maxScore": 264
   },
   "radenov": {
     "center": "r",
@@ -57758,7 +58731,8 @@ const PUZZLES = {
       "rover",
       "veer",
       "veranda"
-    ]
+    ],
+    "maxScore": 228
   },
   "eacfins": {
     "center": "e",
@@ -57814,7 +58788,8 @@ const PUZZLES = {
       "sensei",
       "senses",
       "sienna"
-    ]
+    ],
+    "maxScore": 239
   },
   "sehnoty": {
     "center": "s",
@@ -57872,7 +58847,8 @@ const PUZZLES = {
       "toots",
       "tosh",
       "toss"
-    ]
+    ],
+    "maxScore": 227
   },
   "ebgimnr": {
     "center": "e",
@@ -57925,7 +58901,8 @@ const PUZZLES = {
       "remembering",
       "rimmer",
       "ringer"
-    ]
+    ],
+    "maxScore": 258
   },
   "dabcehr": {
     "center": "d",
@@ -57984,7 +58961,8 @@ const PUZZLES = {
       "reared",
       "redhead",
       "reed"
-    ]
+    ],
+    "maxScore": 254
   },
   "pehlosy": {
     "center": "p",
@@ -58044,7 +59022,8 @@ const PUZZLES = {
       "sloppy",
       "spell",
       "spells"
-    ]
+    ],
+    "maxScore": 234
   },
   "nagilru": {
     "center": "n",
@@ -58098,7 +59077,8 @@ const PUZZLES = {
       "running",
       "urging",
       "urinal"
-    ]
+    ],
+    "maxScore": 249
   },
   "reinotu": {
     "center": "r",
@@ -58162,7 +59142,8 @@ const PUZZLES = {
       "turret",
       "untrue",
       "utter"
-    ]
+    ],
+    "maxScore": 263
   },
   "ebhlort": {
     "center": "e",
@@ -58222,7 +59203,8 @@ const PUZZLES = {
       "throttle",
       "tore",
       "tree"
-    ]
+    ],
+    "maxScore": 221
   },
   "fdeinrs": {
     "center": "f",
@@ -58275,7 +59257,8 @@ const PUZZLES = {
       "referee",
       "refers",
       "refined"
-    ]
+    ],
+    "maxScore": 249
   },
   "nefistu": {
     "center": "n",
@@ -58331,7 +59314,8 @@ const PUZZLES = {
       "units",
       "unseen",
       "untie"
-    ]
+    ],
+    "maxScore": 258
   },
   "aeilort": {
     "center": "a",
@@ -58397,7 +59381,8 @@ const PUZZLES = {
       "traitor",
       "treat",
       "trial"
-    ]
+    ],
+    "maxScore": 266
   },
   "ebdlosu": {
     "center": "e",
@@ -58457,7 +59442,8 @@ const PUZZLES = {
       "subdued",
       "suede",
       "used"
-    ]
+    ],
+    "maxScore": 235
   },
   "abelnot": {
     "center": "a",
@@ -58519,7 +59505,8 @@ const PUZZLES = {
       "teal",
       "tenant",
       "total"
-    ]
+    ],
+    "maxScore": 240
   },
   "daehnru": {
     "center": "d",
@@ -58580,7 +59567,8 @@ const PUZZLES = {
       "undue",
       "unhand",
       "unheard"
-    ]
+    ],
+    "maxScore": 231
   },
   "ocdehrt": {
     "center": "o",
@@ -58639,7 +59627,8 @@ const PUZZLES = {
       "torched",
       "tore",
       "trot"
-    ]
+    ],
+    "maxScore": 245
   },
   "gdeinru": {
     "center": "g",
@@ -58693,7 +59682,8 @@ const PUZZLES = {
       "urge",
       "urged",
       "urging"
-    ]
+    ],
+    "maxScore": 269
   },
   "saceinv": {
     "center": "s",
@@ -58746,7 +59736,8 @@ const PUZZLES = {
       "vines",
       "visa",
       "visas"
-    ]
+    ],
+    "maxScore": 254
   },
   "laeginv": {
     "center": "l",
@@ -58807,7 +59798,8 @@ const PUZZLES = {
       "villa",
       "village",
       "villain"
-    ]
+    ],
+    "maxScore": 233
   },
   "vcdeior": {
     "center": "v",
@@ -58854,7 +59846,8 @@ const PUZZLES = {
       "viii",
       "voice",
       "voodoo"
-    ]
+    ],
+    "maxScore": 227
   },
   "icdelps": {
     "center": "i",
@@ -58910,7 +59903,8 @@ const PUZZLES = {
       "spill",
       "spilled",
       "spills"
-    ]
+    ],
+    "maxScore": 242
   },
   "daegrtv": {
     "center": "d",
@@ -58968,7 +59962,8 @@ const PUZZLES = {
       "trader",
       "tread",
       "treated"
-    ]
+    ],
+    "maxScore": 259
   },
   "laenopr": {
     "center": "l",
@@ -59032,7 +60027,8 @@ const PUZZLES = {
       "roll",
       "roller",
       "rollo"
-    ]
+    ],
+    "maxScore": 237
   },
   "naegikl": {
     "center": "n",
@@ -59091,7 +60087,8 @@ const PUZZLES = {
       "nail",
       "nailing",
       "nine"
-    ]
+    ],
+    "maxScore": 233
   },
   "icemnot": {
     "center": "i",
@@ -59141,7 +60138,8 @@ const PUZZLES = {
       "tintin",
       "tonic",
       "tonino"
-    ]
+    ],
+    "maxScore": 233
   },
   "gailnsv": {
     "center": "g",
@@ -59197,7 +60195,8 @@ const PUZZLES = {
       "slinging",
       "snag",
       "vigil"
-    ]
+    ],
+    "maxScore": 247
   },
   "ocdertu": {
     "center": "o",
@@ -59254,7 +60253,8 @@ const PUZZLES = {
       "tout",
       "trot",
       "trout"
-    ]
+    ],
+    "maxScore": 245
   }
 };
 

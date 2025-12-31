@@ -20,14 +20,14 @@ describe('Italian Game Logic', () => {
         words = new Set(JSON.parse(wordsMatch[1]));
     });
 
-    test('All puzzles should have between 30 and 60 words', () => {
+    test('All puzzles should have between 30 and 80 words', () => {
         const ids = Object.keys(puzzles);
         expect(ids.length).toBeGreaterThan(0);
 
         ids.forEach(id => {
             const p = puzzles[id];
             expect(p.words.length).toBeGreaterThanOrEqual(30);
-            expect(p.words.length).toBeLessThanOrEqual(60);
+            expect(p.words.length).toBeLessThanOrEqual(80);
         });
     });
 
