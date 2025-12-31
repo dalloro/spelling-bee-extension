@@ -2,7 +2,10 @@
 // Copyright (c) 2025 Livio Dalloro
 // See LICENSE file for details.
 
-// Firebase Imports - v2.3.2
+// Firebase Imports - v4.13.5
+const APP_VERSION = '4.13.5';
+console.log(`🚀 Spelling Bee Mobile v${APP_VERSION} starting...`);
+
 import { initializeApp } from 'firebase/app';
 import {
     getFirestore, doc, setDoc, getDoc, updateDoc, onSnapshot, Timestamp, connectFirestoreEmulator, deleteField
@@ -134,39 +137,56 @@ const els = {
 document.addEventListener('DOMContentLoaded', initGame);
 
 async function initGame() {
-    loadLocalState();
+    try {
+        console.log("Initializing game...");
+        loadLocalState();
 
-    if (!state.puzzle) {
-        await loadDailyPuzzle();
-    } else {
-        // Redundant but safe check to populate state.puzzle if somehow missing while puzzleId exists
-        const puzzles = getCurrentPuzzles();
-        if (!state.puzzle && puzzles[state.puzzleId]) {
-            state.puzzle = puzzles[state.puzzleId];
+        if (!state.puzzle) {
+            await loadDailyPuzzle();
+        } else {
+            // Redundant but safe check to populate state.puzzle if somehow missing while puzzleId exists
+            const puzzles = getCurrentPuzzles();
+            if (!state.puzzle && puzzles[state.puzzleId]) {
+                state.puzzle = puzzles[state.puzzleId];
+            }
         }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const roomFromUrl = urlParams.get('room');
+
+        if (roomFromUrl) {
+            joinFirebaseRoom(roomFromUrl, false).catch(err => {
+                console.warn("Failed to join room from URL:", err);
+                window.history.replaceState({}, document.title, window.location.pathname);
+            });
+        } else if (state.multiplayer.roomCode) {
+            joinFirebaseRoom(state.multiplayer.roomCode, false).catch(() => {
+                state.multiplayer.roomCode = null;
+                saveLocalState();
+            });
+        }
+
+        renderPuzzle();
+        updateScoreUI();
+        renderFoundWords();
+        renderMultiplayerBanner();
+        updateLanguageUI();
+        setupEventListeners();
+
+        // Add version to UI for debugging
+        const footer = document.createElement('div');
+        footer.id = 'debug-version';
+        footer.style.cssText = 'font-size: 10px; color: #666; text-align: center; padding: 10px; opacity: 0.5;';
+        footer.innerText = `v${APP_VERSION}`;
+        document.querySelector('.container').appendChild(footer);
+
+        console.log("Game initialized successfully.");
+    } catch (criticalError) {
+        console.error("CRITICAL INIT ERROR:", criticalError);
+        // Disaster recovery: Clear everything and reload
+        localStorage.clear();
+        setTimeout(() => location.reload(), 1000);
     }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const roomFromUrl = urlParams.get('room');
-
-    if (roomFromUrl) {
-        joinFirebaseRoom(roomFromUrl, false).catch(err => {
-            console.warn("Failed to join room from URL:", err);
-            window.history.replaceState({}, document.title, window.location.pathname);
-        });
-    } else if (state.multiplayer.roomCode) {
-        joinFirebaseRoom(state.multiplayer.roomCode, false).catch(() => {
-            state.multiplayer.roomCode = null;
-            saveLocalState();
-        });
-    }
-
-    renderPuzzle();
-    updateScoreUI();
-    renderFoundWords();
-    renderMultiplayerBanner();
-    updateLanguageUI();
-    setupEventListeners();
 }
 
 function loadLocalState() {
