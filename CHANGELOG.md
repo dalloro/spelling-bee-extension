@@ -1,3 +1,10 @@
+# [4.13.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.12.0...v4.13.0) (2025-12-31)
+
+
+### Features
+
+* **puzzles:** reach 250pt target for EN/IT, overhaul EN dictionary, and optimize build size ([a4ed4d0](https://github.com/dalloro/spelling-bee-extension/commit/a4ed4d0ccf24d60ac65b95c130f11d39e0e9307a))
+
 # [4.12.0](https://github.com/dalloro/spelling-bee-extension/compare/v4.11.0...v4.12.0) (2025-12-30)
 
 
